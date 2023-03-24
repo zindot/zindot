@@ -1,0 +1,50 @@
+-- import: sarvom.github.io/zindot/assets
+
+-- navbar1:
+
+-- component navbar1:
+
+-- ftd.row:
+align-content: center
+width: fill-container
+border-width.px: 30
+border-top-left-radius.px: 45
+border-top-right-radius.px: 45
+color: white
+padding-vertical.px: 24
+padding-horizontal.px: 40 
+spacing.fixed.px: 40
+
+
+-- ftd.row:
+spacing.fixed.px: 60
+align-self: start
+align-content: center
+
+
+-- ftd.text: Terms & Conditions
+color: black
+role: $inherited.types.label-large
+text-align: center
+white-space: nowrap
+
+-- ftd.text: FAQs
+color: black
+role: $inherited.types.label-large
+text-align: center
+white-space: nowrap
+
+-- ftd.text: Menu Option
+color: black
+role: $inherited.types.label-large
+text-align: center
+white-space: nowrap
+
+-- button: Connect Wallet
+
+-- end: ftd.row
+
+-- end: ftd.row
+-- end: navbar1
+
+
