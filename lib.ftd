@@ -9,16 +9,12 @@
 align-content: center
 width: fill-container
 border-width.px: 30
-border-top-left-radius.px: 45
-border-top-right-radius.px: 45
+border-top-left-radius.px: 0
+border-top-right-radius.px: 0
 color: white
 padding-horizontal.px: 40 
 spacing.fixed.px: 80
 margin-bottom.px: 10
-
--- ftd.image:
-width: fill-container
-src: https://github.com/Sarvom/zindot/blob/main/images/logo.png
 
 -- ftd.row:
 spacing.fixed.px: 60
@@ -54,7 +50,4 @@ white-space: nowrap
 -- end: ftd.row
 -- end: navbar1
 
--- ftd.image:
-width: fill-container
-src: https://github.com/Sarvom/zindot/blob/main/images/bgimg.jpg?raw=true
 
