@@ -1,6 +1,6 @@
 -- import: sarvom.github.io/zindot/assets
 
--- navbar1:
+-- navbar1: 
 
 -- component navbar1:
 
@@ -23,24 +23,22 @@ align-content: center
 
 
 -- ftd.text: Terms & Conditions
-color: black
+color: purple
 role: $inherited.types.label-large
 text-align: center
 white-space: nowrap
 
 -- ftd.text: FAQs
-color: black
+color: purple
 role: $inherited.types.label-large
 text-align: center
 white-space: nowrap
 
 -- ftd.text: Menu Option
-color: black
+color: violet
 role: $inherited.types.label-large
 text-align: center
 white-space: nowrap
-
--- button: Connect Wallet
 
 -- end: ftd.row
 
