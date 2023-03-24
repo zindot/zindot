@@ -11,31 +11,39 @@ border-width.px: 30
 border-top-left-radius.px: 45
 border-top-right-radius.px: 45
 color: white
-padding-vertical.px: 24
 padding-horizontal.px: 40 
-spacing.fixed.px: 40
+spacing.fixed.px: 80
+margin-bottom.px: 10
 
+-- ftd.image:
+width: fill-container
+src: https://github.com/Sarvom/zindot/blob/main/images/logo.png
 
 -- ftd.row:
 spacing.fixed.px: 60
 align-self: start
-align-content: center
+align-content: right
 
-
--- ftd.text: Terms & Conditions
-color: purple
+-- ftd.text: Home
+color: #c091fb
 role: $inherited.types.label-large
 text-align: center
 white-space: nowrap
 
--- ftd.text: FAQs
-color: purple
+-- ftd.text: Services
+color: #c091fb
 role: $inherited.types.label-large
 text-align: center
 white-space: nowrap
 
--- ftd.text: Menu Option
-color: violet
+-- ftd.text: Training
+color: #c091fb
+role: $inherited.types.label-large
+text-align: center
+white-space: nowrap
+
+-- ftd.text: Contact Us
+color: #c091fb
 role: $inherited.types.label-large
 text-align: center
 white-space: nowrap
@@ -45,4 +53,7 @@ white-space: nowrap
 -- end: ftd.row
 -- end: navbar1
 
+-- ftd.image:
+width: fill-container
+src: https://github.com/Sarvom/zindot/blob/main/images/bgimg.jpg?raw=true
 
