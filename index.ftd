@@ -1,5 +1,52 @@
 -- import: sarvom.github.io/zindot/assets
 -- import: sarvom.github.io/zindot/lib
 
--- navbar1:
+-- navbar1: 
+
+-- component navbar1:
+
+-- ftd.row:
+align-content: center
+width: fill-container
+border-width.px: 30
+border-top-left-radius.px: 0
+border-top-right-radius.px: 0
+color: white
+padding-horizontal.px: 40 
+spacing.fixed.px: 80
+margin-bottom.px: 10
+
+-- ftd.row:
+spacing.fixed.px: 60
+align-self: start
+align-content: right
+
+-- ftd.text: Home
+color: #c091fb
+role: $inherited.types.label-large
+text-align: center
+white-space: nowrap
+
+-- ftd.text: Services
+color: #c091fb
+role: $inherited.types.label-large
+text-align: center
+white-space: nowrap
+
+-- ftd.text: Training
+color: #c091fb
+role: $inherited.types.label-large
+text-align: center
+white-space: nowrap
+
+-- ftd.text: Contact Us
+color: #c091fb
+role: $inherited.types.label-large
+text-align: center
+white-space: nowrap
+
+-- end: ftd.row
+
+-- end: ftd.row
+-- end: navbar1
 
