@@ -2,9 +2,5 @@
 
 -- fastn.package: sarvom.github.io/zindot/lib
 
--- fastn.dependency: fifthtry.github.io/doc-site as ds
--- fastn.dependency: fifthtry.github.io/bling as bling
 -- fastn.dependency: sarvom.github.io/zindot/assets
 
--- fastn.auto-import: bling/chat as chat
--- fastn.auto-import: ds
