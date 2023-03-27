@@ -16,6 +16,9 @@ padding-horizontal.px: 40
 spacing.fixed.px: 80
 margin-bottom.px: 10
 
+-- ftd.image:
+src: $assets.files.images.zindot.png
+
 -- ftd.row:
 spacing.fixed.px: 60
 align-self: start
