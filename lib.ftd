@@ -1,23 +1,37 @@
--- import: fastn
 -- import: sarvom.github.io/zindot/assets
 
--- navbar1: 
-
--- component navbar1:
+-- component navbar:
 
 -- ftd.row:
-align-content: center
+align-content: left
 width: fill-container
 border-width.px: 30
 border-top-left-radius.px: 0
 border-top-right-radius.px: 0
-color: white
+border-color: white
 padding-horizontal.px: 40 
 spacing.fixed.px: 80
 margin-bottom.px: 10
 
+-- ftd.row:
+align-self: start
+width: fill-container
+
+-- ftd.image:
+src: $assets.files.images.zindot.png 
+height.fixed.px: 50
+
+-- ftd.text: Zindot
+padding-left.px: 10
+padding-bottom.px: 5
+color: #c091ff
+role: $inherited.types.heading-medium
+
+-- end: ftd.row
+
 -- ftd.text: Home
 color: #c091fb
+padding-horizontal.px: 30 
 role: $inherited.types.label-large
 text-align: center
 white-space: nowrap
@@ -42,8 +56,130 @@ white-space: nowrap
 
 -- end: ftd.row
 
+-- end: navbar
+
+
+
+
+
+
+
+
+
+-- component hero-with-image:
+caption title:
+string cta-text-1:
+string cta-link-1:
+string cta-text-2:
+string cta-link-2:
+ftd.image-src image:
+body body: 
+
+-- ftd.column:
+
+-- end: ftd.column
+
+-- end: hero-with-image
+
+
+
+
+
+
+
+
+
+-- component button:
+caption name:
+
+-- ftd.text: $button.name
+role: $inherited.types.label-large
+width.fixed.px: 100
+text-align: center
+padding-left.px: 10
+padding-right.px: 10
+padding-top.px: 10
+padding-bottom.px: 10
+border-width.px: 5
+border-top-left-radius.px: 10
+border-top-right-radius.px: 10
+border-bottom-left-radius.px: 10
+border-bottom-right-radius.px: 10
+background.solid: #c091fb
+border-color: white
+
+-- end: button
+
+
+
+
+
+
+
+
+
+
+-- component hero:
+
+-- ftd.row:
+align-content: right
+width: fill-container
+border-width.px: 50
+border-color: white
+
+-- ftd.column:
+
+-- ftd.text: Technology and Education Roads to a Brighter Future
+color: #000000
+role: $inherited.types.heading-large
+
+-- ftd.text:Understand how the world works. Learn, Apply and Grow with us in every aspect of life.
+color: #000000
+role: $inherited.types.heading-small 
+
+-- ftd.row:
+
+-- button: Services
+-- button: Training
+
 -- end: ftd.row
--- end: navbar1
+
+-- end: ftd.column
 
 -- ftd.image:
-src: $assets.files.images.zindot.png
+src: images/zin.png
+
+-- end: ftd.row
+
+-- end: hero
+
+
+
+
+
+
+
+
+
+-- component about:
+
+-- ftd.column:
+align-content: center
+
+
+-- ftd.text: Our Services
+color: #000000
+role: $inherited.types.heading-hero
+
+-- ftd.text: Zindot Technologies bring you a handful of services under one roof. From software development to one-to-one mentoring for technical aspirants. We provide project assistance to students and industrialists and undertake projects offering the best standards. Zindot is a one stop destination for all your technical requirements!
+align-self: center
+role: $inherited.types.heading-small
+padding-left.px: 200
+padding-right.px: 200
+padding-top.px: 10
+padding-bottom.px: 10
+
+-- end: ftd.column
+-- end: about
+
+
