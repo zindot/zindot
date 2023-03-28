@@ -24,7 +24,7 @@ height.fixed.px: 50
 -- ftd.text: Zindot
 padding-left.px: 10
 padding-bottom.px: 5
-color: #c091ff
+color: #57028f
 role: $inherited.types.heading-medium
 
 -- end: ftd.row
@@ -177,9 +177,129 @@ role: $inherited.types.heading-small
 padding-left.px: 200
 padding-right.px: 200
 padding-top.px: 10
-padding-bottom.px: 10
+padding-bottom.px: 30
+
+-- ftd.row:
+padding-left.px: 200
+padding-top.px: 30
+padding-right.px: 200
+
+-- ftd.column:
+
+-- ftd.text: Embedded system and PCB design
+role: $inherited.types.heading-small
+
+-- ftd.text: The embedded system wing of ZINDOT is just the right place for all your custom requirements. With best solutions for your problems in minimal time, we will fulfil your requirements.
+role: $inherited.types.label-small
+
+-- end: ftd.column
+
+-- ftd.column:
+
+-- ftd.text: Internet of Things
+role: $inherited.types.heading-small
+
+-- ftd.text: The Internet of Things, or IoT for short, is the concept of connecting physical objects to the Internet so that they can be either controlled or monitored remotely, with the goal of gaining insights that help improve personal or business outcomes. We at Zindot design and develop unique, tailor-made IoT solutions.
+role: $inherited.types.label-small
+-- end: ftd.column
+
+-- ftd.column:
+
+-- ftd.text: Rapid Prototyping
+role: $inherited.types.heading-small
+
+-- ftd.text: With 3D printers taking on the industry with its ability to cater to the needs of anything and everything we bring you the service of building your 3D models. Learn early insights about your designs or improve them with our team.
+role: $inherited.types.label-small
+
+-- end: ftd.column
+
+-- ftd.column:
+
+-- ftd.text: Web and App Development
+role: $inherited.types.heading-small
+
+-- ftd.text: Zindot has the best web and native app development team with updated and new stacks to flexible and robust on-cloud solutions. The best architecture for your business with strategic insights to generate greater brand engagement, higher conversions and measurable results.
+role: $inherited.types.label-small
+-- end: ftd.column
+
+-- end: ftd.row
 
 -- end: ftd.column
 -- end: about
+
+
+
+
+
+
+
+
+
+-- component service:
+
+-- ftd.column:
+align-content: center
+
+
+-- ftd.text: Zindot-in-Education Services
+color: #000000
+role: $inherited.types.heading-large
+
+-- ftd.text: “Technology will never replace great teachers, but in the hands of great teachers, it’s transformational.” – George Couros
+align-self: center
+role: $inherited.types.heading-small
+padding-left.px: 200
+padding-right.px: 200
+padding-top.px: 10
+padding-bottom.px: 30
+
+-- ftd.row:
+padding-left.px: 200
+padding-top.px: 30
+padding-right.px: 200
+
+-- ftd.column:
+
+-- ftd.text: Embedded system and PCB design
+role: $inherited.types.heading-small
+
+-- ftd.text: The embedded system wing of ZINDOT is just the right place for all your custom requirements. With best solutions for your problems in minimal time, we will fulfil your requirements.
+role: $inherited.types.label-small
+
+-- end: ftd.column
+
+-- ftd.column:
+
+-- ftd.text: Internet of Things
+role: $inherited.types.heading-small
+
+-- ftd.text: The Internet of Things, or IoT for short, is the concept of connecting physical objects to the Internet so that they can be either controlled or monitored remotely, with the goal of gaining insights that help improve personal or business outcomes. We at Zindot design and develop unique, tailor-made IoT solutions.
+role: $inherited.types.label-small
+-- end: ftd.column
+
+-- ftd.column:
+
+-- ftd.text: Rapid Prototyping
+role: $inherited.types.heading-small
+
+-- ftd.text: With 3D printers taking on the industry with its ability to cater to the needs of anything and everything we bring you the service of building your 3D models. Learn early insights about your designs or improve them with our team.
+role: $inherited.types.label-small
+
+-- end: ftd.column
+
+-- end: ftd.row
+
+-- end: ftd.column
+-- end: service
+
+
+
+
+
+
+
+
+
+
 
 
