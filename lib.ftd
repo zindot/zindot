@@ -74,7 +74,6 @@ string cta-text-2:
 string cta-link-2:
 ftd.image-src image:
 body body: 
-
 -- ftd.column:
 
 -- end: ftd.column
@@ -140,6 +139,7 @@ role: $inherited.types.heading-small
 
 -- ftd.row:
 
+
 -- button: Services
 -- button: Training
 
@@ -177,9 +177,9 @@ role: $inherited.types.heading-large
 
 -- ftd.text: Zindot Technologies bring you a handful of services under one roof. From software development to one-to-one mentoring for technical aspirants. We provide project assistance to students and industrialists and undertake projects offering the best standards. Zindot is a one stop destination for all your technical requirements!
 align-self: center
-role: $inherited.types.heading-small
-padding-left.px: 200
-padding-right.px: 200
+role: $inherited.types.heading-tiny
+padding-left.px: 300
+padding-right.px: 300
 padding-top.px: 10
 padding-bottom.px: 30
 text-align: center
@@ -245,6 +245,7 @@ role: $inherited.types.heading-small
 -- ftd.column:
 align-self: center
 align-content: center
+padding-bottom.px: 100
 
 
 -- ftd.text: Zindot-in-Education Services
@@ -317,20 +318,80 @@ padding-left.px: 10
 
 
 
--- component stats-bar:
+-- component dashboard:
 
 -- ftd.column:
+width: fill-container
+padding-left.px: 200
+padding-right.px: 200
+padding-top.px: 100
+padding-bottom.px: 30
+background.solid: grey
 
 -- ftd.row:
+spacing.fixed.px: 80
+
+-- ftd.column:
+align-content: center
 
 -- ftd.text: 55
--- ftd.text: Projects
+role: $inherited.types.heading-medium
 
--- end: ftd.row
+-- ftd.text: projects
 
 -- end: ftd.column
 
--- end: stats-bar
+-- ftd.column:
+align-content: center
+
+-- ftd.text: 21
+role: $inherited.types.heading-medium
+
+-- ftd.text: clients
+
+-- end: ftd.column
+
+-- ftd.column:
+align-content: center
+
+-- ftd.text: 1200+
+role: $inherited.types.heading-medium
+
+-- ftd.text: students trained
+
+-- end: ftd.column
+
+-- ftd.column:
+align-content: center
+
+-- ftd.text: 10+
+role: $inherited.types.heading-medium
+
+-- ftd.text: training programs
+
+-- end: ftd.column
+
+-- end: ftd.row
+
+-- ftd.text: Are you ready to Kickstart and Pump your Career? Apply for any training programme by completing the form
+role: $inherited.types.heading-small
+
+-- end: ftd.column
+
+-- end: dashboard
+
+
+
+
+
+
+
+
+
+
+-- component testimonial
+
+-- ftd.quote:
 
 
 
