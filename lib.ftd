@@ -389,9 +389,9 @@ role: $inherited.types.heading-small
 
 
 
--- component testimonial
+;; component testimonial
 
--- ftd.quote:
+;; ftd.quote:
 
 
 
