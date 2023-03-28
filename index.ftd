@@ -5,6 +5,16 @@
 
 -- lib.hero: 
 
+-- lib.hero-with-image: Tech
+cta-text-1: Get Started
+cta-link-1: /
+cta-text-2: Shop now
+cta-link-2: /
+image: $assets.files.zindot.png
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+incididunt ut labore et dolore magna.
+
 -- lib.about:
 
 -- lib.service:

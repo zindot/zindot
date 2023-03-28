@@ -94,7 +94,6 @@ caption name:
 
 -- ftd.text: $button.name
 role: $inherited.types.label-large
-width.fixed.px: 100
 text-align: center
 padding-left.px: 10
 padding-right.px: 10
@@ -124,7 +123,8 @@ border-color: white
 -- ftd.row:
 align-content: right
 width: fill-container
-border-width.px: 50
+padding-right.px: 100
+padding-left.px: 100
 border-color: white
 
 -- ftd.column:
@@ -133,7 +133,8 @@ border-color: white
 color: #000000
 role: $inherited.types.heading-large
 
--- ftd.text:Understand how the world works. Learn, Apply and Grow with us in every aspect of life.
+
+-- ftd.text: Understand how the world works. Learn, Apply and Grow with us in every aspect of life.
 color: #000000
 role: $inherited.types.heading-small 
 
@@ -147,6 +148,7 @@ role: $inherited.types.heading-small
 -- end: ftd.column
 
 -- ftd.image:
+height.fixed.px: 600
 src: images/zin.png
 
 -- end: ftd.row
@@ -165,11 +167,12 @@ src: images/zin.png
 
 -- ftd.column:
 align-content: center
+padding-top.px: 50
 
 
 -- ftd.text: Our Services
 color: #000000
-role: $inherited.types.heading-hero
+role: $inherited.types.heading-large
 
 -- ftd.text: Zindot Technologies bring you a handful of services under one roof. From software development to one-to-one mentoring for technical aspirants. We provide project assistance to students and industrialists and undertake projects offering the best standards. Zindot is a one stop destination for all your technical requirements!
 align-self: center
@@ -187,7 +190,9 @@ padding-right.px: 200
 -- ftd.column:
 
 -- ftd.text: Embedded system and PCB design
+align-self: center
 role: $inherited.types.heading-small
+
 
 -- ftd.text: The embedded system wing of ZINDOT is just the right place for all your custom requirements. With best solutions for your problems in minimal time, we will fulfil your requirements.
 role: $inherited.types.label-small
@@ -238,6 +243,7 @@ role: $inherited.types.label-small
 -- component service:
 
 -- ftd.column:
+align-self: center
 align-content: center
 
 
@@ -248,8 +254,8 @@ role: $inherited.types.heading-large
 -- ftd.text: “Technology will never replace great teachers, but in the hands of great teachers, it’s transformational.” – George Couros
 align-self: center
 role: $inherited.types.heading-small
-padding-left.px: 200
-padding-right.px: 200
+padding-left.px: 400
+padding-right.px: 400
 padding-top.px: 10
 padding-bottom.px: 30
 
@@ -260,34 +266,43 @@ padding-right.px: 200
 
 -- ftd.column:
 
--- ftd.text: Embedded system and PCB design
+-- ftd.text: Skill & Placement Training
 role: $inherited.types.heading-small
+padding-right.px: 10
+padding-left.px: 10
 
--- ftd.text: The embedded system wing of ZINDOT is just the right place for all your custom requirements. With best solutions for your problems in minimal time, we will fulfil your requirements.
-role: $inherited.types.label-small
+-- ftd.text: Never be doubtful about yourself again and get placed in good companies or work on good projects. Zindot offers many programmes for technical and professional upskilling of students as well as graduates. With hands-on-experience on tailored projects from beginner to advanced level, explore the 'GREAT' in you!
+padding-right.px: 20
+
 
 -- end: ftd.column
 
 -- ftd.column:
 
--- ftd.text: Internet of Things
+-- ftd.text: Faculty Development Programmes
 role: $inherited.types.heading-small
+padding-right.px: 10
+padding-left.px: 10
 
--- ftd.text: The Internet of Things, or IoT for short, is the concept of connecting physical objects to the Internet so that they can be either controlled or monitored remotely, with the goal of gaining insights that help improve personal or business outcomes. We at Zindot design and develop unique, tailor-made IoT solutions.
-role: $inherited.types.label-small
+-- ftd.text: To all the talented and beloved faculty members and professors out there... we have the perfect programme for your timely updation in this technical world. Zindot offers faculty development programmes(FDP) for faculty members in technological or professional institutes. FDPs are tailored to requirements and are delivered offline and online.
+
 -- end: ftd.column
 
 -- ftd.column:
 
--- ftd.text: Rapid Prototyping
+-- ftd.text: Project Assistance
 role: $inherited.types.heading-small
+padding-right.px: 10
+padding-left.px: 10
 
--- ftd.text: With 3D printers taking on the industry with its ability to cater to the needs of anything and everything we bring you the service of building your 3D models. Learn early insights about your designs or improve them with our team.
-role: $inherited.types.label-small
+-- ftd.text: Never ever be worried about the technical feasibility of your project when Zindot's here. Zindot provides technical assistance and facilities to technical and research oriented projects of students and even faculty members so you can work on that dream project.
+
 
 -- end: ftd.column
 
 -- end: ftd.row
+
+-- button: Know more
 
 -- end: ftd.column
 -- end: service
