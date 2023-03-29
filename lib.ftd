@@ -1,16 +1,14 @@
 -- import: sarvom.github.io/zindot/assets
 
 -- component navbar:
-
+string name:
 -- ftd.row:
 align-content: left
 width: fill-container
-border-width.px: 30
-border-top-left-radius.px: 0
-border-top-right-radius.px: 0
+border-width.px: 10
 border-color: white
 padding-horizontal.px: 40 
-spacing.fixed.px: 80
+spacing.fixed.px: 40
 margin-bottom.px: 10
 
 -- ftd.row:
@@ -21,7 +19,7 @@ width: fill-container
 src: $assets.files.images.zindot.png 
 height.fixed.px: 50
 
--- ftd.text: Zindot
+-- ftd.text: $navbar.name
 padding-left.px: 10
 padding-bottom.px: 5
 color: #57028f
@@ -103,7 +101,7 @@ border-top-left-radius.px: 10
 border-top-right-radius.px: 10
 border-bottom-left-radius.px: 10
 border-bottom-right-radius.px: 10
-background.solid: #c091fb
+background.solid: #A855F7
 border-color: #c091fb
 
 -- end: button
@@ -168,7 +166,7 @@ src: images/zin.png
 
 -- ftd.column:
 align-content: center
-padding-top.px: 50
+padding-top.px: 62
 
 
 -- ftd.text: Our Services
@@ -191,6 +189,11 @@ padding-right.px: 200
 
 -- ftd.column:
 
+-- ftd.image:
+src: $assets.files.images.embedded.png
+height.fixed.px: 50
+width.fixed.px: 50
+
 -- ftd.text: Embedded system and PCB design
 align-self: center
 role: $inherited.types.heading-small
@@ -202,6 +205,11 @@ role: $inherited.types.heading-small
 
 -- ftd.column:
 
+-- ftd.image:
+src: $assets.files.images.iot.png
+height.fixed.px: 50
+width.fixed.px: 50
+
 -- ftd.text: Internet of Things
 role: $inherited.types.heading-small
 
@@ -211,6 +219,11 @@ role: $inherited.types.heading-small
 
 -- ftd.column:
 
+-- ftd.image:
+src: $assets.files.images.rapid.png
+height.fixed.px: 50
+width.fixed.px: 50
+
 -- ftd.text: Rapid Prototyping
 role: $inherited.types.heading-small
 
@@ -219,6 +232,11 @@ role: $inherited.types.heading-small
 -- end: ftd.column
 
 -- ftd.column:
+
+-- ftd.image:
+src: $assets.files.images.webicon.png
+height.fixed.px: 50
+width.fixed.px: 50
 
 -- ftd.text: Web and App Development
 role: $inherited.types.heading-small
@@ -230,6 +248,7 @@ role: $inherited.types.heading-small
 -- end: ftd.row
 
 -- end: ftd.column
+
 -- end: about
 
 
@@ -245,6 +264,7 @@ role: $inherited.types.heading-small
 -- ftd.column:
 align-self: center
 align-content: center
+padding-top.px: 100
 padding-bottom.px: 100
 
 
@@ -267,38 +287,59 @@ padding-top.px: 30
 padding-right.px: 200
 
 -- ftd.column:
+align-content: center
+
+-- ftd.image:
+src: $assets.files.images.skillicon.png
+height.fixed.px: 60
+width.fixed.px: 60
+align-self: center
 
 -- ftd.text: Skill & Placement Training
 role: $inherited.types.heading-small
-padding-right.px: 10
-padding-left.px: 10
+text-align: center
 
 -- ftd.text: Never be doubtful about yourself again and get placed in good companies or work on good projects. Zindot offers many programmes for technical and professional upskilling of students as well as graduates. With hands-on-experience on tailored projects from beginner to advanced level, explore the 'GREAT' in you!
-padding-right.px: 20
-
+text-align: justify
+padding.px: 10
 
 -- end: ftd.column
 
 -- ftd.column:
+align-content: center
+
+-- ftd.image:
+src: $assets.files.images.placement.png
+height.fixed.px: 60
+width.fixed.px: 60
+align-self: center
 
 -- ftd.text: Faculty Development Programmes
 role: $inherited.types.heading-small
-padding-right.px: 10
-padding-left.px: 10
+text-align: center
 
 -- ftd.text: To all the talented and beloved faculty members and professors out there... we have the perfect programme for your timely updation in this technical world. Zindot offers faculty development programmes(FDP) for faculty members in technological or professional institutes. FDPs are tailored to requirements and are delivered offline and online.
+text-align: justify
+padding.px: 10
 
 -- end: ftd.column
 
 -- ftd.column:
+align-content: center
+
+-- ftd.image:
+src: $assets.files.images.projectassist.png
+height.fixed.px: 60
+width.fixed.px: 60
+align-self: center
 
 -- ftd.text: Project Assistance
 role: $inherited.types.heading-small
-padding-right.px: 10
-padding-left.px: 10
+text-align: center
 
 -- ftd.text: Never ever be worried about the technical feasibility of your project when Zindot's here. Zindot provides technical assistance and facilities to technical and research oriented projects of students and even faculty members so you can work on that dream project.
-
+text-align: justify
+padding.px: 10
 
 -- end: ftd.column
 
@@ -325,21 +366,22 @@ width: fill-container
 padding-left.px: 200
 padding-right.px: 200
 padding-top.px: 100
-padding-bottom.px: 30
-background.solid: grey
+background.solid: #111827
 align-self: center
 align-content: center
 
 -- ftd.row:
-spacing.fixed.px: 80
+spacing.fixed.px: 200
 
 -- ftd.column:
 align-content: center
 
 -- ftd.text: 55
 role: $inherited.types.heading-medium
+color: #d0279f
 
 -- ftd.text: projects
+color: #9CA3AF
 
 -- end: ftd.column
 
@@ -348,8 +390,10 @@ align-content: center
 
 -- ftd.text: 21
 role: $inherited.types.heading-medium
+color: #d0279f
 
 -- ftd.text: clients
+color: #9CA3AF
 
 -- end: ftd.column
 
@@ -358,8 +402,10 @@ align-content: center
 
 -- ftd.text: 1200+
 role: $inherited.types.heading-medium
+color: #d0279f
 
 -- ftd.text: students trained
+color: #9CA3AF
 
 -- end: ftd.column
 
@@ -368,17 +414,22 @@ align-content: center
 
 -- ftd.text: 10+
 role: $inherited.types.heading-medium
+color: #d0279f
 
 -- ftd.text: training programs
+color: #9CA3AF
 
 -- end: ftd.column
 
 -- end: ftd.row
 
 -- ftd.row:
+padding.px: 150
 
 -- ftd.text: Are you ready to Kickstart and Pump your Career? Apply for any training programme by completing the form
 role: $inherited.types.heading-small
+color: #9CA3AF
+
 
 -- button: Apply
 
@@ -412,10 +463,26 @@ role: $inherited.types.heading-large
 text-align: center
 
 -- ftd.row:
+padding.px: 30
+spacing.fixed.px: 50
+
+-- ftd.column:
+border-width.px: 1
+border-color: black
+padding.px: 30
 
 -- ftd.text: Zindot helped me take my business online. They designed a modern website that showcased my interior design projects as well as for my e-commerce needs. It really helped my business.
 
+-- end: ftd.column
+
+-- ftd.column:
+border-width.px: 1
+border-color: black
+padding.px: 30
+
 -- ftd.text: Zindot helped me in developing a prototype for my research project in a very short time. They also helped me with insights for the further development and helped me acheive grants for the same.
+
+-- end: ftd.column
 
 -- end: ftd.row
 
@@ -445,6 +512,59 @@ align-content: center
 -- ftd.text: Contact Us
 role: $inherited.types.heading-large
 text-align: center
+
+-- ftd.text: Contact us regarding any queries
+role: $inherited.types.heading-tiny
+text-align: center
+
+
+-- ftd.column:
+padding-left.px: 20
+padding-right.px: 20
+padding-top.px: 50
+padding-bottom.px: 30
+
+-- ftd.row:
+padding-top.px: 50
+padding-bottom.px: 30
+spacing.fixed.px: 20
+
+-- ftd.text-input:
+placeholder: Name
+padding.px: 10
+width.fixed.px: 300
+height.fixed.px: 30
+border-radius.px: 5
+border-width.px: 1
+border-color: #C8C8C8
+type: text
+role: $inherited.types.copy-large
+
+-- ftd.text-input:
+placeholder: Email
+padding.px: 10
+width.fixed.px: 300
+height.fixed.px: 30
+border-width.px: 1
+border-radius.px: 5
+border-color: #C8C8C8
+type: text
+role: $inherited.types.copy-large
+
+-- end: ftd.row
+
+-- ftd.text-input:
+placeholder: Message
+padding.px: 10 
+width.fixed.px: 620
+height.fixed.px: 200
+border-width.px: 1
+border-radius.px: 5
+border-color: #C8C8C8
+type: text
+role: $inherited.types.copy-large
+
+-- end: ftd.column
 
 -- end: ftd.column
 
