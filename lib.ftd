@@ -1,7 +1,9 @@
 -- import: sarvom.github.io/zindot/assets
+;; import: fifthtry.github.io/opensans
 
 -- component navbar:
 string name:
+
 -- ftd.row:
 align-content: left
 width: fill-container
@@ -10,6 +12,7 @@ border-color: white
 padding-horizontal.px: 40 
 spacing.fixed.px: 40
 margin-bottom.px: 10
+z-index: +1
 
 -- ftd.row:
 align-self: start
@@ -64,27 +67,6 @@ white-space: nowrap
 
 
 
--- component hero-with-image:
-caption title:
-string cta-text-1:
-string cta-link-1:
-string cta-text-2:
-string cta-link-2:
-ftd.image-src image:
-body body: 
--- ftd.column:
-
--- end: ftd.column
-
--- end: hero-with-image
-
-
-
-
-
-
-
-
 
 -- component button:
 caption name:
@@ -92,8 +74,8 @@ caption name:
 -- ftd.text: $button.name
 role: $inherited.types.label-large
 text-align: center
-padding-left.px: 10
-padding-right.px: 10
+padding-left.px: 30
+padding-right.px: 30
 padding-top.px: 10
 padding-bottom.px: 10
 border-width.px: 1
@@ -103,6 +85,7 @@ border-bottom-left-radius.px: 10
 border-bottom-right-radius.px: 10
 background.solid: #A855F7
 border-color: #c091fb
+color: white
 
 -- end: button
 
@@ -116,6 +99,10 @@ border-color: #c091fb
 
 
 -- component hero:
+ftd.image-src pic:
+caption title:
+string cta-text-1:
+
 
 -- ftd.row:
 align-content: right
@@ -126,17 +113,18 @@ border-color: white
 
 -- ftd.column:
 
--- ftd.text: Technology and Education Roads to a Brighter Future
+-- ftd.text: $hero.title
 color: #000000
 role: $inherited.types.heading-large
+padding.px:10
 
-
--- ftd.text: Understand how the world works. Learn, Apply and Grow with us in every aspect of life.
+-- ftd.text: $hero.cta-text-1
 color: #000000
 role: $inherited.types.heading-small 
+padding.px:10
 
 -- ftd.row:
-
+spacing.fixed.px: 10
 
 -- button: Services
 -- button: Training
@@ -145,10 +133,10 @@ role: $inherited.types.heading-small
 
 -- end: ftd.column
 
--- ftd.image:
+-- ftd.image: 
 height.fixed.px: 450
 width.fixed.px: 550
-src: images/zin.png
+src: $hero.pic
 
 -- end: ftd.row
 
@@ -163,17 +151,19 @@ src: images/zin.png
 
 
 -- component about:
+caption title:
+body body:
 
 -- ftd.column:
 align-content: center
 padding-top.px: 62
 
 
--- ftd.text: Our Services
+-- ftd.text: $about.title
 color: #000000
 role: $inherited.types.heading-large
 
--- ftd.text: Zindot Technologies bring you a handful of services under one roof. From software development to one-to-one mentoring for technical aspirants. We provide project assistance to students and industrialists and undertake projects offering the best standards. Zindot is a one stop destination for all your technical requirements!
+-- ftd.text: 
 align-self: center
 role: $inherited.types.heading-tiny
 padding-left.px: 300
@@ -181,6 +171,8 @@ padding-right.px: 300
 padding-top.px: 10
 padding-bottom.px: 30
 text-align: center
+
+$about.body
 
 -- ftd.row:
 padding-left.px: 200
@@ -260,6 +252,8 @@ role: $inherited.types.heading-small
 
 
 -- component service:
+caption title:
+body body:
 
 -- ftd.column:
 align-self: center
@@ -268,80 +262,41 @@ padding-top.px: 100
 padding-bottom.px: 100
 
 
--- ftd.text: Zindot-in-Education Services
+-- ftd.text: $service.title
 color: #000000
 role: $inherited.types.heading-large
 
--- ftd.text: “Technology will never replace great teachers, but in the hands of great teachers, it’s transformational.” – George Couros
+-- ftd.text: 
 align-self: center
-role: $inherited.types.heading-small
+role: $inherited.types.heading-tiny
 padding-left.px: 400
 padding-right.px: 400
 padding-top.px: 10
 padding-bottom.px: 30
 text-align: center
 
+$service.body
+
 -- ftd.row:
 padding-left.px: 200
 padding-top.px: 30
 padding-right.px: 200
+margin-bottom.px: 50
 
--- ftd.column:
-align-content: center
+-- item:
+title: Skill & Placement Training
+body: Never be doubtful about yourself again and get placed in good companies or work on good projects. Zindot offers many programmes for technical and professional upskilling of students as well as graduates. With hands-on-experience on tailored projects from beginner to advanced level, explore the 'GREAT' in you!
+icon: $assets.files.images.skillicon.png
 
--- ftd.image:
-src: $assets.files.images.skillicon.png
-height.fixed.px: 60
-width.fixed.px: 60
-align-self: center
+-- item:
+title: Faculty Development Programmes
+body: To all the talented and beloved faculty members and professors out there... we have the perfect programme for your timely updation in this technical world. Zindot offers faculty development programmes(FDP) for faculty members in technological or professional institutes. FDPs are tailored to requirements and are delivered offline and online.
+icon: $assets.files.images.placement.png
 
--- ftd.text: Skill & Placement Training
-role: $inherited.types.heading-small
-text-align: center
-
--- ftd.text: Never be doubtful about yourself again and get placed in good companies or work on good projects. Zindot offers many programmes for technical and professional upskilling of students as well as graduates. With hands-on-experience on tailored projects from beginner to advanced level, explore the 'GREAT' in you!
-text-align: justify
-padding.px: 10
-
--- end: ftd.column
-
--- ftd.column:
-align-content: center
-
--- ftd.image:
-src: $assets.files.images.placement.png
-height.fixed.px: 60
-width.fixed.px: 60
-align-self: center
-
--- ftd.text: Faculty Development Programmes
-role: $inherited.types.heading-small
-text-align: center
-
--- ftd.text: To all the talented and beloved faculty members and professors out there... we have the perfect programme for your timely updation in this technical world. Zindot offers faculty development programmes(FDP) for faculty members in technological or professional institutes. FDPs are tailored to requirements and are delivered offline and online.
-text-align: justify
-padding.px: 10
-
--- end: ftd.column
-
--- ftd.column:
-align-content: center
-
--- ftd.image:
-src: $assets.files.images.projectassist.png
-height.fixed.px: 60
-width.fixed.px: 60
-align-self: center
-
--- ftd.text: Project Assistance
-role: $inherited.types.heading-small
-text-align: center
-
--- ftd.text: Never ever be worried about the technical feasibility of your project when Zindot's here. Zindot provides technical assistance and facilities to technical and research oriented projects of students and even faculty members so you can work on that dream project.
-text-align: justify
-padding.px: 10
-
--- end: ftd.column
+-- item:
+title: Project Assistance
+body: Never ever be worried about the technical feasibility of your project when Zindot's here. Zindot provides technical assistance and facilities to technical and research oriented projects of students and even faculty members so you can work on that dream project.
+icon: $assets.files.images.projectassist.png
 
 -- end: ftd.row
 
@@ -471,7 +426,24 @@ border-width.px: 1
 border-color: black
 padding.px: 30
 
+-- ftd.image:
+src: $assets.files.images.quote.png
+height.fixed.px: 30
+width.fixed.px: 30
+
 -- ftd.text: Zindot helped me take my business online. They designed a modern website that showcased my interior design projects as well as for my e-commerce needs. It really helped my business.
+
+-- ftd.row:
+padding-top.px: 30
+
+-- ftd.image:
+src: $assets.files.images.logo.png
+height.fixed.px: 40
+width.fixed.px: 40
+
+-- ftd.text: Sarath M
+
+-- end: ftd.row
 
 -- end: ftd.column
 
@@ -480,7 +452,24 @@ border-width.px: 1
 border-color: black
 padding.px: 30
 
+-- ftd.image:
+src: $assets.files.images.quote.png
+height.fixed.px: 30
+width.fixed.px: 30
+
 -- ftd.text: Zindot helped me in developing a prototype for my research project in a very short time. They also helped me with insights for the further development and helped me acheive grants for the same.
+
+-- ftd.row:
+padding-top.px: 30
+
+-- ftd.image:
+src: $assets.files.images.logo.png
+height.fixed.px: 40
+width.fixed.px: 40
+
+-- ftd.text: Sarath M
+
+-- end: ftd.row
 
 -- end: ftd.column
 
@@ -611,6 +600,43 @@ role: $inherited.types.heading-medium
 -- end: ftd.row
 
 -- end: footer
+
+
+
+
+
+
+
+
+
+
+-- component item:
+ftd.image-src icon:
+caption title:
+body body:
+
+-- ftd.column:
+align-content: center
+
+-- ftd.image:
+src: $item.icon
+height.fixed.px: 60
+width.fixed.px: 60
+align-self: center
+
+-- ftd.text: $item.title
+role: $inherited.types.heading-small
+text-align: center
+
+-- ftd.text:
+text-align: justify
+padding.px: 10
+
+$item.body
+
+-- end: ftd.column
+
+-- end: item
 
 
 

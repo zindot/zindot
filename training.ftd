@@ -7,15 +7,13 @@ name: Zindot
 -- lib.hero: 
 title: Technology and Education Roads to a Brighter Future
 cta-text-1: Understand how the world works. Learn, Apply and Grow with us in every aspect of life.
-pic: $assets.files.images.zin.png
+pic: $assets.files.images.zinint.png
 
 -- lib.about:
-title: Our Services
+title: About Us
 body: Zindot Technologies bring you a handful of services under one roof. From software development to one-to-one mentoring for technical aspirants. We provide project assistance to students and industrialists and undertake projects offering the best standards. Zindot is a one stop destination for all your technical requirements!
 
 -- lib.service:
-title: Zindot-in-Educational-Services
-body: “Technology will never replace great teachers, but in the hands of great teachers, it’s transformational.” – George Couros
 
 -- lib.dashboard:
 
