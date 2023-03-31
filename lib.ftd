@@ -65,6 +65,7 @@ color: #c091fb
 role: $inherited.types.label-large
 text-align: center
 white-space: nowrap
+link: index.html#contact
 
 -- end: ftd.row
 
@@ -486,6 +487,7 @@ padding-top.px: 100
 padding-bottom.px: 30
 align-self: center
 align-content: center
+id: contact
 
 -- ftd.text: Contact Us
 role: $inherited.types.heading-large
