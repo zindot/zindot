@@ -1,5 +1,8 @@
 -- import: sarvom.github.io/zindot/assets
-;; import: fifthtry.github.io/opensans
+-- import: fastn-community.github.io/opensans-typography
+-- import: sarvom.github.io/zindot/common
+
+;; types: $opensans-typography.types
 
 -- component navbar:
 string name:
@@ -12,11 +15,16 @@ border-color: white
 padding-horizontal.px: 40 
 spacing.fixed.px: 40
 margin-bottom.px: 10
-z-index: +1
+types: $opensans-typography.types
+shadow: $common.navbar
+background.solid: #ffffff
+sticky: true
 
 -- ftd.row:
 align-self: start
 width: fill-container
+types: $opensans-typography.types
+
 
 -- ftd.image:
 src: $assets.files.images.zindot.png 
@@ -36,18 +44,21 @@ padding-horizontal.px: 30
 role: $inherited.types.label-large
 text-align: center
 white-space: nowrap
+link: /
 
 -- ftd.text: Services
 color: #c091fb
 role: $inherited.types.label-large
 text-align: center
 white-space: nowrap
+link: index.html#services
 
 -- ftd.text: Training
 color: #c091fb
 role: $inherited.types.label-large
 text-align: center
 white-space: nowrap
+link: training/
 
 -- ftd.text: Contact Us
 color: #c091fb
@@ -107,21 +118,24 @@ string cta-text-1:
 -- ftd.row:
 align-content: right
 width: fill-container
-padding-right.px: 100
-padding-left.px: 100
+padding-right.px: 144
+padding-left.px: 144
 border-color: white
+types: $opensans-typography.types
+
 
 -- ftd.column:
+types: $opensans-typography.types
 
 -- ftd.text: $hero.title
 color: #000000
 role: $inherited.types.heading-large
-padding.px:10
+
 
 -- ftd.text: $hero.cta-text-1
 color: #000000
 role: $inherited.types.heading-small 
-padding.px:10
+padding-vertical.px: 10
 
 -- ftd.row:
 spacing.fixed.px: 10
@@ -157,7 +171,8 @@ body body:
 -- ftd.column:
 align-content: center
 padding-top.px: 62
-
+types: $opensans-typography.types
+id: services
 
 -- ftd.text: $about.title
 color: #000000
@@ -174,75 +189,50 @@ text-align: center
 
 $about.body
 
--- ftd.row:
-padding-left.px: 200
-padding-top.px: 30
-padding-right.px: 200
-
--- ftd.column:
-
--- ftd.image:
-src: $assets.files.images.embedded.png
-height.fixed.px: 50
-width.fixed.px: 50
-
--- ftd.text: Embedded system and PCB design
-align-self: center
-role: $inherited.types.heading-small
-
-
--- ftd.text: The embedded system wing of ZINDOT is just the right place for all your custom requirements. With best solutions for your problems in minimal time, we will fulfil your requirements.
-
--- end: ftd.column
-
--- ftd.column:
-
--- ftd.image:
-src: $assets.files.images.iot.png
-height.fixed.px: 50
-width.fixed.px: 50
-
--- ftd.text: Internet of Things
-role: $inherited.types.heading-small
-
--- ftd.text: The Internet of Things, or IoT for short, is the concept of connecting physical objects to the Internet so that they can be either controlled or monitored remotely, with the goal of gaining insights that help improve personal or business outcomes. We at Zindot design and develop unique, tailor-made IoT solutions.
-
--- end: ftd.column
-
--- ftd.column:
-
--- ftd.image:
-src: $assets.files.images.rapid.png
-height.fixed.px: 50
-width.fixed.px: 50
-
--- ftd.text: Rapid Prototyping
-role: $inherited.types.heading-small
-
--- ftd.text: With 3D printers taking on the industry with its ability to cater to the needs of anything and everything we bring you the service of building your 3D models. Learn early insights about your designs or improve them with our team.
-
--- end: ftd.column
-
--- ftd.column:
-
--- ftd.image:
-src: $assets.files.images.webicon.png
-height.fixed.px: 50
-width.fixed.px: 50
-
--- ftd.text: Web and App Development
-role: $inherited.types.heading-small
-
--- ftd.text: Zindot has the best web and native app development team with updated and new stacks to flexible and robust on-cloud solutions. The best architecture for your business with strategic insights to generate greater brand engagement, higher conversions and measurable results.
-
--- end: ftd.column
-
--- end: ftd.row
-
 -- end: ftd.column
 
 -- end: about
 
+
+
+
+
+
+
+
+
+-- component stackhold:
+
+-- ftd.row:
+padding-left.px: 168
+padding-top.px: 30
+padding-right.px: 168
+spacing.fixed.px: 40
+types: $opensans-typography.types
+
+-- stack:
+icon: $assets.files.images.embedded.png
+title: Embedded system and PCB design
+body: The embedded system wing of ZINDOT is just the right place for all your custom requirements. With best solutions for your problems in minimal time, we will fulfil your requirements.
+
+-- stack:
+icon: $assets.files.images.iot.png
+title: Internet of Things
+body: The Internet of Things, or IoT for short, is the concept of connecting physical objects to the Internet so that they can be either controlled or monitored remotely, with the goal of gaining insights that help improve personal or business outcomes. We at Zindot design and develop unique, tailor-made IoT solutions.
+
+-- stack:
+icon: $assets.files.images.rapid.png
+title: Rapid Prototyping
+body: With 3D printers taking on the industry with its ability to cater to the needs of anything and everything we bring you the service of building your 3D models. Learn early insights about your designs or improve them with our team.
+
+-- stack:
+icon: $assets.files.images.webicon.png
+title: Web and App Development
+body: Zindot has the best web and native app development team with updated and new stacks to flexible and robust on-cloud solutions. The best architecture for your business with strategic insights to generate greater brand engagement, higher conversions and measurable results.
+
+-- end: ftd.row
+
+-- end: stackhold
 
 
 
@@ -282,6 +272,7 @@ padding-left.px: 200
 padding-top.px: 30
 padding-right.px: 200
 margin-bottom.px: 50
+types: $opensans-typography.types
 
 -- item:
 title: Skill & Placement Training
@@ -425,6 +416,7 @@ spacing.fixed.px: 50
 border-width.px: 1
 border-color: black
 padding.px: 30
+margin.px: 10
 
 -- ftd.image:
 src: $assets.files.images.quote.png
@@ -555,6 +547,28 @@ role: $inherited.types.copy-large
 
 -- end: ftd.column
 
+-- button: Send
+
+-- ftd.column:
+padding-top.px: 50
+padding-bottom.px: 30
+align-self: center
+align-content: center
+
+-- ftd.text: info@zindot.in
+color: #000000
+role: $inherited.types.copy-large
+
+-- ftd.text: +91 6238296993
+padding-bottom.px: 50
+color: #9CA3AF
+role: $inherited.types.copy-large
+
+-- social-media:
+
+
+-- end: ftd.column
+
 -- end: ftd.column
 
 -- end: contact
@@ -597,6 +611,8 @@ role: $inherited.types.heading-medium
 
 -- end: ftd.row
 
+-- social-media:
+
 -- end: ftd.row
 
 -- end: footer
@@ -617,6 +633,7 @@ body body:
 
 -- ftd.column:
 align-content: center
+types: $opensans-typography.types
 
 -- ftd.image:
 src: $item.icon
@@ -629,6 +646,8 @@ role: $inherited.types.heading-small
 text-align: center
 
 -- ftd.text:
+color: #353f4f
+role: $inherited.types.label-large
 text-align: justify
 padding.px: 10
 
@@ -637,6 +656,83 @@ $item.body
 -- end: ftd.column
 
 -- end: item
+
+
+
+
+
+
+
+
+
+-- component stack:
+ftd.image-src icon:
+caption title:
+body body:
+
+-- ftd.column:
+width.fixed.px: 250
+
+-- ftd.image:
+src: $stack.icon
+height.fixed.px: 50
+width.fixed.px: 50
+
+-- ftd.text: $stack.title
+text-align: start
+role: $inherited.types.heading-small
+
+
+-- ftd.text: 
+color: #353f4f
+role: $inherited.types.label-large
+text-align: start
+
+$stack.body
+
+-- end: ftd.column
+
+-- end: stack
+
+
+
+
+
+
+
+
+
+
+-- component social-media:
+
+-- ftd.row:
+spacing.fixed.px: 10
+
+-- ftd.image:
+src: $assets.files.images.insta.png
+height.fixed.px: 30
+width.fixed.px: 30
+
+
+-- ftd.image:
+src: $assets.files.images.linkedin.png
+height.fixed.px: 30
+width.fixed.px: 30
+
+-- ftd.image:
+src: $assets.files.images.mail.png
+height.fixed.px: 30
+width.fixed.px: 30
+
+-- ftd.image:
+src: $assets.files.images.whatsapp.png
+height.fixed.px: 30
+width.fixed.px: 30
+
+-- end: ftd.row
+
+-- end: social-media
+
 
 
 
