@@ -1,6 +1,10 @@
 -- import: sarvom.github.io/zindot/assets
 -- import: sarvom.github.io/zindot/lib
 
+;; ftd.image:
+src: $assets.files.images.bgimg.jpg
+z-index: -1
+
 -- lib.navbar: 
 name: Zindot
 
@@ -12,6 +16,8 @@ pic: $assets.files.images.zin.png
 -- lib.about:
 title: Our Services
 body: Zindot Technologies bring you a handful of services under one roof. From software development to one-to-one mentoring for technical aspirants. We provide project assistance to students and industrialists and undertake projects offering the best standards. Zindot is a one stop destination for all your technical requirements!
+
+-- lib.stackhold:
 
 -- lib.service:
 title: Zindot-in-Educational-Services
