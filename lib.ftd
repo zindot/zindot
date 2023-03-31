@@ -216,15 +216,21 @@ icon: $assets.files.images.embedded.png
 title: Embedded system and PCB design
 body: The embedded system wing of ZINDOT is just the right place for all your custom requirements. With best solutions for your problems in minimal time, we will fulfil your requirements.
 
+-- vertline:
+
 -- stack:
 icon: $assets.files.images.iot.png
 title: Internet of Things
 body: The Internet of Things, or IoT for short, is the concept of connecting physical objects to the Internet so that they can be either controlled or monitored remotely, with the goal of gaining insights that help improve personal or business outcomes. We at Zindot design and develop unique, tailor-made IoT solutions.
 
+-- vertline:
+
 -- stack:
 icon: $assets.files.images.rapid.png
 title: Rapid Prototyping
 body: With 3D printers taking on the industry with its ability to cater to the needs of anything and everything we bring you the service of building your 3D models. Learn early insights about your designs or improve them with our team.
+
+-- vertline:
 
 -- stack:
 icon: $assets.files.images.webicon.png
@@ -682,7 +688,7 @@ width.fixed.px: 50
 
 -- ftd.text: $stack.title
 text-align: start
-role: $inherited.types.heading-small
+role: $inherited.types.heading-tiny
 
 
 -- ftd.text: 
@@ -739,3 +745,22 @@ color: #353f4f
 -- end: ftd.row
 
 -- end: social-media
+
+
+
+
+
+
+
+
+
+-- component vertline:
+
+-- ftd.column:
+width.fixed.px: 1
+height.fixed.px: 350
+background.solid: #354243
+
+-- end: ftd.column
+
+-- end: vertline
