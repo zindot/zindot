@@ -1,7 +1,15 @@
 -- ftd.shadow navbar:
-color: #000000
-x-offset.px: -2
-y-offset.px: 10
+color: #dddddd
+x-offset.px: 0
+y-offset.px: 0
 blur.px: 10
-spread.px: 10
+spread.px: 5
+inset: false
+
+-- ftd.shadow box:
+color: #eeeeee
+x-offset.px: 0
+y-offset.px: 0
+blur.px: 30
+spread.px: 5
 inset: false
