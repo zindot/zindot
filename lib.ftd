@@ -275,11 +275,12 @@ text-align: center
 $service.body
 
 -- ftd.row:
-padding-left.px: 200
+padding-left.px: 168
 padding-top.px: 30
-padding-right.px: 200
+padding-right.px: 168
 margin-bottom.px: 50
 types: $opensans-typography.types
+width: fill-container
 
 -- item:
 title: Skill & Placement Training
@@ -640,6 +641,7 @@ caption title:
 body body:
 
 -- ftd.column:
+width: fill-container
 align-content: center
 types: $opensans-typography.types
 
@@ -650,12 +652,12 @@ width.fixed.px: 60
 align-self: center
 
 -- ftd.text: $item.title
-role: $inherited.types.heading-small
+role: $inherited.types.heading-tiny
 text-align: center
 
 -- ftd.text:
 color: #353f4f
-role: $inherited.types.label-large
+role: $inherited.types.copy-small
 text-align: justify
 padding.px: 10
 
@@ -679,7 +681,7 @@ caption title:
 body body:
 
 -- ftd.column:
-width.fixed.px: 250
+width : fill-container
 
 -- ftd.image:
 src: $stack.icon
