@@ -6,7 +6,6 @@
 string name:
 ftd.image-src pic:
 string text1:
-string cta-text2:
 
 -- ftd.row:
 align-content: left
