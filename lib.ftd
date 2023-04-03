@@ -2,8 +2,6 @@
 -- import: fastn-community.github.io/opensans-typography
 -- import: sarvom.github.io/zindot/common
 
-;; types: $opensans-typography.types
-
 -- component navbar:
 string name:
 
@@ -202,6 +200,7 @@ $about.body
 
 
 
+
 -- component stackhold:
 
 -- ftd.row:
@@ -240,6 +239,8 @@ body: Zindot has the best web and native app development team with updated and n
 -- end: ftd.row
 
 -- end: stackhold
+
+
 
 
 
@@ -401,6 +402,7 @@ color: #9CA3AF
 
 
 
+
 -- component testimonial:
 
 -- ftd.column: 
@@ -475,6 +477,7 @@ width.fixed.px: 40
 -- end: ftd.column
 
 -- end: testimonial
+
 
 
 
