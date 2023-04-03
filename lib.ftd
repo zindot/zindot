@@ -4,6 +4,9 @@
 
 -- component navbar:
 string name:
+ftd.image-src pic:
+string text1:
+string cta-text2:
 
 -- ftd.row:
 align-content: left
@@ -25,8 +28,8 @@ types: $opensans-typography.types
 
 
 -- ftd.image:
-src: $assets.files.images.zindot.png 
 height.fixed.px: 50
+src: $navbar.pic
 
 -- ftd.text: $navbar.name
 padding-left.px: 10
@@ -36,9 +39,8 @@ role: $inherited.types.heading-medium
 
 -- end: ftd.row
 
--- ftd.text: Home
+-- ftd.text: $navbar.text1
 color: #c091fb
-padding-horizontal.px: 30 
 role: $inherited.types.label-large
 text-align: center
 white-space: nowrap
