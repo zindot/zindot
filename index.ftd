@@ -1,10 +1,6 @@
 -- import: sarvom.github.io/zindot/assets
 -- import: sarvom.github.io/zindot/lib
 
-;; ftd.image:
-src: $assets.files.images.bgimg.jpg
-z-index: -1
-
 -- lib.navbar: 
 name: Zindot
 
