@@ -462,7 +462,9 @@ src: $assets.files.images.quote.png
 height.fixed.px: 30
 width.fixed.px: 30
 
--- ftd.text: Zindot helped me take my business online. They designed a modern website that 
+-- ftd.text: 
+
+Zindot helped me take my business online. They designed a modern website that 
 showcased my interior design projects as well as for my e-commerce needs. It really helped
 my business.
 
@@ -489,7 +491,9 @@ src: $assets.files.images.quote.png
 height.fixed.px: 30
 width.fixed.px: 30
 
--- ftd.text: Zindot helped me in developing a prototype for my research project in a very 
+-- ftd.text: 
+
+Zindot helped me in developing a prototype for my research project in a very 
 short time. They also helped me with insights for the further development and helped me 
 acheive grants for the same.
 
