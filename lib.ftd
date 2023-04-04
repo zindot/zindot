@@ -6,6 +6,7 @@
 caption name:
 ftd.image-src pic:
 string text1:
+ftd.type-data types: $opensans-typography.types
 
 -- ftd.row:
 align-content: left
@@ -113,7 +114,7 @@ color: white
 ftd.image-src pic:
 caption title:
 body cta-text-1:
-
+ftd.type-data types: $opensans-typography.types
 
 -- ftd.row:
 align-content: right
@@ -121,11 +122,8 @@ width: fill-container
 padding-right.px: 144
 padding-left.px: 144
 border-color: white
-types: $opensans-typography.types
-
 
 -- ftd.column:
-types: $opensans-typography.types
 
 -- ftd.text: $hero.title
 color: #000000
@@ -168,11 +166,11 @@ src: $hero.pic
 -- component about:
 caption title:
 body body:
+ftd.type-data types: $opensans-typography.types
 
 -- ftd.column:
 align-content: center
 padding-top.px: 62
-types: $opensans-typography.types
 id: services
 
 -- ftd.text: $about.title
@@ -204,13 +202,13 @@ $about.body
 
 
 -- component stackhold:
+ftd.type-data types: $opensans-typography.types
 
 -- ftd.row:
 padding-left.px: 168
 padding-top.px: 30
 padding-right.px: 168
 spacing.fixed.px: 40
-types: $opensans-typography.types
 
 -- stack: Embedded system and PCB design
 icon: $assets.files.images.embedded.png
@@ -264,6 +262,7 @@ results.
 -- component service:
 caption title:
 body body:
+ftd.type-data types: $opensans-typography.types
 
 -- ftd.column:
 align-self: center
@@ -292,7 +291,6 @@ padding-left.px: 168
 padding-top.px: 30
 padding-right.px: 168
 margin-bottom.px: 50
-types: $opensans-typography.types
 width: fill-container
 
 -- item: Skill & Placement Training
@@ -335,6 +333,7 @@ oriented projects of students and even faculty members so you can work on that d
 
 
 -- component dashboard:
+ftd.type-data types: $opensans-typography.types
 
 -- ftd.column:
 width: fill-container
@@ -428,6 +427,7 @@ programme by completing the form
 
 
 -- component testimonial:
+ftd.type-data types: $opensans-typography.types
 
 -- ftd.column: 
 width: fill-container
@@ -456,6 +456,7 @@ height.fixed.px: 30
 width.fixed.px: 30
 
 -- ftd.text: 
+role: $inherited.types.label-large
 
 Zindot helped me take my business online. They designed a modern website that 
 showcased my interior design projects as well as for my e-commerce needs. It really helped
@@ -485,6 +486,7 @@ height.fixed.px: 30
 width.fixed.px: 30
 
 -- ftd.text: 
+role: $inherited.types.label-large
 
 Zindot helped me in developing a prototype for my research project in a very 
 short time. They also helped me with insights for the further development and helped me 
@@ -520,6 +522,7 @@ width.fixed.px: 40
 
 
 -- component contact:
+ftd.type-data types: $opensans-typography.types
 
 -- ftd.column:
 width: fill-container
@@ -674,6 +677,7 @@ role: $inherited.types.heading-medium
 ftd.image-src icon:
 caption title:
 body body:
+ftd.type-data types: $opensans-typography.types
 
 -- ftd.column:
 width: fill-container
@@ -714,6 +718,7 @@ $item.body
 ftd.image-src icon:
 caption title:
 body body:
+ftd.type-data types: $opensans-typography.types
 
 -- ftd.column:
 width : fill-container
