@@ -3,6 +3,9 @@
 
 -- ftd.document: Zindot
 
+-- ftd.column:
+background.image: $assets.files.images.bgimg.jpg
+
 -- lib.navbar: Zindot
 pic: $assets.files.images.zindot.png 
 text1: Home
@@ -10,6 +13,7 @@ text1: Home
 -- lib.hero: 
 title: Technology and Education Roads to a Brighter Future
 pic: $assets.files.images.zin.png
+
 
 Understand how the world works. Learn, Apply and Grow with us in every aspect of life.
 
@@ -37,4 +41,5 @@ it’s transformational.” – George Couros
 
 -- lib.footer:
 
+-- end: ftd.column
 -- end: ftd.document

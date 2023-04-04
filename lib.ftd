@@ -467,10 +467,21 @@ padding-top.px: 30
 
 -- ftd.image:
 src: $assets.files.images.logo.png
-height.fixed.px: 40
-width.fixed.px: 40
+height.fixed.px: 50
+width.fixed.px: 50
+padding-top.px: 10
 
--- ftd.text: Sarath M
+-- ftd.column:
+padding.px: 10
+
+-- ftd.text: Muhammed Nowfal
+role: $inherited.types.label-large
+
+-- ftd.text: Director | Evergreen Interiors
+role: $inherited.types.label-large
+
+-- end: ftd.column
+
 
 -- end: ftd.row
 
@@ -497,10 +508,20 @@ padding-top.px: 30
 
 -- ftd.image:
 src: $assets.files.images.logo.png
-height.fixed.px: 40
-width.fixed.px: 40
+height.fixed.px: 50
+width.fixed.px: 50
+padding-top.px: 10
+
+-- ftd.column:
+padding.px: 10
 
 -- ftd.text: Sarath M
+role: $inherited.types.label-large
+
+-- ftd.text: Research Student | CUSAT
+role: $inherited.types.label-large
+
+-- end: ftd.column
 
 -- end: ftd.row
 
@@ -634,10 +655,6 @@ role: $inherited.types.copy-large
 -- ftd.row:
 align-content: left
 width: fill-container
-border-width.px: 30
-border-top-left-radius.px: 0
-border-top-right-radius.px: 0
-border-color: white
 padding-horizontal.px: 40 
 spacing.fixed.px: 80
 margin-bottom.px: 10
