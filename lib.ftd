@@ -3,7 +3,7 @@
 -- import: sarvom.github.io/zindot/common
 
 -- component navbar:
-string name:
+caption name:
 ftd.image-src pic:
 string text1:
 
@@ -112,7 +112,7 @@ color: white
 -- component hero:
 ftd.image-src pic:
 caption title:
-string cta-text-1:
+body cta-text-1:
 
 
 -- ftd.row:
@@ -141,6 +141,7 @@ padding-vertical.px: 10
 spacing.fixed.px: 10
 
 -- button: Services
+
 -- button: Training
 
 -- end: ftd.row
@@ -214,28 +215,38 @@ types: $opensans-typography.types
 -- stack:
 icon: $assets.files.images.embedded.png
 title: Embedded system and PCB design
-body: The embedded system wing of ZINDOT is just the right place for all your custom requirements. With best solutions for your problems in minimal time, we will fulfil your requirements.
+body: The embedded system wing of ZINDOT is just the right place for all your custom 
+requirements. With best solutions for your problems in minimal time, we will fulfil your 
+requirements.
 
 -- vertline:
 
 -- stack:
 icon: $assets.files.images.iot.png
 title: Internet of Things
-body: The Internet of Things, or IoT for short, is the concept of connecting physical objects to the Internet so that they can be either controlled or monitored remotely, with the goal of gaining insights that help improve personal or business outcomes. We at Zindot design and develop unique, tailor-made IoT solutions.
+body: The Internet of Things, or IoT for short, is the concept of connecting physical 
+objects to the Internet so that they can be either controlled or monitored remotely, with
+the goal of gaining insights that help improve personal or business outcomes. We at Zindot 
+design and develop unique, tailor-made IoT solutions.
 
 -- vertline:
 
 -- stack:
 icon: $assets.files.images.rapid.png
 title: Rapid Prototyping
-body: With 3D printers taking on the industry with its ability to cater to the needs of anything and everything we bring you the service of building your 3D models. Learn early insights about your designs or improve them with our team.
+body: With 3D printers taking on the industry with its ability to cater to the needs of 
+anything and everything we bring you the service of building your 3D models. Learn early 
+insights about your designs or improve them with our team.
 
 -- vertline:
 
 -- stack:
 icon: $assets.files.images.webicon.png
 title: Web and App Development
-body: Zindot has the best web and native app development team with updated and new stacks to flexible and robust on-cloud solutions. The best architecture for your business with strategic insights to generate greater brand engagement, higher conversions and measurable results.
+body: Zindot has the best web and native app development team with updated and new stacks 
+to flexible and robust on-cloud solutions. The best architecture for your business with 
+strategic insights to generate greater brand engagement, higher conversions and measurable
+results.
 
 -- end: ftd.row
 
@@ -286,17 +297,25 @@ width: fill-container
 
 -- item:
 title: Skill & Placement Training
-body: Never be doubtful about yourself again and get placed in good companies or work on good projects. Zindot offers many programmes for technical and professional upskilling of students as well as graduates. With hands-on-experience on tailored projects from beginner to advanced level, explore the 'GREAT' in you!
+body: Never be doubtful about yourself again and get placed in good companies or work on 
+good projects. Zindot offers many programmes for technical and professional upskilling of 
+students as well as graduates. With hands-on-experience on tailored projects from beginner 
+to advanced level, explore the 'GREAT' in you!
 icon: $assets.files.images.skillicon.png
 
 -- item:
 title: Faculty Development Programmes
-body: To all the talented and beloved faculty members and professors out there... we have the perfect programme for your timely updation in this technical world. Zindot offers faculty development programmes(FDP) for faculty members in technological or professional institutes. FDPs are tailored to requirements and are delivered offline and online.
+body: To all the talented and beloved faculty members and professors out there... we have 
+the perfect programme for your timely updation in this technical world. Zindot offers 
+faculty development programmes(FDP) for faculty members in technological or professional 
+institutes. FDPs are tailored to requirements and are delivered offline and online.
 icon: $assets.files.images.placement.png
 
 -- item:
 title: Project Assistance
-body: Never ever be worried about the technical feasibility of your project when Zindot's here. Zindot provides technical assistance and facilities to technical and research oriented projects of students and even faculty members so you can work on that dream project.
+body: Never ever be worried about the technical feasibility of your project when Zindot's 
+here. Zindot provides technical assistance and facilities to technical and research 
+oriented projects of students and even faculty members so you can work on that dream project.
 icon: $assets.files.images.projectassist.png
 
 -- end: ftd.row
@@ -382,7 +401,8 @@ color: #9CA3AF
 -- ftd.row:
 padding.px: 150
 
--- ftd.text: Are you ready to Kickstart and Pump your Career? Apply for any training programme by completing the form
+-- ftd.text: Are you ready to Kickstart and Pump your Career? Apply for any training 
+programme by completing the form
 role: $inherited.types.heading-small
 color: #9CA3AF
 
@@ -432,7 +452,9 @@ src: $assets.files.images.quote.png
 height.fixed.px: 30
 width.fixed.px: 30
 
--- ftd.text: Zindot helped me take my business online. They designed a modern website that showcased my interior design projects as well as for my e-commerce needs. It really helped my business.
+-- ftd.text: Zindot helped me take my business online. They designed a modern website that 
+showcased my interior design projects as well as for my e-commerce needs. It really helped
+my business.
 
 -- ftd.row:
 padding-top.px: 30
@@ -457,7 +479,9 @@ src: $assets.files.images.quote.png
 height.fixed.px: 30
 width.fixed.px: 30
 
--- ftd.text: Zindot helped me in developing a prototype for my research project in a very short time. They also helped me with insights for the further development and helped me acheive grants for the same.
+-- ftd.text: Zindot helped me in developing a prototype for my research project in a very 
+short time. They also helped me with insights for the further development and helped me 
+acheive grants for the same.
 
 -- ftd.row:
 padding-top.px: 30
