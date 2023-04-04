@@ -1,6 +1,8 @@
 -- import: sarvom.github.io/zindot/assets
 -- import: sarvom.github.io/zindot/lib
 
+-- ftd.document: Zindot
+
 -- lib.navbar: 
 name: Zindot
 pic: $assets.files.images.zindot.png 
@@ -30,3 +32,5 @@ transformational.” – George Couros
 -- lib.contact:
 
 -- lib.footer:
+
+-- end: ftd.document
