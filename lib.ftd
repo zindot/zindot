@@ -1,7 +1,6 @@
 -- import: sarvom.github.io/zindot/assets
 -- import: fastn-community.github.io/opensans-typography
 -- import: sarvom.github.io/zindot/common
--- import: sarvom.github.io/zindot/document
 
 -- component navbar:
 caption name:
@@ -765,6 +764,7 @@ src: $assets.files.images.insta.png
 height.fixed.px: 30
 width.fixed.px: 30
 color: #353f4f
+link: https://www.instagram.com/zindotinnovations/
 
 
 -- ftd.image:
@@ -772,18 +772,21 @@ src: $assets.files.images.linkedin.png
 height.fixed.px: 30
 width.fixed.px: 30
 color: #353f4f
+link: https://www.linkedin.com/company/zindot/
 
 -- ftd.image:
 src: $assets.files.images.mail.png
 height.fixed.px: 30
 width.fixed.px: 30
 color: #353f4f
+link: mailto:info@zindot.in
 
 -- ftd.image:
 src: $assets.files.images.whatsapp.png
 height.fixed.px: 30
 width.fixed.px: 30
 color: #353f4f
+link: https://wa.me/916238296993
 
 -- end: ftd.row
 
