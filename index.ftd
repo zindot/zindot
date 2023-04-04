@@ -1,10 +1,6 @@
 -- import: sarvom.github.io/zindot/assets
 -- import: sarvom.github.io/zindot/lib
 
--- ftd.document: My title
--- ftd.text: this page has a title
--- end: ftd.document
-
 -- lib.navbar: Zindot
 pic: $assets.files.images.zindot.png 
 text1: Home
