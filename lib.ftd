@@ -215,7 +215,8 @@ types: $opensans-typography.types
 -- stack:
 icon: $assets.files.images.embedded.png
 title: Embedded system and PCB design
-body: The embedded system wing of ZINDOT is just the right place for all your custom 
+
+The embedded system wing of ZINDOT is just the right place for all your custom 
 requirements. With best solutions for your problems in minimal time, we will fulfil your 
 requirements.
 
@@ -224,7 +225,8 @@ requirements.
 -- stack:
 icon: $assets.files.images.iot.png
 title: Internet of Things
-body: The Internet of Things, or IoT for short, is the concept of connecting physical 
+
+The Internet of Things, or IoT for short, is the concept of connecting physical 
 objects to the Internet so that they can be either controlled or monitored remotely, with
 the goal of gaining insights that help improve personal or business outcomes. We at Zindot 
 design and develop unique, tailor-made IoT solutions.
@@ -234,7 +236,8 @@ design and develop unique, tailor-made IoT solutions.
 -- stack:
 icon: $assets.files.images.rapid.png
 title: Rapid Prototyping
-body: With 3D printers taking on the industry with its ability to cater to the needs of 
+
+With 3D printers taking on the industry with its ability to cater to the needs of 
 anything and everything we bring you the service of building your 3D models. Learn early 
 insights about your designs or improve them with our team.
 
@@ -243,7 +246,8 @@ insights about your designs or improve them with our team.
 -- stack:
 icon: $assets.files.images.webicon.png
 title: Web and App Development
-body: Zindot has the best web and native app development team with updated and new stacks 
+
+Zindot has the best web and native app development team with updated and new stacks 
 to flexible and robust on-cloud solutions. The best architecture for your business with 
 strategic insights to generate greater brand engagement, higher conversions and measurable
 results.
@@ -297,7 +301,8 @@ width: fill-container
 
 -- item:
 title: Skill & Placement Training
-body: Never be doubtful about yourself again and get placed in good companies or work on 
+
+Never be doubtful about yourself again and get placed in good companies or work on 
 good projects. Zindot offers many programmes for technical and professional upskilling of 
 students as well as graduates. With hands-on-experience on tailored projects from beginner 
 to advanced level, explore the 'GREAT' in you!
@@ -305,7 +310,8 @@ icon: $assets.files.images.skillicon.png
 
 -- item:
 title: Faculty Development Programmes
-body: To all the talented and beloved faculty members and professors out there... we have 
+
+To all the talented and beloved faculty members and professors out there... we have 
 the perfect programme for your timely updation in this technical world. Zindot offers 
 faculty development programmes(FDP) for faculty members in technological or professional 
 institutes. FDPs are tailored to requirements and are delivered offline and online.
@@ -313,7 +319,8 @@ icon: $assets.files.images.placement.png
 
 -- item:
 title: Project Assistance
-body: Never ever be worried about the technical feasibility of your project when Zindot's 
+
+Never ever be worried about the technical feasibility of your project when Zindot's 
 here. Zindot provides technical assistance and facilities to technical and research 
 oriented projects of students and even faculty members so you can work on that dream project.
 icon: $assets.files.images.projectassist.png
