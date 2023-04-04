@@ -212,9 +212,8 @@ padding-right.px: 168
 spacing.fixed.px: 40
 types: $opensans-typography.types
 
--- stack:
+-- stack: Embedded system and PCB design
 icon: $assets.files.images.embedded.png
-title: Embedded system and PCB design
 
 The embedded system wing of ZINDOT is just the right place for all your custom 
 requirements. With best solutions for your problems in minimal time, we will fulfil your 
@@ -222,9 +221,8 @@ requirements.
 
 -- vertline:
 
--- stack:
+-- stack: Internet of Things
 icon: $assets.files.images.iot.png
-title: Internet of Things
 
 The Internet of Things, or IoT for short, is the concept of connecting physical 
 objects to the Internet so that they can be either controlled or monitored remotely, with
@@ -233,9 +231,8 @@ design and develop unique, tailor-made IoT solutions.
 
 -- vertline:
 
--- stack:
+-- stack: Rapid Prototyping
 icon: $assets.files.images.rapid.png
-title: Rapid Prototyping
 
 With 3D printers taking on the industry with its ability to cater to the needs of 
 anything and everything we bring you the service of building your 3D models. Learn early 
@@ -243,9 +240,8 @@ insights about your designs or improve them with our team.
 
 -- vertline:
 
--- stack:
+-- stack: Web and App Development
 icon: $assets.files.images.webicon.png
-title: Web and App Development
 
 Zindot has the best web and native app development team with updated and new stacks 
 to flexible and robust on-cloud solutions. The best architecture for your business with 
@@ -299,8 +295,7 @@ margin-bottom.px: 50
 types: $opensans-typography.types
 width: fill-container
 
--- item:
-title: Skill & Placement Training
+-- item: Skill & Placement Training
 
 Never be doubtful about yourself again and get placed in good companies or work on 
 good projects. Zindot offers many programmes for technical and professional upskilling of 
@@ -308,8 +303,7 @@ students as well as graduates. With hands-on-experience on tailored projects fro
 to advanced level, explore the 'GREAT' in you!
 icon: $assets.files.images.skillicon.png
 
--- item:
-title: Faculty Development Programmes
+-- item: Faculty Development Programmes
 
 To all the talented and beloved faculty members and professors out there... we have 
 the perfect programme for your timely updation in this technical world. Zindot offers 
@@ -317,8 +311,7 @@ faculty development programmes(FDP) for faculty members in technological or prof
 institutes. FDPs are tailored to requirements and are delivered offline and online.
 icon: $assets.files.images.placement.png
 
--- item:
-title: Project Assistance
+-- item: Project Assistance
 
 Never ever be worried about the technical feasibility of your project when Zindot's 
 here. Zindot provides technical assistance and facilities to technical and research 
