@@ -2,6 +2,10 @@
 -- import: fastn-community.github.io/opensans-typography
 -- import: sarvom.github.io/zindot/common
 
+-- ftd.document: My title
+-- ftd.text: this page has a title
+-- end: ftd.document
+
 -- component navbar:
 caption name:
 ftd.image-src pic:
