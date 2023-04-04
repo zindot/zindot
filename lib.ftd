@@ -408,10 +408,13 @@ color: #9CA3AF
 -- ftd.row:
 padding.px: 150
 
--- ftd.text: Are you ready to Kickstart and Pump your Career? Apply for any training 
-programme by completing the form
+-- ftd.text: 
 role: $inherited.types.heading-small
 color: #9CA3AF
+
+Are you ready to Kickstart and Pump your Career? Apply for any training 
+programme by completing the form
+
 
 
 -- button: Apply
