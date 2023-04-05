@@ -9,6 +9,9 @@ background.image: $assets.files.images.bgimg.jpg
 -- lib.navbar: Zindot
 pic: $assets.files.images.zindot.png 
 text1: Home
+text2: Services
+text3: Training
+text4: Contact Us
 
 -- lib.hero: 
 title: Technology and Education Roads to a Brighter Future

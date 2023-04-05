@@ -4,21 +4,24 @@
 
 -- component navbar:
 caption name:
-ftd.image-src pic:
 string text1:
+string text2:
+string text3:
+string text4:
+ftd.image-src pic:
 ftd.type-data types: $opensans-typography.types
 
 -- ftd.row:
 align-content: left
 width: fill-container
-border-width.px: 10
-border-color: white
+border-width.px: 30
+border-color: #ffffff99
 padding-horizontal.px: 40 
 spacing.fixed.px: 40
 margin-bottom.px: 10
 types: $opensans-typography.types
 shadow: $common.navbar
-background.solid: #ffffff
+background.solid: #ffffff99
 sticky: true
 
 -- ftd.row:
@@ -46,21 +49,21 @@ text-align: center
 white-space: nowrap
 link: /zindot/
 
--- ftd.text: Services
+-- ftd.text: $navbar.text2
 color: #c091fb
 role: $inherited.types.label-large
 text-align: center
 white-space: nowrap
 link: index.html#services
 
--- ftd.text: Training
+-- ftd.text: $navbar.text3
 color: #c091fb
 role: $inherited.types.label-large
 text-align: center
 white-space: nowrap
 link: training/
 
--- ftd.text: Contact Us
+-- ftd.text: $navbar.text4
 color: #c091fb
 role: $inherited.types.label-large
 text-align: center
@@ -602,6 +605,7 @@ role: $inherited.types.copy-small
 -- end: ftd.row
 
 -- ftd.text-input:
+align-self: start
 placeholder: Message
 padding.px: 10 
 width.fixed.px: 620
