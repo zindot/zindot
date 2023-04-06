@@ -11,6 +11,50 @@ string text4:
 ftd.image-src pic:
 ftd.type-data types: $opensans-typography.types
 
+-- ftd.column:
+width: fill-container
+
+-- navbar-mobile:
+if: { ftd.device == "mobile" }
+name: $navbar.name
+text1: $navbar.text1
+text2: $navbar.text2
+text3: $navbar.text3
+text4: $navbar.text4
+pic: $navbar.pic
+types: $navbar.types
+
+-- navbar-desktop:
+if: { ftd.device == "desktop" }
+name: $navbar.name
+text1: $navbar.text1
+text2: $navbar.text2
+text3: $navbar.text3
+text4: $navbar.text4
+pic: $navbar.pic
+types: $navbar.types
+
+-- end: ftd.column
+
+-- end: navbar
+
+
+
+
+
+
+
+
+
+-- component navbar-desktop:
+caption name:
+string text1:
+string text2:
+string text3:
+string text4:
+ftd.image-src pic:
+ftd.type-data types: $opensans-typography.types
+
 -- ftd.row:
 align-content: left
 width: fill-container
@@ -28,12 +72,11 @@ align-self: start
 width: fill-container
 types: $opensans-typography.types
 
-
 -- ftd.image:
 height.fixed.px: 50
-src: $navbar.pic
+src: $navbar-desktop.pic
 
--- ftd.text: $navbar.name
+-- ftd.text: $navbar-desktop.name
 padding-left.px: 10
 padding-bottom.px: 5
 color: #57028f
@@ -41,28 +84,28 @@ role: $inherited.types.heading-medium
 
 -- end: ftd.row
 
--- ftd.text: $navbar.text1
+-- ftd.text: $navbar-desktop.text1
 color: #c091fb
 role: $inherited.types.label-large
 text-align: center
 white-space: nowrap
 link: /zindot/
 
--- ftd.text: $navbar.text2
+-- ftd.text: $navbar-desktop.text2
 color: #c091fb
 role: $inherited.types.label-large
 text-align: center
 white-space: nowrap
 link: index.html#services
 
--- ftd.text: $navbar.text3
+-- ftd.text: $navbar-desktop.text3
 color: #c091fb
 role: $inherited.types.label-large
 text-align: center
 white-space: nowrap
 link: training/
 
--- ftd.text: $navbar.text4
+-- ftd.text: $navbar-desktop.text4
 color: #c091fb
 role: $inherited.types.label-large
 text-align: center
@@ -71,7 +114,122 @@ link: index.html#contact
 
 -- end: ftd.row
 
--- end: navbar
+-- end: navbar-desktop
+
+
+
+
+
+
+
+
+
+
+-- component navbar-mobile:
+caption name:
+string text1:
+string text2:
+string text3:
+string text4:
+ftd.image-src pic:
+ftd.image-src menu: $assets.files.images.menu.png
+ftd.image-src close: $assets.files.images.close.png
+ftd.type-data types: $opensans-typography.types
+boolean $open: false
+
+-- ftd.column:
+padding.px: 20
+width: fill-container
+height: hug-content
+shadow: $common.navbar
+background.solid: #ffffff
+;; $on-click$: $toggle($value = $navbar.open)
+
+-- ftd.row:
+align-self: start
+width: fill-container
+spacing.fixed.px: 30
+types: $opensans-typography.types
+
+-- ftd.image:
+height.fixed.px: 50
+src: $navbar-mobile.pic
+
+-- ftd.text: $navbar-mobile.name
+padding-horizontal.px: 10
+padding-bottom.px: 5
+color: #57028f
+role: $inherited.types.heading-medium
+
+-- ftd.image:
+if: { !navbar-mobile.open }
+height.fixed.px: 50
+src: $navbar-mobile.menu
+$on-click$: $ftd.set-bool($a = $navbar-mobile.open, v = true)
+
+-- ftd.image:
+if: { navbar-mobile.open }
+height.fixed.px: 50
+src: $navbar-mobile.close
+$on-click$: $ftd.set-bool($a = $navbar-mobile.open, v = false)
+
+
+
+-- end: ftd.row
+
+-- ftd.column:
+if: { navbar-mobile.open}
+width: fill-container
+
+-- ftd.text: $navbar-mobile.text1
+color: #c091fb
+role: $inherited.types.label-large
+text-align: center
+white-space: nowrap
+link: /zindot/
+
+-- ftd.text: $navbar-mobile.text2
+color: #c091fb
+role: $inherited.types.label-large
+text-align: center
+white-space: nowrap
+link: index.html#services
+;; if: { navbar-mobile.open}
+
+-- ftd.text: $navbar-mobile.text3
+color: #c091fb
+role: $inherited.types.label-large
+text-align: center
+white-space: nowrap
+link: training/
+;; if: { navbar-mobile.open}
+
+-- ftd.text: $navbar-mobile.text4
+color: #c091fb
+role: $inherited.types.label-large
+text-align: center
+white-space: nowrap
+link: index.html#contact
+;; if: { navbar-mobile.open}
+
+-- end: ftd.column
+
+-- end: ftd.column
+
+-- end: navbar-mobile
+
+
+
+
+
+
+
+
+
+;; void toggle(value):
+;; boolean $value:
+
+;; value = !value;
 
 
 
@@ -84,7 +242,7 @@ link: index.html#contact
 
 -- component button:
 caption name:
-string url: /
+string url:
 
 -- ftd.text: $button.name
 role: $inherited.types.label-large
@@ -98,6 +256,7 @@ border-radius.px: 10
 background.solid: #A855F7
 border-color: #c091fb
 color: white
+link: $button.url
 
 -- end: button
 
@@ -139,8 +298,7 @@ padding-vertical.px: 10
 spacing.fixed.px: 10
 
 -- button: Services
-url: /training/
-
+url: index.html#services
 -- button: Training
 url: training/
 
@@ -169,6 +327,7 @@ src: $hero.pic
 caption title:
 body body:
 ftd.type-data types: $opensans-typography.types
+children wrap:
 
 -- ftd.column:
 align-content: center
@@ -191,67 +350,16 @@ text-align: center
 
 $about.body
 
+-- ftd.row:
+wrap: true
+width: fill-container
+align-self: center
+align-content: center
+children: $about.wrap
+
 -- end: ftd.column
 
 -- end: about
-
-
-
-
-
-
-
-
-
-
--- component stackhold:
-ftd.type-data types: $opensans-typography.types
-
--- ftd.row:
-padding-left.px: 168
-padding-top.px: 30
-padding-right.px: 168
-spacing.fixed.px: 40
-
--- stack: Embedded system and PCB design
-icon: $assets.files.images.embedded.png
-
-The embedded system wing of ZINDOT is just the right place for all your custom 
-requirements. With best solutions for your problems in minimal time, we will fulfil your 
-requirements.
-
--- vertline:
-
--- stack: Internet of Things
-icon: $assets.files.images.iot.png
-
-The Internet of Things, or IoT for short, is the concept of connecting physical 
-objects to the Internet so that they can be either controlled or monitored remotely, with
-the goal of gaining insights that help improve personal or business outcomes. We at Zindot 
-design and develop unique, tailor-made IoT solutions.
-
--- vertline:
-
--- stack: Rapid Prototyping
-icon: $assets.files.images.rapid.png
-
-With 3D printers taking on the industry with its ability to cater to the needs of 
-anything and everything we bring you the service of building your 3D models. Learn early 
-insights about your designs or improve them with our team.
-
--- vertline:
-
--- stack: Web and App Development
-icon: $assets.files.images.webicon.png
-
-Zindot has the best web and native app development team with updated and new stacks 
-to flexible and robust on-cloud solutions. The best architecture for your business with 
-strategic insights to generate greater brand engagement, higher conversions and measurable
-results.
-
--- end: ftd.row
-
--- end: stackhold
 
 
 
@@ -289,41 +397,6 @@ text-align: center
 
 $service.body
 
--- ftd.row:
-padding-left.px: 168
-padding-top.px: 30
-padding-right.px: 168
-margin-bottom.px: 50
-width: fill-container
-
--- item: Skill & Placement Training
-icon: $assets.files.images.skillicon.png
-
-Never be doubtful about yourself again and get placed in good companies or work on 
-good projects. Zindot offers many programmes for technical and professional upskilling of 
-students as well as graduates. With hands-on-experience on tailored projects from beginner 
-to advanced level, explore the 'GREAT' in you!
-
--- item: Faculty Development Programmes
-icon: $assets.files.images.placement.png
-
-To all the talented and beloved faculty members and professors out there... we have 
-the perfect programme for your timely updation in this technical world. Zindot offers 
-faculty development programmes(FDP) for faculty members in technological or professional 
-institutes. FDPs are tailored to requirements and are delivered offline and online.
-
--- item: Project Assistance
-icon: $assets.files.images.projectassist.png
-
-Never ever be worried about the technical feasibility of your project when Zindot's 
-here. Zindot provides technical assistance and facilities to technical and research 
-oriented projects of students and even faculty members so you can work on that dream project.
-
--- end: ftd.row
-
--- button: Know more
-url: /training/
-
 -- end: ftd.column
 -- end: service
 
@@ -337,7 +410,16 @@ url: /training/
 
 
 -- component dashboard:
+string head1:
+string text1:
+string head2:
+string text2:
+string head3:
+string text3:
+string head4:
+string text4:
 ftd.type-data types: $opensans-typography.types
+body body:
 
 -- ftd.column:
 width: fill-container
@@ -354,48 +436,52 @@ spacing.fixed.px: 200
 -- ftd.column:
 align-content: center
 
--- ftd.text: 55
-role: $inherited.types.heading-medium
+-- ftd.text: $dashboard.head1
+role: $inherited.types.heading-large
 color: #d0279f
 
--- ftd.text: projects
+-- ftd.text: $dashboard.text1
 color: #9CA3AF
+role: $inherited.types.label-large
 
 -- end: ftd.column
 
 -- ftd.column:
 align-content: center
 
--- ftd.text: 21
-role: $inherited.types.heading-medium
+-- ftd.text: $dashboard.head2
+role: $inherited.types.heading-large
 color: #d0279f
 
--- ftd.text: clients
+-- ftd.text: $dashboard.text2
 color: #9CA3AF
+role: $inherited.types.label-large
 
 -- end: ftd.column
 
 -- ftd.column:
 align-content: center
 
--- ftd.text: 1200+
-role: $inherited.types.heading-medium
+-- ftd.text: $dashboard.head3
+role: $inherited.types.heading-large
 color: #d0279f
 
--- ftd.text: students trained
+-- ftd.text: $dashboard.text3
 color: #9CA3AF
+role: $inherited.types.label-large
 
 -- end: ftd.column
 
 -- ftd.column:
 align-content: center
 
--- ftd.text: 10+
-role: $inherited.types.heading-medium
+-- ftd.text: $dashboard.head4
+role: $inherited.types.heading-large
 color: #d0279f
 
--- ftd.text: training programs
+-- ftd.text: $dashboard.text4
 color: #9CA3AF
+role: $inherited.types.label-large
 
 -- end: ftd.column
 
@@ -408,13 +494,10 @@ padding.px: 150
 role: $inherited.types.heading-small
 color: #9CA3AF
 
-Are you ready to Kickstart and Pump your Career? Apply for any training 
-programme by completing the form
-
-
+$dashboard.body
 
 -- button: Apply
-url: /training/
+url: https://bit.ly/Zindot
 
 -- end: ftd.row
 
@@ -454,6 +537,7 @@ spacing.fixed.px: 50
 -- ftd.column:
 padding.px: 30
 shadow: $common.box
+background.solid: white
 
 -- ftd.image:
 src: $assets.files.images.quote.png
@@ -495,6 +579,7 @@ role: $inherited.types.label-large
 -- ftd.column:
 shadow: $common.box
 padding.px: 30
+background.solid: white
 
 -- ftd.image:
 src: $assets.files.images.quote.png
@@ -622,7 +707,7 @@ role: $inherited.types.copy-small
 -- end: ftd.column
 
 -- button: Send
-url: /training/
+url: mailto: zindottechnologies@gmail.com <zindottechnologies@gmail.com>;
 
 -- ftd.column:
 padding-top.px: 50
