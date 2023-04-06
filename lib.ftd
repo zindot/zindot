@@ -226,19 +226,6 @@ link: index.html#contact
 
 
 
-;; void toggle(value):
-;; boolean $value:
-
-;; value = !value;
-
-
-
-
-
-
-
-
-
 
 -- component button:
 caption name:
