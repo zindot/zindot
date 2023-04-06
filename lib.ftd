@@ -194,7 +194,6 @@ role: $inherited.types.label-large
 text-align: center
 white-space: nowrap
 link: index.html#services
-;; if: { navbar-mobile.open}
 
 -- ftd.text: $navbar-mobile.text3
 color: #c091fb
@@ -202,7 +201,6 @@ role: $inherited.types.label-large
 text-align: center
 white-space: nowrap
 link: training/
-;; if: { navbar-mobile.open}
 
 -- ftd.text: $navbar-mobile.text4
 color: #c091fb
@@ -210,7 +208,6 @@ role: $inherited.types.label-large
 text-align: center
 white-space: nowrap
 link: index.html#contact
-;; if: { navbar-mobile.open}
 
 -- end: ftd.column
 
@@ -263,21 +260,25 @@ body cta-text-1:
 ftd.type-data types: $opensans-typography.types
 
 -- ftd.row:
-align-content: right
+max-width.fixed.px: 1240
+max-height.fixed.px: 426.662
+align-content: center
 width: fill-container
-padding-vertical.px: 100
-padding-horizontal.px: 150
-
+padding-horizontal.px: 20
+padding-vertical.px: 96
+margin-horizontal.px: 139
 
 -- ftd.column:
 
 -- ftd.text: $hero.title
 color: #000000
+max-width.fixed.px: 576
 role: $inherited.types.heading-large
 
 
 -- ftd.text: $hero.cta-text-1
 color: #000000
+max-width.fixed.px: 592
 role: $inherited.types.heading-small 
 padding-vertical.px: 10
 
@@ -295,7 +296,7 @@ url: training/
 
 -- ftd.image: 
 height.fixed.px: 450
-width.fixed.px: 550
+width.fixed.px: 512
 src: $hero.pic
 
 -- end: ftd.row
@@ -329,10 +330,8 @@ role: $inherited.types.heading-large
 -- ftd.text: 
 align-self: center
 role: $inherited.types.heading-tiny
-padding-left.px: 300
-padding-right.px: 300
-padding-top.px: 10
-padding-bottom.px: 30
+margin-top.px: 8
+margin-horizontal.px: 192
 text-align: center
 
 $about.body
