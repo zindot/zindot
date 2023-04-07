@@ -3,9 +3,6 @@
 
 -- ftd.document: Zindot
 
--- ftd.column:
-background.image: $assets.files.images.bgimg.jpg
-
 -- lib.navbar: Zindot
 pic: $assets.files.images.zindot.png 
 text1: Home
@@ -28,10 +25,7 @@ to students and industrialists and undertake projects offering the best standard
 is a one stop destination for all your technical requirements!
 
 -- ftd.row:
-padding-left.px: 168
-padding-top.px: 30
-padding-right.px: 168
-spacing.fixed.px: 40
+margin-horizontal.px: 100
 
 -- lib.stack: Embedded system and PCB design
 icon: $assets.files.images.embedded.png
@@ -78,9 +72,7 @@ title: Zindot-in-Educational-Services
 it’s transformational.” – George Couros
 
 -- ftd.row:
-padding-left.px: 168
-padding-top.px: 30
-padding-right.px: 168
+margin-horizontal.px: 100
 margin-bottom.px: 50
 width: fill-container
 
@@ -139,5 +131,4 @@ programme by completing the form
 
 -- lib.footer:
 
--- end: ftd.column
 -- end: ftd.document

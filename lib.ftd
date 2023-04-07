@@ -57,10 +57,11 @@ ftd.type-data types: $opensans-typography.types
 
 -- ftd.row:
 align-content: left
+max-width.fixed.px: 1480
+height.fixed.px: 68
 width: fill-container
-border-width.px: 20
-border-color: #ffffff00
-padding-horizontal.px: 40 
+padding-horizontal.px: 20 
+padding-vertical.px: 16
 spacing.fixed.px: 40
 types: $opensans-typography.types
 shadow: $common.navbar
@@ -73,12 +74,11 @@ width: fill-container
 types: $opensans-typography.types
 
 -- ftd.image:
-height.fixed.px: 50
+height.fixed.px: 32
 src: $navbar-desktop.pic
 
 -- ftd.text: $navbar-desktop.name
 padding-left.px: 10
-padding-bottom.px: 5
 color: #57028f
 role: $inherited.types.heading-medium
 
@@ -143,7 +143,6 @@ width: fill-container
 height: hug-content
 shadow: $common.navbar
 background.solid: #ffffff
-;; $on-click$: $toggle($value = $navbar.open)
 
 -- ftd.row:
 align-self: start
@@ -259,16 +258,20 @@ caption title:
 body cta-text-1:
 ftd.type-data types: $opensans-typography.types
 
+-- ftd.column:
+width: fill-container
+background.image: $assets.files.images.bgimg.jpg
+
 -- ftd.row:
 max-width.fixed.px: 1240
-max-height.fixed.px: 426.662
-align-content: center
+max-height.fixed.px: 776
 width: fill-container
 padding-horizontal.px: 20
 padding-vertical.px: 96
-margin-horizontal.px: 139
+margin-horizontal.px if { ftd.device == "desktop" }: 139
 
 -- ftd.column:
+padding-right.px: 96
 
 -- ftd.text: $hero.title
 color: #000000
@@ -278,7 +281,6 @@ role: $inherited.types.heading-large
 
 -- ftd.text: $hero.cta-text-1
 color: #000000
-max-width.fixed.px: 592
 role: $inherited.types.heading-small 
 padding-vertical.px: 10
 
@@ -301,6 +303,8 @@ src: $hero.pic
 
 -- end: ftd.row
 
+-- end: ftd.column
+
 -- end: hero
 
 
@@ -318,8 +322,12 @@ ftd.type-data types: $opensans-typography.types
 children wrap:
 
 -- ftd.column:
+margin-horizontal.px if { ftd.device == "desktop" }: 100
+
+-- ftd.column:
 align-content: center
-padding-top.px: 100
+padding-vertical.px: 96
+padding-horizontal.px: 20
 id: services
 background.solid: white
 
@@ -331,10 +339,12 @@ role: $inherited.types.heading-large
 align-self: center
 role: $inherited.types.heading-tiny
 margin-top.px: 8
-margin-horizontal.px: 192
+margin-horizontal.px if { ftd.device == "desktop" }: 192
 text-align: center
 
 $about.body
+
+-- end: ftd.column
 
 -- ftd.row:
 wrap: true
@@ -364,27 +374,74 @@ ftd.type-data types: $opensans-typography.types
 -- ftd.column:
 align-self: center
 align-content: center
-padding-top.px: 100
-padding-bottom.px: 100
+margin-horizontal.px if { ftd.device == "desktop" }: 100
+padding-horizontal.px: 20
+padding-vertical.px: 96
 
+-- ftd.column:
+margin-bottom.px if { ftd.device == "desktop" }: 16
 
 -- ftd.text: $service.title
 color: #000000
 role: $inherited.types.heading-large
+margin-bottom.px: 16
+
+-- end: ftd.column
 
 -- ftd.text: 
 align-self: center
 role: $inherited.types.heading-tiny
-padding-left.px: 400
-padding-right.px: 400
-padding-top.px: 10
-padding-bottom.px: 30
+margin-horizontal.px if { ftd.device == "desktop" }: 300
 text-align: center
 
 $service.body
 
 -- end: ftd.column
 -- end: service
+
+
+
+
+
+
+
+
+
+
+-- component item:
+ftd.image-src icon:
+caption title:
+body body:
+ftd.type-data types: $opensans-typography.types
+
+-- ftd.column:
+padding-horizontal.px: 16
+padding-vertical.px: 16
+align-content: center
+types: $opensans-typography.types
+
+-- ftd.image:
+src: $item.icon
+height.fixed.px: 80
+width.fixed.px: 80
+align-self: center
+margin-bottom.px: 20
+
+-- ftd.text: $item.title
+role: $inherited.types.heading-tiny
+text-align: center
+margin-bottom.px: 12
+
+-- ftd.text:
+color: #353f4f
+role: $inherited.types.copy-small
+text-align: justify
+
+$item.body
+
+-- end: ftd.column
+
+-- end: item
 
 
 
@@ -556,7 +613,6 @@ role: $inherited.types.label-large
 role: $inherited.types.label-large
 
 -- end: ftd.column
-
 
 -- end: ftd.row
 
@@ -768,47 +824,6 @@ role: $inherited.types.heading-medium
 
 
 
--- component item:
-ftd.image-src icon:
-caption title:
-body body:
-ftd.type-data types: $opensans-typography.types
-
--- ftd.column:
-width: fill-container
-align-content: center
-types: $opensans-typography.types
-
--- ftd.image:
-src: $item.icon
-height.fixed.px: 80
-width.fixed.px: 80
-align-self: center
-
--- ftd.text: $item.title
-role: $inherited.types.heading-tiny
-text-align: center
-
--- ftd.text:
-color: #353f4f
-role: $inherited.types.copy-small
-text-align: justify
-padding.px: 10
-
-$item.body
-
--- end: ftd.column
-
--- end: item
-
-
-
-
-
-
-
-
-
 -- component stack:
 ftd.image-src icon:
 caption title:
@@ -817,6 +832,8 @@ ftd.type-data types: $opensans-typography.types
 
 -- ftd.column:
 width : fill-container
+padding-horizontal.px: 32
+padding-vertical.px:24
 
 -- ftd.image:
 src: $stack.icon
