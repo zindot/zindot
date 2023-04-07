@@ -275,12 +275,14 @@ padding-right.px: 96
 color: #000000
 max-width.fixed.px: 576
 role: $inherited.types.heading-large
+text-align if { ftd.device == "mobile" }: center
 
 
 -- ftd.text: $hero.cta-text-1
 color: #000000
 role: $inherited.types.heading-small 
 padding-vertical.px: 10
+text-align if { ftd.device == "mobile" }: center
 
 -- ftd.row:
 spacing.fixed.px: 10
@@ -385,6 +387,8 @@ margin-bottom.px if { ftd.device == "desktop" }: 16
 color: #000000
 role: $inherited.types.heading-large
 margin-bottom.px: 16
+align-self: center
+text-align if { ftd.device == "mobile" }: center
 
 -- end: ftd.column
 
