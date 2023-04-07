@@ -621,7 +621,155 @@ $item.body
 
 
 
--- component dashboard:
+-- component counter:
+string head1:
+string text1:
+string head2:
+string text2:
+string head3:
+string text3:
+string head4:
+string text4:
+ftd.type-data types: $opensans-typography.types
+
+-- ftd.column:
+width: fill-container
+
+-- counter-mobile:
+if: { ftd.device == "mobile" }
+head1: $counter.head1
+text1: $counter.text1
+head2: $counter.head2
+text2: $counter.text2
+head3: $counter.head3
+text3: $counter.text3
+head4: $counter.head4
+text4: $counter.text4
+types: $counter.types
+
+-- counter-desktop:
+if: { ftd.device == "desktop" }
+head1: $counter.head1
+text1: $counter.text1
+head2: $counter.head2
+text2: $counter.text2
+head3: $counter.head3
+text3: $counter.text3
+head4: $counter.head4
+text4: $counter.text4
+types: $counter.types
+
+-- end: ftd.column
+
+-- end: counter
+
+
+
+
+
+
+
+
+
+
+-- component counter-mobile:
+string head1:
+string text1:
+string head2:
+string text2:
+string head3:
+string text3:
+string head4:
+string text4:
+ftd.type-data types: $opensans-typography.types
+
+-- ftd.row:
+margin-horizontal.px: 139
+width: fill-container
+background.solid: #111827
+align-self: center
+align-content: center
+
+-- ftd.column:
+padding-horizontal.px: 20
+padding-vertical.px: 96
+spacing.fixed.px: 200
+
+-- ftd.column:
+align-content: center
+
+-- ftd.text: $counter-mobile.head1
+role: $inherited.types.heading-large
+color: #d0279f
+
+-- ftd.text: $counter-mobile.text1
+color: #9CA3AF
+role: $inherited.types.label-large
+
+-- end: ftd.column
+
+-- ftd.column:
+align-content: center
+
+-- ftd.text: $counter-mobile.head2
+role: $inherited.types.heading-large
+color: #d0279f
+
+-- ftd.text: $counter-mobile.text2
+color: #9CA3AF
+role: $inherited.types.label-large
+
+-- end: ftd.column
+
+-- end: ftd.column
+
+-- ftd.column:
+padding-horizontal.px: 20
+padding-vertical.px: 96
+spacing.fixed.px: 200
+
+-- ftd.column:
+align-content: center
+
+-- ftd.text: $counter-mobile.head3
+role: $inherited.types.heading-large
+color: #d0279f
+
+-- ftd.text: $counter-mobile.text3
+color: #9CA3AF
+role: $inherited.types.label-large
+
+-- end: ftd.column
+
+-- ftd.column:
+align-content: center
+
+-- ftd.text: $counter-mobile.head4
+role: $inherited.types.heading-large
+color: #d0279f
+
+-- ftd.text: $counter-mobile.text4
+color: #9CA3AF
+role: $inherited.types.label-large
+
+-- end: ftd.column
+
+-- end: ftd.column
+
+-- end: ftd.row
+
+-- end: counter-mobile
+
+
+
+
+
+
+
+
+
+
+-- component counter-desktop:
 string head1:
 string text1:
 string head2:
@@ -647,11 +795,11 @@ spacing.fixed.px: 200
 -- ftd.column:
 align-content: center
 
--- ftd.text: $dashboard.head1
+-- ftd.text: $counter-desktop.head1
 role: $inherited.types.heading-large
 color: #d0279f
 
--- ftd.text: $dashboard.text1
+-- ftd.text: $counter-desktop.text1
 color: #9CA3AF
 role: $inherited.types.label-large
 
@@ -660,11 +808,11 @@ role: $inherited.types.label-large
 -- ftd.column:
 align-content: center
 
--- ftd.text: $dashboard.head2
+-- ftd.text: $counter-desktop.head2
 role: $inherited.types.heading-large
 color: #d0279f
 
--- ftd.text: $dashboard.text2
+-- ftd.text: $counter-desktop.text2
 color: #9CA3AF
 role: $inherited.types.label-large
 
@@ -673,11 +821,11 @@ role: $inherited.types.label-large
 -- ftd.column:
 align-content: center
 
--- ftd.text: $dashboard.head3
+-- ftd.text: $counter-desktop.head3
 role: $inherited.types.heading-large
 color: #d0279f
 
--- ftd.text: $dashboard.text3
+-- ftd.text: $counter-desktop.text3
 color: #9CA3AF
 role: $inherited.types.label-large
 
@@ -686,11 +834,11 @@ role: $inherited.types.label-large
 -- ftd.column:
 align-content: center
 
--- ftd.text: $dashboard.head4
+-- ftd.text: $counter-desktop.head4
 role: $inherited.types.heading-large
 color: #d0279f
 
--- ftd.text: $dashboard.text4
+-- ftd.text: $counter-desktop.text4
 color: #9CA3AF
 role: $inherited.types.label-large
 
@@ -700,7 +848,7 @@ role: $inherited.types.label-large
 
 -- end: ftd.row
 
--- end: dashboard
+-- end: counter-desktop
 
 
 
@@ -710,8 +858,82 @@ role: $inherited.types.label-large
 
 
 
--- component dash2:
-body body:
+
+-- component dash:
+body content:
+ftd.type-data types: $opensans-typography.types
+
+-- ftd.column:
+
+-- dash-mobile:
+if: { ftd.device == "mobile" }
+content: $dash.content
+types: $dash.types
+
+-- dash-desktop:
+if: { ftd.device == "desktop" }
+content: $dash.content
+types: $dash.types
+
+-- end: ftd.column
+
+-- end: dash
+
+
+
+
+
+
+
+
+
+
+-- component dash-mobile:
+body content:
+ftd.type-data types: $opensans-typography.types
+
+-- ftd.row:
+padding-vertical.px: 96
+padding-horizontal.px: 20
+width: fill-container
+background.solid: #111827
+align-self: center
+align-content: center
+
+-- ftd.column:
+margin-horizontal.px: 40
+
+-- ftd.text: 
+role: $inherited.types.heading-small
+color: #9CA3AF
+padding-right.px: 64
+
+$dash-mobile.content
+
+-- ftd.column:
+
+-- button: Apply
+url: https://bit.ly/Zindot
+
+-- end: ftd.column
+
+-- end: ftd.column
+
+-- end: ftd.row
+
+-- end: dash-mobile
+
+
+
+
+
+
+
+
+
+-- component dash-desktop:
+body content:
+ftd.type-data types: $opensans-typography.types
 
 -- ftd.row:
 padding-vertical.px: 96
@@ -722,23 +944,30 @@ align-self: center
 align-content: center
 
 -- ftd.row:
-margin-horizontal.px: 240
+margin-horizontal.px: 340
 
 -- ftd.text: 
 role: $inherited.types.heading-small
 color: #9CA3AF
 padding-right.px: 64
 
-$dash2.body
+$dash-desktop.content
+
+-- ftd.column:
+align-content: center
 
 -- button: Apply
 url: https://bit.ly/Zindot
 
--- end: ftd.row
+-- end: ftd.column
 
 -- end: ftd.row
 
--- end: dash2
+-- end: ftd.row
+
+-- end: dash-desktop
+
+
 
 
 
@@ -924,7 +1153,7 @@ spacing.fixed.px: 20
 -- ftd.text-input:
 placeholder: Name
 padding.px: 8
-min-width.fixed.px: 340
+width: fill-container
 height.fixed.px: 30
 border-radius.px: 5
 border-width.px: 1
@@ -936,7 +1165,7 @@ role: $inherited.types.copy-small
 -- ftd.text-input:
 placeholder: Email
 padding.px: 8
-min-width.fixed.px: 340
+width: fill-container
 height.fixed.px: 30
 border-width.px: 1
 border-radius.px: 5
@@ -951,7 +1180,7 @@ role: $inherited.types.copy-small
 align-self: start
 placeholder: Message
 padding-horizontal.px: 10 
-min-width.fixed.px: 700
+width: fill-container
 height.fixed.px: 300
 border-width.px: 1
 border-radius.px: 5

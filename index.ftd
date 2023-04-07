@@ -10,8 +10,7 @@ text2: Services
 text3: Training
 text4: Contact Us
 
--- lib.hero: 
-title: Technology and Education Roads to a Brighter Future
+-- lib.hero: Technology and Education Roads to a Brighter Future
 pic: $assets.files.images.zin.png
 
 Understand how the world works. Learn, Apply and Grow with us in every aspect of life.
@@ -173,7 +172,7 @@ url: /training
 
 -- end: ftd.row
 
--- lib.dashboard:
+-- lib.counter:
 head1: 55
 text1: Projects
 head2: 21
@@ -183,7 +182,7 @@ text3: Students Trained
 head4: 10+
 text4: Training Programs
 
--- lib.dash2:
+-- lib.dash:
 
 Are you ready to Kickstart and Pump your Career? Apply for any training 
 programme by completing the form
