@@ -261,47 +261,19 @@ ftd.type-data types: $opensans-typography.types
 width: fill-container
 background.image: $assets.files.images.bgimg.jpg
 
--- ftd.row:
-max-width.fixed.px if { ftd.device == "desktop" }: 1240
-width: fill-container
-padding-horizontal.px: 20
-padding-vertical.px: 96
-margin-horizontal.px if { ftd.device == "desktop" }: 139
+-- hero-mobile:
+if: { ftd.device == "mobile" }
+pic: $hero.pic
+title: $hero.title
+cta-text-1: $hero.cta-text-1
+types: $hero.types
 
--- ftd.column:
-padding-right.px: 96
-
--- ftd.text: $hero.title
-color: #000000
-max-width.fixed.px: 576
-role: $inherited.types.heading-large
-text-align if { ftd.device == "mobile" }: center
-
-
--- ftd.text: $hero.cta-text-1
-color: #000000
-role: $inherited.types.heading-small 
-padding-vertical.px: 10
-text-align if { ftd.device == "mobile" }: center
-
--- ftd.row:
-spacing.fixed.px: 10
-
--- button: Services
-url: index.html#services
--- button: Training
-url: training/
-
--- end: ftd.row
-
--- end: ftd.column
-
--- ftd.image: 
-height.fixed.px: 450
-width.fixed.px: 512
-src: $hero.pic
-
--- end: ftd.row
+-- hero-desk:
+if: { ftd.device == "desktop" }
+pic: $hero.pic
+title: $hero.title
+cta-text-1: $hero.cta-text-1
+types: $hero.types
 
 -- end: ftd.column
 
@@ -371,6 +343,69 @@ align-self: center
 -- end: ftd.column
 
 -- end: hero-mobile
+
+
+
+
+
+
+
+
+
+
+-- component hero-desk:
+ftd.image-src pic:
+caption title:
+body cta-text-1:
+ftd.type-data types: $opensans-typography.types
+
+-- ftd.column:
+width: fill-container
+background.image: $assets.files.images.bgimg.jpg
+
+-- ftd.row:
+max-width.fixed.px: 1240
+width: fill-container
+padding-horizontal.px: 20
+padding-vertical.px: 96
+margin-horizontal.px: 139
+
+-- ftd.column:
+padding-right.px: 96
+
+-- ftd.text: $hero-desk.title
+color: #000000
+max-width.fixed.px: 576
+role: $inherited.types.heading-large
+
+
+-- ftd.text: $hero-desk.cta-text-1
+color: #000000
+role: $inherited.types.heading-small 
+padding-vertical.px: 10
+
+-- ftd.row:
+spacing.fixed.px: 10
+
+-- button: Services
+url: index.html#services
+-- button: Training
+url: training/
+
+-- end: ftd.row
+
+-- end: ftd.column
+
+-- ftd.image: 
+height.fixed.px: 450
+width.fixed.px: 512
+src: $hero-desk.pic
+
+-- end: ftd.row
+
+-- end: ftd.column
+
+-- end: hero-desk
 
 
 
@@ -470,6 +505,8 @@ $service.body
 -- end: ftd.column
 
 -- ftd.row:
+margin-horizontal.px if { ftd.device == "desktop" }: 100
+margin-bottom.px: 50
 wrap: true
 width: fill-container
 align-self: center
