@@ -10,7 +10,7 @@ text2: Services
 text3: Training
 text4: Contact Us
 
--- lib.hero: 
+-- lib.hero-mobile: 
 title: Technology and Education Roads to a Brighter Future
 pic: $assets.files.images.zin.png
 

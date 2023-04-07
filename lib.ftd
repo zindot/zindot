@@ -315,6 +315,71 @@ src: $hero.pic
 
 
 
+
+-- component hero-mobile:
+ftd.image-src pic:
+caption title:
+body cta-text-1:
+ftd.type-data types: $opensans-typography.types
+
+-- ftd.column:
+width: fill-container
+background.image: $assets.files.images.bgimg.jpg
+
+-- ftd.column:
+width: fill-container
+padding-horizontal.px: 20
+padding-vertical.px: 96
+
+-- ftd.column:
+margin-bottom.px: 64
+
+-- ftd.text: $hero-mobile.title
+color: #000000
+max-width.fixed.px: 576
+role: $inherited.types.heading-large
+text-align: center
+
+
+-- ftd.text: $hero-mobile.cta-text-1
+color: #000000
+role: $inherited.types.heading-small 
+padding-vertical.px: 10
+text-align: center
+
+-- ftd.row:
+spacing.fixed.px: 10
+align-self: center
+
+-- button: Services
+url: index.html#services
+-- button: Training
+url: training/
+
+-- end: ftd.row
+
+-- end: ftd.column
+
+-- ftd.image: 
+height.fixed.px: 267
+width.fixed.px: 322
+src: $hero-mobile.pic
+align-self: center
+
+-- end: ftd.column
+
+-- end: ftd.column
+
+-- end: hero-mobile
+
+
+
+
+
+
+
+
+
 -- component about:
 caption title:
 body body:
