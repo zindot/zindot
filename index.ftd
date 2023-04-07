@@ -3,7 +3,7 @@
 
 -- ftd.document: Zindot
 
--- lib.navbar: Zindot
+-- lib.navbar: **Zindot**
 pic: $assets.files.images.zindot.png 
 text1: Home
 text2: Services

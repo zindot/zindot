@@ -79,7 +79,8 @@ src: $navbar-desktop.pic
 -- ftd.text: $navbar-desktop.name
 padding-left.px: 10
 color: #57028f
-role: $inherited.types.heading-medium
+margin-bottom.px: 10
+role: $inherited.types.heading-small
 
 -- end: ftd.row
 
@@ -144,34 +145,41 @@ shadow: $common.navbar
 background.solid: #ffffff
 
 -- ftd.row:
+spacing.fixed.px: 80
+
+-- ftd.row:
 align-self: start
 width: fill-container
-spacing.fixed.px: 30
 types: $opensans-typography.types
 
 -- ftd.image:
-height.fixed.px: 50
+height.fixed.px: 32
 src: $navbar-mobile.pic
 
 -- ftd.text: $navbar-mobile.name
 padding-horizontal.px: 10
-padding-bottom.px: 5
 color: #57028f
-role: $inherited.types.heading-medium
+margin-bottom.px: 10
+role: $inherited.types.heading-small
+
+-- end: ftd.row
+
+-- ftd.row:
+margin-left.px: 80
 
 -- ftd.image:
 if: { !navbar-mobile.open }
-height.fixed.px: 50
+height.fixed.px: 32
 src: $navbar-mobile.menu
 $on-click$: $ftd.set-bool($a = $navbar-mobile.open, v = true)
 
 -- ftd.image:
 if: { navbar-mobile.open }
-height.fixed.px: 50
+height.fixed.px: 32
 src: $navbar-mobile.close
 $on-click$: $ftd.set-bool($a = $navbar-mobile.open, v = false)
 
-
+-- end: ftd.row
 
 -- end: ftd.row
 
@@ -887,10 +895,7 @@ ftd.type-data types: $opensans-typography.types
 
 -- ftd.column:
 width: fill-container
-padding-left.px: 200
-padding-right.px: 200
-padding-top.px: 100
-padding-bottom.px: 30
+padding-vertical.px: 96
 align-self: center
 align-content: center
 id: contact
@@ -898,6 +903,7 @@ id: contact
 -- ftd.text: Contact Us
 role: $inherited.types.heading-large
 text-align: center
+margin-bottom.px: 16 
 
 -- ftd.text: Contact us regarding any queries
 role: $inherited.types.heading-tiny
@@ -917,8 +923,8 @@ spacing.fixed.px: 20
 
 -- ftd.text-input:
 placeholder: Name
-padding.px: 10
-width.fixed.px: 300
+padding.px: 8
+min-width.fixed.px: 340
 height.fixed.px: 30
 border-radius.px: 5
 border-width.px: 1
@@ -929,8 +935,8 @@ role: $inherited.types.copy-small
 
 -- ftd.text-input:
 placeholder: Email
-padding.px: 10
-width.fixed.px: 300
+padding.px: 8
+min-width.fixed.px: 340
 height.fixed.px: 30
 border-width.px: 1
 border-radius.px: 5
@@ -944,12 +950,12 @@ role: $inherited.types.copy-small
 -- ftd.text-input:
 align-self: start
 placeholder: Message
-padding.px: 10 
-width.fixed.px: 620
-height.fixed.px: 200
+padding-horizontal.px: 10 
+min-width.fixed.px: 700
+height.fixed.px: 300
 border-width.px: 1
 border-radius.px: 5
-border-color: #C8C8C8
+border-color: #9CA3AF
 shadow: $common.box
 type: text
 role: $inherited.types.copy-small
@@ -996,8 +1002,7 @@ role: $inherited.types.copy-large
 
 -- ftd.row:
 align-content: left
-width: fill-container
-padding-horizontal.px: 40 
+width: fill-container 
 spacing.fixed.px: 80
 margin-bottom.px: 10
 
@@ -1007,13 +1012,14 @@ width: fill-container
 
 -- ftd.image:
 src: $assets.files.images.zindot.png 
-height.fixed.px: 50
+height.fixed.px: 27
+width.fixed.px: 50
 
--- ftd.text: Zindot
+-- ftd.text: **Zindot**
 padding-left.px: 10
-padding-bottom.px: 5
+margin-bottom.px: 10
 color: #57028f
-role: $inherited.types.heading-medium
+role: $inherited.types.heading-small
 
 -- end: ftd.row
 
