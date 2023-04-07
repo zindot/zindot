@@ -16,8 +16,7 @@ pic: $assets.files.images.zin.png
 
 Understand how the world works. Learn, Apply and Grow with us in every aspect of life.
 
--- lib.about:
-title: Our Services
+-- lib.about: Our Services
 
 Zindot Technologies bring you a handful of services under one roof. From software 
 development to one-to-one mentoring for technical aspirants. We provide project assistance
@@ -101,8 +100,7 @@ results.
 
 -- end: ftd.row
 
--- lib.service:
-title: Zindot-in-Educational-Services
+-- lib.service: Zindot-in-Educational-Services
 
 “Technology will never replace great teachers, but in the hands of great teachers, 
 it’s transformational.” – George Couros
