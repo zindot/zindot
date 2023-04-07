@@ -466,6 +466,46 @@ children: $about.wrap
 
 
 
+-- component stack:
+ftd.image-src icon:
+caption title:
+body body:
+ftd.type-data types: $opensans-typography.types
+
+-- ftd.column:
+width : fill-container
+padding-horizontal.px: 32
+padding-vertical.px: 24
+
+-- ftd.image:
+src: $stack.icon
+height.fixed.px: 50
+width.fixed.px: 50
+
+-- ftd.text: $stack.title
+text-align: start
+role: $inherited.types.heading-tiny
+
+
+-- ftd.text: 
+color: #353f4f
+role: $inherited.types.label-large
+text-align: start
+
+$stack.body
+
+-- end: ftd.column
+
+-- end: stack
+
+
+
+
+
+
+
+
+
 -- component service:
 caption title:
 body body:
@@ -478,7 +518,7 @@ align-self: center
 align-content: center
 margin-horizontal.px if { ftd.device == "desktop" }: 100
 padding-horizontal.px: 20
-padding-vertical.px: 96
+padding-top.px: 96
 
 -- ftd.column:
 margin-bottom.px if { ftd.device == "desktop" }: 16
@@ -583,18 +623,17 @@ string text3:
 string head4:
 string text4:
 ftd.type-data types: $opensans-typography.types
-body body:
 
--- ftd.column:
+-- ftd.row:
+margin-horizontal.px: 139
 width: fill-container
-padding-left.px: 200
-padding-right.px: 200
-padding-top.px: 100
 background.solid: #111827
 align-self: center
 align-content: center
 
 -- ftd.row:
+padding-horizontal.px: 20
+padding-vertical.px: 96
 spacing.fixed.px: 200
 
 -- ftd.column:
@@ -651,23 +690,47 @@ role: $inherited.types.label-large
 
 -- end: ftd.row
 
+-- end: ftd.row
+
+-- end: dashboard
+
+
+
+
+
+
+
+
+
+-- component dash2:
+body body:
+
 -- ftd.row:
-padding.px: 150
+padding-vertical.px: 96
+padding-horizontal.px: 20
+width: fill-container
+background.solid: #111827
+align-self: center
+align-content: center
+
+-- ftd.row:
+margin-horizontal.px: 240
 
 -- ftd.text: 
 role: $inherited.types.heading-small
 color: #9CA3AF
+padding-right.px: 64
 
-$dashboard.body
+$dash2.body
 
 -- button: Apply
 url: https://bit.ly/Zindot
 
 -- end: ftd.row
 
--- end: ftd.column
+-- end: ftd.row
 
--- end: dashboard
+-- end: dash2
 
 
 
@@ -682,10 +745,9 @@ url: https://bit.ly/Zindot
 ftd.type-data types: $opensans-typography.types
 
 -- ftd.column: 
+margin-horizontal.px: 139
 width: fill-container
-padding-left.px: 200
-padding-right.px: 200
-padding-top.px: 100
+padding-vertical.px: 96
 padding-bottom.px: 30
 align-self: center
 align-content: center
@@ -693,98 +755,123 @@ align-content: center
 -- ftd.text: Testimonials
 role: $inherited.types.heading-large
 text-align: center
+margin-bottom.px: 48
 
--- ftd.row:
-padding.px: 30
+-- ftd.column:
+if: { ftd.device == "mobile" }
 spacing.fixed.px: 50
 
--- ftd.column:
-padding.px: 30
-shadow: $common.box
-background.solid: white
+-- test-card:
+quote: $assets.files.images.quote.png
+logo: $assets.files.images.logo.png
+name: Muhammed Nowfal
+role: Director | Evergreen Interiors
 
--- ftd.image:
-src: $assets.files.images.quote.png
-height.fixed.px: 30
-width.fixed.px: 30
+Zindot helped me take my business online. They designed a modern website that showcased 
+my interior design projects as well as for my e-commerce needs. It really helped my 
+business.
 
--- ftd.text: 
-role: $inherited.types.label-large
-
-Zindot helped me take my business online. They designed a modern website that 
-showcased my interior design projects as well as for my e-commerce needs. It really helped
-my business.
-
--- ftd.row:
-padding-top.px: 30
-
--- ftd.image:
-src: $assets.files.images.logo.png
-height.fixed.px: 50
-width.fixed.px: 50
-padding-top.px: 10
-
--- ftd.column:
-padding.px: 10
-
--- ftd.text: Muhammed Nowfal
-role: $inherited.types.label-large
-
--- ftd.text: Director | Evergreen Interiors
-role: $inherited.types.label-large
-
--- end: ftd.column
-
--- end: ftd.row
-
--- end: ftd.column
-
--- ftd.column:
-shadow: $common.box
-padding.px: 30
-background.solid: white
-
--- ftd.image:
-src: $assets.files.images.quote.png
-height.fixed.px: 30
-width.fixed.px: 30
-
--- ftd.text: 
-role: $inherited.types.label-large
+-- test-card:
+quote: $assets.files.images.quote.png
+logo: $assets.files.images.logo.png
+name: Sarath M
+role: Research Student | CUSAT
 
 Zindot helped me in developing a prototype for my research project in a very 
 short time. They also helped me with insights for the further development and helped me 
 acheive grants for the same.
 
+-- end: ftd.column
+
 -- ftd.row:
-padding-top.px: 30
+if: { ftd.device == "desktop" }
+margin-horizontal.px: 139
+spacing.fixed.px: 50
 
--- ftd.image:
-src: $assets.files.images.logo.png
-height.fixed.px: 50
-width.fixed.px: 50
-padding-top.px: 10
+-- test-card:
+quote: $assets.files.images.quote.png
+logo: $assets.files.images.logo.png
+name: Muhammed Nowfal
+role: Director | Evergreen Interiors
 
--- ftd.column:
-padding.px: 10
+Zindot helped me take my business online. They designed a modern website that showcased 
+my interior design projects as well as for my e-commerce needs. It really helped my 
+business.
 
--- ftd.text: Sarath M
-role: $inherited.types.label-large
+-- test-card:
+quote: $assets.files.images.quote.png
+logo: $assets.files.images.logo.png
+name: Sarath M
+role: Research Student | CUSAT
 
--- ftd.text: Research Student | CUSAT
-role: $inherited.types.label-large
-
--- end: ftd.column
-
--- end: ftd.row
-
--- end: ftd.column
+Zindot helped me in developing a prototype for my research project in a very 
+short time. They also helped me with insights for the further development and helped me 
+acheive grants for the same.
 
 -- end: ftd.row
 
 -- end: ftd.column
 
 -- end: testimonial
+
+
+
+
+
+
+
+
+
+-- component test-card:
+ftd.image-src quote:
+body body:
+ftd.image-src logo:
+string name:
+string role:
+
+
+-- ftd.column:
+padding.px: 30
+shadow: $common.box
+background.solid: white
+
+-- ftd.image:
+src: $test-card.quote
+height.fixed.px: 30
+width.fixed.px: 30
+
+-- ftd.text: 
+role: $inherited.types.label-large
+
+$test-card.body
+
+-- ftd.row:
+padding-top.px: 30
+
+-- ftd.image:
+src: $test-card.logo
+height.fixed.px: 50
+width.fixed.px: 50
+padding-top.px: 10
+
+-- ftd.column:
+padding.px: 10
+
+-- ftd.text: $test-card.name
+role: $inherited.types.label-large
+
+-- ftd.text: $test-card.role
+role: $inherited.types.label-large
+
+-- end: ftd.column
+
+-- end: ftd.row
+
+-- end: ftd.column
+
+-- end: test-card
+
+
 
 
 
@@ -935,47 +1022,6 @@ role: $inherited.types.heading-medium
 -- end: ftd.row
 
 -- end: footer
-
-
-
-
-
-
-
-
-
-
--- component stack:
-ftd.image-src icon:
-caption title:
-body body:
-ftd.type-data types: $opensans-typography.types
-
--- ftd.column:
-width : fill-container
-padding-horizontal.px: 32
-padding-vertical.px: 24
-
--- ftd.image:
-src: $stack.icon
-height.fixed.px: 50
-width.fixed.px: 50
-
--- ftd.text: $stack.title
-text-align: start
-role: $inherited.types.heading-tiny
-
-
--- ftd.text: 
-color: #353f4f
-role: $inherited.types.label-large
-text-align: start
-
-$stack.body
-
--- end: ftd.column
-
--- end: stack
 
 
 
