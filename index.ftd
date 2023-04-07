@@ -25,7 +25,7 @@ to students and industrialists and undertake projects offering the best standard
 is a one stop destination for all your technical requirements!
 
 -- ftd.row:
-margin-horizontal.px: 100
+margin-horizontal.px if { ftd.device == "desktop" }: 100
 
 -- lib.stack: Embedded system and PCB design
 icon: $assets.files.images.embedded.png
@@ -72,9 +72,8 @@ title: Zindot-in-Educational-Services
 it’s transformational.” – George Couros
 
 -- ftd.row:
-margin-horizontal.px: 100
+margin-horizontal.px if { ftd.device == "desktop" }: 100
 margin-bottom.px: 50
-width: fill-container
 
 -- lib.item: Skill & Placement Training
 icon: $assets.files.images.skillicon.png

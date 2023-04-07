@@ -57,7 +57,6 @@ ftd.type-data types: $opensans-typography.types
 
 -- ftd.row:
 align-content: left
-max-width.fixed.px: 1480
 height.fixed.px: 68
 width: fill-container
 padding-horizontal.px: 20 
@@ -263,8 +262,7 @@ width: fill-container
 background.image: $assets.files.images.bgimg.jpg
 
 -- ftd.row:
-max-width.fixed.px: 1240
-max-height.fixed.px: 776
+max-width.fixed.px if { ftd.device == "desktop" }: 1240
 width: fill-container
 padding-horizontal.px: 20
 padding-vertical.px: 96
@@ -369,9 +367,11 @@ children: $about.wrap
 -- component service:
 caption title:
 body body:
+children wrap:
 ftd.type-data types: $opensans-typography.types
 
 -- ftd.column:
+width: fill-container
 align-self: center
 align-content: center
 margin-horizontal.px if { ftd.device == "desktop" }: 100
@@ -388,15 +388,29 @@ margin-bottom.px: 16
 
 -- end: ftd.column
 
+-- ftd.column:
+margin-horizontal.px if { ftd.device == "desktop" }: 300
+
 -- ftd.text: 
 align-self: center
 role: $inherited.types.heading-tiny
-margin-horizontal.px if { ftd.device == "desktop" }: 300
 text-align: center
 
 $service.body
 
 -- end: ftd.column
+
+-- ftd.row:
+wrap: true
+width: fill-container
+align-self: center
+align-content: center
+children: $service.wrap
+
+-- end: ftd.row
+
+-- end: ftd.column
+
 -- end: service
 
 
@@ -415,6 +429,7 @@ body body:
 ftd.type-data types: $opensans-typography.types
 
 -- ftd.column:
+width: fill-container
 padding-horizontal.px: 16
 padding-vertical.px: 16
 align-content: center
@@ -833,7 +848,7 @@ ftd.type-data types: $opensans-typography.types
 -- ftd.column:
 width : fill-container
 padding-horizontal.px: 32
-padding-vertical.px:24
+padding-vertical.px: 24
 
 -- ftd.image:
 src: $stack.icon
