@@ -315,14 +315,14 @@ padding-vertical.px: 96
 margin-bottom.px: 64
 
 -- ftd.text: $hero-mobile.title
-color: #000000
+color: #303030
 max-width.fixed.px: 576
 role: $inherited.types.heading-large
 text-align: center
 
 
 -- ftd.text: $hero-mobile.cta-text-1
-color: #000000
+color: #303030
 role: $inherited.types.heading-small 
 padding-vertical.px: 10
 text-align: center
@@ -382,13 +382,13 @@ margin-horizontal.px: 139
 padding-right.px: 96
 
 -- ftd.text: $hero-desk.title
-color: #000000
+color: #303030
 max-width.fixed.px: 576
 role: $inherited.types.heading-large
 
 
 -- ftd.text: $hero-desk.cta-text-1
-color: #000000
+color: #303030
 role: $inherited.types.heading-small 
 padding-vertical.px: 10
 
@@ -440,7 +440,7 @@ id: services
 background.solid: white
 
 -- ftd.text: $about.title
-color: #000000
+color: #303030
 role: $inherited.types.heading-large
 
 -- ftd.text: 
@@ -493,6 +493,7 @@ width.fixed.px: 50
 -- ftd.text: $stack.title
 text-align: start
 role: $inherited.types.heading-tiny
+color: #303030
 
 
 -- ftd.text: 
@@ -532,7 +533,7 @@ padding-top.px: 96
 margin-bottom.px if { ftd.device == "desktop" }: 16
 
 -- ftd.text: $service.title
-color: #000000
+color: #303030
 role: $inherited.types.heading-large
 margin-bottom.px: 16
 align-self: center
@@ -600,6 +601,7 @@ margin-bottom.px: 20
 role: $inherited.types.heading-tiny
 text-align: center
 margin-bottom.px: 12
+color: #303030
 
 -- ftd.text:
 color: #353f4f
