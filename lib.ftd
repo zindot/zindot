@@ -995,6 +995,7 @@ align-content: center
 role: $inherited.types.heading-large
 text-align: center
 margin-bottom.px: 48
+color: #303030
 
 -- ftd.column:
 if: { ftd.device == "mobile" }
@@ -1135,6 +1136,7 @@ id: contact
 role: $inherited.types.heading-large
 text-align: center
 margin-bottom.px: 16 
+color: #303030
 
 -- ftd.text: Contact us regarding any queries
 role: $inherited.types.heading-tiny
