@@ -368,17 +368,24 @@ body cta-text-1:
 ftd.type-data types: $opensans-typography.types
 
 -- ftd.column:
+align-self: center
+align-content: center
 width: fill-container
 background.image: $assets.files.images.bgimg.jpg
 
 -- ftd.row:
+align-self: center
+align-content: center
+width: fill-container
 max-width.fixed.px: 1240
 padding-left.px: 20
 padding-vertical.px: 96
 margin-horizontal.px: 139
 
 -- ftd.column:
-padding-right.px: 96
+align-self: start
+align-content: left
+width: fill-container
 
 -- ftd.text: $hero-desk.title
 color: #303030
@@ -782,19 +789,24 @@ string text4:
 ftd.type-data types: $opensans-typography.types
 
 -- ftd.row:
-margin-horizontal.px: 139
 width: fill-container
+margin-horizontal.px: 139
 background.solid: #111827
 align-self: center
 align-content: center
 
 -- ftd.row:
+width: fill-container
 padding-horizontal.px: 20
 padding-vertical.px: 96
-spacing.fixed.px: 200
+;; spacing.fixed.px: 200
+align-content: center
+align-self: center
 
 -- ftd.column:
 align-content: center
+align-self: center
+width: fill-container
 
 -- ftd.text: $counter-desktop.head1
 role: $inherited.types.heading-large
@@ -808,6 +820,8 @@ role: $inherited.types.label-large
 
 -- ftd.column:
 align-content: center
+align-self: center
+width: fill-container
 
 -- ftd.text: $counter-desktop.head2
 role: $inherited.types.heading-large
@@ -821,6 +835,8 @@ role: $inherited.types.label-large
 
 -- ftd.column:
 align-content: center
+align-self: center
+width: fill-container
 
 -- ftd.text: $counter-desktop.head3
 role: $inherited.types.heading-large
@@ -834,6 +850,8 @@ role: $inherited.types.label-large
 
 -- ftd.column:
 align-content: center
+align-self: center
+width: fill-container
 
 -- ftd.text: $counter-desktop.head4
 role: $inherited.types.heading-large
@@ -937,24 +955,25 @@ body content:
 ftd.type-data types: $opensans-typography.types
 
 -- ftd.row:
+width: fill-container
 padding-vertical.px: 96
 padding-horizontal.px: 20
-width: fill-container
 background.solid: #111827
 align-self: center
 align-content: center
 
 -- ftd.row:
-margin-horizontal.px: 340
+margin-horizontal.px: 140
+width: fill-container
 
 -- ftd.text: 
 role: $inherited.types.heading-small
 color: #9CA3AF
-padding-right.px: 64
 
 $dash-desktop.content
 
 -- ftd.column:
+align-self: center
 align-content: center
 
 -- button: Apply
