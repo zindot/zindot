@@ -373,7 +373,6 @@ background.image: $assets.files.images.bgimg.jpg
 
 -- ftd.row:
 max-width.fixed.px: 1240
-width: fill-container
 padding-horizontal.px: 20
 padding-vertical.px: 96
 margin-horizontal.px: 139
