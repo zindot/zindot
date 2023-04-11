@@ -1256,6 +1256,7 @@ align-content: left
 width: fill-container 
 spacing.fixed.px: 80
 margin-bottom.px: 10
+padding.px: 16
 
 -- ftd.row:
 align-self: start
