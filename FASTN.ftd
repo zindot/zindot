@@ -1,7 +1,7 @@
 -- import: fastn
 
 -- fastn.package: sarvom.github.io/zindot
-favicon: /images/zindot.png
+favicon: /images/zindotlogo.ico
 
 -- fastn.dependency: fastn-community.github.io/opensans-typography
 
