@@ -1,9 +1,10 @@
 -- import: fastn
 
 -- fastn.package: sarvom.github.io/zindot
+favicon: /images/zindot.png
 
 -- fastn.dependency: fastn-community.github.io/opensans-typography
 
 -- fastn.dependency: fifthtry.github.io/doc-site 
 
-favicon: /images/zindot.png
+
