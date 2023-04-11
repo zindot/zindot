@@ -1,0 +1,120 @@
+-- import: sarvom.github.io/zindot/assets
+-- import: sarvom.github.io/zindot/lib
+
+-- ftd.document: Zindot
+
+-- lib.navbar: 
+name: Zindot
+pic: $assets.files.images.zindot.png 
+text1: Home
+text2: Services
+text3: Training
+text4: Contact Us
+
+-- lib.hero: 
+title: Technology and Education Roads to a Brighter Future
+cta-text-1: Understand how the world works. Learn, Apply and Grow with us in every aspect of life.
+pic: $assets.files.images.zinint.png
+
+-- lib.about: About Us
+
+Zindot Technologies bring you a handful of services under one roof. From software 
+development to one-to-one mentoring for technical aspirants. We provide project assistance 
+to students and industrialists and undertake projects offering the best standards. Zindot 
+is a one stop destination for all your technical requirements!
+
+-- lib.service: Zindot-in-Educational-Services
+
+“Technology will never replace great teachers, but in the hands of great teachers, 
+it’s transformational.” – George Couros
+
+-- ftd.column:
+if: { ftd.device == "mobile" }
+
+-- lib.item: Skill & Placement Training
+icon: $assets.files.images.skillicon.png
+
+Never be doubtful about yourself again and get placed in good companies or work on 
+good projects. Zindot offers many programmes for technical and professional upskilling of 
+students as well as graduates. With hands-on-experience on tailored projects from beginner 
+to advanced level, explore the 'GREAT' in you!
+
+-- lib.item: Faculty Development Programmes
+icon: $assets.files.images.placement.png
+
+To all the talented and beloved faculty members and professors out there... we have 
+the perfect programme for your timely updation in this technical world. Zindot offers 
+faculty development programmes(FDP) for faculty members in technological or professional 
+institutes. FDPs are tailored to requirements and are delivered offline and online.
+
+-- lib.item: Project Assistance
+icon: $assets.files.images.projectassist.png
+
+Never ever be worried about the technical feasibility of your project when Zindot's 
+here. Zindot provides technical assistance and facilities to technical and research 
+oriented projects of students and even faculty members so you can work on that dream project.
+
+-- end: ftd.column
+
+-- ftd.row:
+if: { ftd.device == "desktop" }
+margin-horizontal.px: 100
+
+-- lib.item: Skill & Placement Training
+icon: $assets.files.images.skillicon.png
+
+Never be doubtful about yourself again and get placed in good companies or work on 
+good projects. Zindot offers many programmes for technical and professional upskilling of 
+students as well as graduates. With hands-on-experience on tailored projects from beginner 
+to advanced level, explore the 'GREAT' in you!
+
+-- lib.item: Faculty Development Programmes
+icon: $assets.files.images.placement.png
+
+To all the talented and beloved faculty members and professors out there... we have 
+the perfect programme for your timely updation in this technical world. Zindot offers 
+faculty development programmes(FDP) for faculty members in technological or professional 
+institutes. FDPs are tailored to requirements and are delivered offline and online.
+
+-- lib.item: Project Assistance
+icon: $assets.files.images.projectassist.png
+
+Never ever be worried about the technical feasibility of your project when Zindot's 
+here. Zindot provides technical assistance and facilities to technical and research 
+oriented projects of students and even faculty members so you can work on that dream project.
+
+-- end: ftd.row
+
+-- ftd.row:
+align-self: center
+align-content: center
+margin-bottom.px: 50
+width: fill-container
+
+-- lib.button: Know More
+url: /training
+
+-- end: ftd.row
+
+-- lib.counter:
+head1: 55
+text1: Projects
+head2: 21
+text2: Clients
+head3: 1200+
+text3: Students Trained
+head4: 10+
+text4: Training Programs
+
+-- lib.dash:
+
+Are you ready to Kickstart and Pump your Career? Apply for any training 
+programme by completing the form
+
+-- lib.testimonial:
+
+-- lib.contact:
+
+-- lib.footer:
+
+-- end: ftd.document

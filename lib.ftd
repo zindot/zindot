@@ -1,0 +1,1349 @@
+-- import: sarvom.github.io/zindot/assets
+-- import: fastn-community.github.io/opensans-typography
+-- import: sarvom.github.io/zindot/common
+
+-- component navbar:
+caption name:
+string text1:
+string text2:
+string text3:
+string text4:
+ftd.image-src pic:
+ftd.type-data types: $opensans-typography.types
+
+-- ftd.column:
+width: fill-container
+
+-- navbar-mobile:
+if: { ftd.device == "mobile" }
+name: $navbar.name
+text1: $navbar.text1
+text2: $navbar.text2
+text3: $navbar.text3
+text4: $navbar.text4
+pic: $navbar.pic
+types: $navbar.types
+
+-- navbar-desktop:
+if: { ftd.device == "desktop" }
+name: $navbar.name
+text1: $navbar.text1
+text2: $navbar.text2
+text3: $navbar.text3
+text4: $navbar.text4
+pic: $navbar.pic
+types: $navbar.types
+
+-- end: ftd.column
+
+-- end: navbar
+
+
+
+
+
+
+
+
+
+-- component navbar-desktop:
+caption name:
+string text1:
+string text2:
+string text3:
+string text4:
+ftd.image-src pic:
+ftd.type-data types: $opensans-typography.types
+
+-- ftd.row:
+align-content: left
+height.fixed.px: 68
+width: fill-container
+padding-horizontal.px: 20 
+padding-vertical.px: 16
+spacing.fixed.px: 40
+types: $opensans-typography.types
+shadow: $common.navbar
+background.solid: #ffffff99
+sticky: true
+
+-- ftd.row:
+align-self: start
+width: fill-container
+types: $opensans-typography.types
+
+-- ftd.image:
+height.fixed.px: 32
+src: $navbar-desktop.pic
+
+-- ftd.text: $navbar-desktop.name
+padding-left.px: 10
+color: #57028f
+margin-bottom.px: 10
+role: $inherited.types.heading-small
+
+-- end: ftd.row
+
+-- ftd.text: $navbar-desktop.text1
+color: #c091fb
+role: $inherited.types.label-large
+text-align: center
+white-space: nowrap
+link: /zindot/
+
+-- ftd.text: $navbar-desktop.text2
+color: #c091fb
+role: $inherited.types.label-large
+text-align: center
+white-space: nowrap
+link: index.html#services
+
+-- ftd.text: $navbar-desktop.text3
+color: #c091fb
+role: $inherited.types.label-large
+text-align: center
+white-space: nowrap
+link: training/
+
+-- ftd.text: $navbar-desktop.text4
+color: #c091fb
+role: $inherited.types.label-large
+text-align: center
+white-space: nowrap
+link: index.html#contact
+
+-- end: ftd.row
+
+-- end: navbar-desktop
+
+
+
+
+
+
+
+
+
+
+-- component navbar-mobile:
+caption name:
+string text1:
+string text2:
+string text3:
+string text4:
+ftd.image-src pic:
+ftd.image-src menu: $assets.files.images.menu.png
+ftd.image-src close: $assets.files.images.close.png
+ftd.type-data types: $opensans-typography.types
+boolean $open: false
+
+-- ftd.column:
+padding.px: 20
+width: fill-container
+height: hug-content
+shadow: $common.navbar
+background.solid: #ffffff
+
+-- ftd.row:
+spacing.fixed.px: 80
+
+-- ftd.row:
+align-self: start
+width: fill-container
+types: $opensans-typography.types
+
+-- ftd.image:
+height.fixed.px: 32
+src: $navbar-mobile.pic
+
+-- ftd.text: $navbar-mobile.name
+padding-horizontal.px: 10
+color: #57028f
+margin-bottom.px: 10
+role: $inherited.types.heading-small
+
+-- end: ftd.row
+
+-- ftd.row:
+margin-left.px: 80
+
+-- ftd.image:
+if: { !navbar-mobile.open }
+height.fixed.px: 32
+src: $navbar-mobile.menu
+$on-click$: $ftd.set-bool($a = $navbar-mobile.open, v = true)
+
+-- ftd.image:
+if: { navbar-mobile.open }
+height.fixed.px: 32
+src: $navbar-mobile.close
+$on-click$: $ftd.set-bool($a = $navbar-mobile.open, v = false)
+
+-- end: ftd.row
+
+-- end: ftd.row
+
+-- ftd.column:
+if: { navbar-mobile.open}
+width: fill-container
+
+-- ftd.text: $navbar-mobile.text1
+color: #c091fb
+role: $inherited.types.label-large
+text-align: center
+white-space: nowrap
+link: /zindot/
+
+-- ftd.text: $navbar-mobile.text2
+color: #c091fb
+role: $inherited.types.label-large
+text-align: center
+white-space: nowrap
+link: index.html#services
+
+-- ftd.text: $navbar-mobile.text3
+color: #c091fb
+role: $inherited.types.label-large
+text-align: center
+white-space: nowrap
+link: training/
+
+-- ftd.text: $navbar-mobile.text4
+color: #c091fb
+role: $inherited.types.label-large
+text-align: center
+white-space: nowrap
+link: index.html#contact
+
+-- end: ftd.column
+
+-- end: ftd.column
+
+-- end: navbar-mobile
+
+
+
+
+
+
+
+
+
+
+-- component button:
+caption name:
+string url:
+
+-- ftd.text: $button.name
+role: $inherited.types.label-large
+text-align: center
+padding-left.px: 30
+padding-right.px: 30
+padding-top.px: 10
+padding-bottom.px: 10
+border-width.px: 1
+border-radius.px: 10
+background.solid: #A855F7
+border-color: #c091fb
+color: white
+link: $button.url
+
+-- end: button
+
+
+
+
+
+
+
+
+
+
+-- component hero:
+ftd.image-src pic:
+caption title:
+body cta-text-1:
+ftd.type-data types: $opensans-typography.types
+
+-- ftd.column:
+width: fill-container
+background.image: $assets.files.images.bgimg.jpg
+
+-- hero-mobile:
+if: { ftd.device == "mobile" }
+pic: $hero.pic
+title: $hero.title
+cta-text-1: $hero.cta-text-1
+types: $hero.types
+
+-- hero-desk:
+if: { ftd.device == "desktop" }
+pic: $hero.pic
+title: $hero.title
+cta-text-1: $hero.cta-text-1
+types: $hero.types
+
+-- end: ftd.column
+
+-- end: hero
+
+
+
+
+
+
+
+
+
+
+-- component hero-mobile:
+ftd.image-src pic:
+caption title:
+body cta-text-1:
+ftd.type-data types: $opensans-typography.types
+
+-- ftd.column:
+width: fill-container
+background.image: $assets.files.images.bgimg.jpg
+
+-- ftd.column:
+width: fill-container
+padding-horizontal.px: 20
+padding-vertical.px: 96
+
+-- ftd.column:
+margin-bottom.px: 64
+
+-- ftd.text: $hero-mobile.title
+color: #303030
+max-width.fixed.px: 576
+role: $inherited.types.heading-large
+text-align: center
+
+
+-- ftd.text: $hero-mobile.cta-text-1
+color: #303030
+role: $inherited.types.heading-small 
+padding-vertical.px: 10
+text-align: center
+
+-- ftd.row:
+spacing.fixed.px: 10
+align-self: center
+
+-- button: Services
+url: index.html#services
+-- button: Training
+url: training/
+
+-- end: ftd.row
+
+-- end: ftd.column
+
+-- ftd.image: 
+height.fixed.px: 267
+width.fixed.px: 322
+src: $hero-mobile.pic
+align-self: center
+
+-- end: ftd.column
+
+-- end: ftd.column
+
+-- end: hero-mobile
+
+
+
+
+
+
+
+
+
+
+-- component hero-desk:
+ftd.image-src pic:
+caption title:
+body cta-text-1:
+ftd.type-data types: $opensans-typography.types
+
+-- ftd.column:
+align-self: center
+align-content: center
+width: fill-container
+background.image: $assets.files.images.bgimg.jpg
+
+-- ftd.row:
+align-self: center
+align-content: center
+width: fill-container
+max-width.fixed.px: 1240
+padding-left.px: 20
+padding-vertical.px: 96
+margin-horizontal.px: 139
+
+-- ftd.column:
+align-self: start
+align-content: left
+width: fill-container
+
+-- ftd.text: $hero-desk.title
+color: #303030
+max-width.fixed.px: 576
+role: $inherited.types.heading-large
+
+
+-- ftd.text: $hero-desk.cta-text-1
+color: #303030
+role: $inherited.types.heading-small 
+padding-vertical.px: 10
+
+-- ftd.row:
+spacing.fixed.px: 10
+
+-- button: Services
+url: index.html#services
+-- button: Training
+url: training/
+
+-- end: ftd.row
+
+-- end: ftd.column
+
+-- ftd.image: 
+height.fixed.px: 450
+width.fixed.px: 512
+src: $hero-desk.pic
+
+-- end: ftd.row
+
+-- end: ftd.column
+
+-- end: hero-desk
+
+
+
+
+
+
+
+
+
+-- component about:
+caption title:
+body body:
+ftd.type-data types: $opensans-typography.types
+children wrap:
+
+-- ftd.column:
+margin-horizontal.px if { ftd.device == "desktop" }: 100
+
+-- ftd.column:
+align-content: center
+padding-vertical.px: 96
+padding-horizontal.px: 20
+id: services
+background.solid: white
+
+-- ftd.text: $about.title
+color: #303030
+role: $inherited.types.heading-large
+
+-- ftd.text: 
+align-self: center
+role: $inherited.types.heading-tiny
+margin-top.px: 8
+margin-horizontal.px if { ftd.device == "desktop" }: 192
+text-align: center
+
+$about.body
+
+-- end: ftd.column
+
+-- ftd.row:
+wrap: true
+width: fill-container
+align-self: center
+align-content: center
+children: $about.wrap
+
+-- end: ftd.column
+
+-- end: about
+
+
+
+
+
+
+
+
+
+
+-- component stack:
+ftd.image-src icon:
+caption title:
+body body:
+ftd.type-data types: $opensans-typography.types
+
+-- ftd.column:
+width : fill-container
+padding-horizontal.px: 32
+padding-vertical.px: 24
+
+-- ftd.image:
+src: $stack.icon
+height.fixed.px: 50
+width.fixed.px: 50
+
+-- ftd.text: $stack.title
+text-align: start
+role: $inherited.types.heading-tiny
+color: #303030
+
+
+-- ftd.text: 
+color: #353f4f
+role: $inherited.types.label-large
+text-align: start
+
+$stack.body
+
+-- end: ftd.column
+
+-- end: stack
+
+
+
+
+
+
+
+
+
+-- component service:
+caption title:
+body body:
+children wrap:
+ftd.type-data types: $opensans-typography.types
+
+-- ftd.column:
+width: fill-container
+align-self: center
+align-content: center
+margin-horizontal.px if { ftd.device == "desktop" }: 100
+padding-horizontal.px: 20
+padding-top.px: 96
+
+-- ftd.column:
+margin-bottom.px if { ftd.device == "desktop" }: 16
+
+-- ftd.text: $service.title
+color: #303030
+role: $inherited.types.heading-large
+margin-bottom.px: 16
+align-self: center
+text-align if { ftd.device == "mobile" }: center
+
+-- end: ftd.column
+
+-- ftd.column:
+margin-horizontal.px if { ftd.device == "desktop" }: 300
+
+-- ftd.text: 
+align-self: center
+role: $inherited.types.heading-tiny
+text-align: center
+
+$service.body
+
+-- end: ftd.column
+
+-- ftd.row:
+margin-horizontal.px if { ftd.device == "desktop" }: 100
+margin-bottom.px: 50
+wrap: true
+width: fill-container
+align-self: center
+align-content: center
+children: $service.wrap
+
+-- end: ftd.row
+
+-- end: ftd.column
+
+-- end: service
+
+
+
+
+
+
+
+
+
+
+-- component item:
+ftd.image-src icon:
+caption title:
+body body:
+ftd.type-data types: $opensans-typography.types
+
+-- ftd.column:
+width: fill-container
+padding-horizontal.px: 16
+padding-vertical.px: 16
+align-content: center
+types: $opensans-typography.types
+
+-- ftd.image:
+src: $item.icon
+height.fixed.px: 80
+width.fixed.px: 80
+align-self: center
+margin-bottom.px: 20
+
+-- ftd.text: $item.title
+role: $inherited.types.heading-tiny
+text-align: center
+margin-bottom.px: 12
+color: #303030
+
+-- ftd.text:
+color: #353f4f
+role: $inherited.types.copy-small
+text-align: justify
+
+$item.body
+
+-- end: ftd.column
+
+-- end: item
+
+
+
+
+
+
+
+
+
+
+-- component counter:
+string head1:
+string text1:
+string head2:
+string text2:
+string head3:
+string text3:
+string head4:
+string text4:
+ftd.type-data types: $opensans-typography.types
+
+-- ftd.column:
+width: fill-container
+
+-- counter-mobile:
+if: { ftd.device == "mobile" }
+head1: $counter.head1
+text1: $counter.text1
+head2: $counter.head2
+text2: $counter.text2
+head3: $counter.head3
+text3: $counter.text3
+head4: $counter.head4
+text4: $counter.text4
+types: $counter.types
+
+-- counter-desktop:
+if: { ftd.device == "desktop" }
+head1: $counter.head1
+text1: $counter.text1
+head2: $counter.head2
+text2: $counter.text2
+head3: $counter.head3
+text3: $counter.text3
+head4: $counter.head4
+text4: $counter.text4
+types: $counter.types
+
+-- end: ftd.column
+
+-- end: counter
+
+
+
+
+
+
+
+
+
+
+-- component counter-mobile:
+string head1:
+string text1:
+string head2:
+string text2:
+string head3:
+string text3:
+string head4:
+string text4:
+ftd.type-data types: $opensans-typography.types
+
+-- ftd.row:
+margin-horizontal.px: 139
+width: fill-container
+background.solid: #111827
+align-self: center
+align-content: center
+
+-- ftd.column:
+padding-horizontal.px: 20
+padding-vertical.px: 96
+spacing.fixed.px: 200
+
+-- ftd.column:
+align-content: center
+
+-- ftd.text: $counter-mobile.head1
+role: $inherited.types.heading-large
+color: #d0279f
+
+-- ftd.text: $counter-mobile.text1
+color: #9CA3AF
+role: $inherited.types.label-large
+
+-- end: ftd.column
+
+-- ftd.column:
+align-content: center
+
+-- ftd.text: $counter-mobile.head2
+role: $inherited.types.heading-large
+color: #d0279f
+
+-- ftd.text: $counter-mobile.text2
+color: #9CA3AF
+role: $inherited.types.label-large
+
+-- end: ftd.column
+
+-- end: ftd.column
+
+-- ftd.column:
+padding-horizontal.px: 20
+padding-vertical.px: 96
+spacing.fixed.px: 200
+
+-- ftd.column:
+align-content: center
+
+-- ftd.text: $counter-mobile.head3
+role: $inherited.types.heading-large
+color: #d0279f
+
+-- ftd.text: $counter-mobile.text3
+color: #9CA3AF
+role: $inherited.types.label-large
+
+-- end: ftd.column
+
+-- ftd.column:
+align-content: center
+
+-- ftd.text: $counter-mobile.head4
+role: $inherited.types.heading-large
+color: #d0279f
+
+-- ftd.text: $counter-mobile.text4
+color: #9CA3AF
+role: $inherited.types.label-large
+
+-- end: ftd.column
+
+-- end: ftd.column
+
+-- end: ftd.row
+
+-- end: counter-mobile
+
+
+
+
+
+
+
+
+
+
+-- component counter-desktop:
+string head1:
+string text1:
+string head2:
+string text2:
+string head3:
+string text3:
+string head4:
+string text4:
+ftd.type-data types: $opensans-typography.types
+
+-- ftd.row:
+width: fill-container
+margin-horizontal.px: 139
+background.solid: #111827
+align-self: center
+align-content: center
+
+-- ftd.row:
+width: fill-container
+padding-horizontal.px: 20
+padding-vertical.px: 96
+;; spacing.fixed.px: 200
+align-content: center
+align-self: center
+
+-- ftd.column:
+align-content: center
+align-self: center
+width: fill-container
+
+-- ftd.text: $counter-desktop.head1
+role: $inherited.types.heading-large
+color: #d0279f
+
+-- ftd.text: $counter-desktop.text1
+color: #9CA3AF
+role: $inherited.types.label-large
+
+-- end: ftd.column
+
+-- ftd.column:
+align-content: center
+align-self: center
+width: fill-container
+
+-- ftd.text: $counter-desktop.head2
+role: $inherited.types.heading-large
+color: #d0279f
+
+-- ftd.text: $counter-desktop.text2
+color: #9CA3AF
+role: $inherited.types.label-large
+
+-- end: ftd.column
+
+-- ftd.column:
+align-content: center
+align-self: center
+width: fill-container
+
+-- ftd.text: $counter-desktop.head3
+role: $inherited.types.heading-large
+color: #d0279f
+
+-- ftd.text: $counter-desktop.text3
+color: #9CA3AF
+role: $inherited.types.label-large
+
+-- end: ftd.column
+
+-- ftd.column:
+align-content: center
+align-self: center
+width: fill-container
+
+-- ftd.text: $counter-desktop.head4
+role: $inherited.types.heading-large
+color: #d0279f
+
+-- ftd.text: $counter-desktop.text4
+color: #9CA3AF
+role: $inherited.types.label-large
+
+-- end: ftd.column
+
+-- end: ftd.row
+
+-- end: ftd.row
+
+-- end: counter-desktop
+
+
+
+
+
+
+
+
+
+
+-- component dash:
+body content:
+ftd.type-data types: $opensans-typography.types
+
+-- ftd.column:
+
+-- dash-mobile:
+if: { ftd.device == "mobile" }
+content: $dash.content
+types: $dash.types
+
+-- dash-desktop:
+if: { ftd.device == "desktop" }
+content: $dash.content
+types: $dash.types
+
+-- end: ftd.column
+
+-- end: dash
+
+
+
+
+
+
+
+
+
+
+-- component dash-mobile:
+body content:
+ftd.type-data types: $opensans-typography.types
+
+-- ftd.row:
+padding-vertical.px: 96
+padding-horizontal.px: 20
+width: fill-container
+background.solid: #111827
+align-self: center
+align-content: center
+
+-- ftd.column:
+margin-horizontal.px: 40
+
+-- ftd.text: 
+role: $inherited.types.heading-small
+color: #9CA3AF
+padding-right.px: 64
+
+$dash-mobile.content
+
+-- ftd.column:
+
+-- button: Apply
+url: https://bit.ly/Zindot
+
+-- end: ftd.column
+
+-- end: ftd.column
+
+-- end: ftd.row
+
+-- end: dash-mobile
+
+
+
+
+
+
+
+
+
+-- component dash-desktop:
+body content:
+ftd.type-data types: $opensans-typography.types
+
+-- ftd.row:
+width: fill-container
+padding-vertical.px: 96
+padding-horizontal.px: 20
+background.solid: #111827
+align-self: center
+align-content: center
+
+-- ftd.row:
+margin-horizontal.px: 140
+width: fill-container
+
+-- ftd.text: 
+role: $inherited.types.heading-small
+color: #9CA3AF
+
+$dash-desktop.content
+
+-- ftd.column:
+align-self: center
+align-content: center
+
+-- button: Apply
+url: https://bit.ly/Zindot
+
+-- end: ftd.column
+
+-- end: ftd.row
+
+-- end: ftd.row
+
+-- end: dash-desktop
+
+
+
+
+
+
+
+
+
+
+
+
+-- component testimonial:
+ftd.type-data types: $opensans-typography.types
+
+-- ftd.column: 
+margin-horizontal.px: 139
+width: fill-container
+padding-vertical.px: 96
+padding-bottom.px: 30
+align-self: center
+align-content: center
+
+-- ftd.text: Testimonials
+role: $inherited.types.heading-large
+text-align: center
+margin-bottom.px: 48
+color: #303030
+
+-- ftd.column:
+if: { ftd.device == "mobile" }
+spacing.fixed.px: 50
+
+-- test-card:
+quote: $assets.files.images.quote.png
+logo: $assets.files.images.logo.png
+name: Muhammed Nowfal
+role: Director | Evergreen Interiors
+
+Zindot helped me take my business online. They designed a modern website that showcased 
+my interior design projects as well as for my e-commerce needs. It really helped my 
+business.
+
+-- test-card:
+quote: $assets.files.images.quote.png
+logo: $assets.files.images.logo.png
+name: Sarath M
+role: Research Student | CUSAT
+
+Zindot helped me in developing a prototype for my research project in a very 
+short time. They also helped me with insights for the further development and helped me 
+acheive grants for the same.
+
+-- end: ftd.column
+
+-- ftd.row:
+if: { ftd.device == "desktop" }
+margin-horizontal.px: 139
+spacing.fixed.px: 50
+
+-- test-card:
+quote: $assets.files.images.quote.png
+logo: $assets.files.images.logo.png
+name: Muhammed Nowfal
+role: Director | Evergreen Interiors
+
+Zindot helped me take my business online. They designed a modern website that showcased 
+my interior design projects as well as for my e-commerce needs. It really helped my 
+business.
+
+-- test-card:
+quote: $assets.files.images.quote.png
+logo: $assets.files.images.logo.png
+name: Sarath M
+role: Research Student | CUSAT
+
+Zindot helped me in developing a prototype for my research project in a very 
+short time. They also helped me with insights for the further development and helped me 
+acheive grants for the same.
+
+-- end: ftd.row
+
+-- end: ftd.column
+
+-- end: testimonial
+
+
+
+
+
+
+
+
+
+-- component test-card:
+ftd.image-src quote:
+body body:
+ftd.image-src logo:
+string name:
+string role:
+
+
+-- ftd.column:
+padding.px: 30
+shadow: $common.box
+background.solid: white
+
+-- ftd.image:
+src: $test-card.quote
+height.fixed.px: 30
+width.fixed.px: 30
+
+-- ftd.text: 
+role: $inherited.types.label-large
+
+$test-card.body
+
+-- ftd.row:
+padding-top.px: 30
+
+-- ftd.image:
+src: $test-card.logo
+height.fixed.px: 50
+width.fixed.px: 50
+padding-top.px: 10
+
+-- ftd.column:
+padding.px: 10
+
+-- ftd.text: $test-card.name
+role: $inherited.types.label-large
+
+-- ftd.text: $test-card.role
+role: $inherited.types.label-large
+
+-- end: ftd.column
+
+-- end: ftd.row
+
+-- end: ftd.column
+
+-- end: test-card
+
+
+
+
+
+
+
+
+
+
+
+
+-- component contact:
+ftd.type-data types: $opensans-typography.types
+
+-- ftd.column:
+width: fill-container
+padding-vertical.px: 96
+align-self: center
+align-content: center
+id: contact
+
+-- ftd.text: Contact Us
+role: $inherited.types.heading-large
+text-align: center
+margin-bottom.px: 16 
+color: #303030
+
+-- ftd.text: Contact us regarding any queries
+role: $inherited.types.heading-tiny
+text-align: center
+
+
+-- ftd.column:
+padding-left.px: 20
+padding-right.px: 20
+padding-top.px: 50
+padding-bottom.px: 30
+
+-- ftd.row:
+padding-top.px: 50
+padding-bottom.px: 30
+spacing.fixed.px: 20
+
+-- ftd.text-input:
+placeholder: Name
+padding.px: 8
+width: fill-container
+height.fixed.px: 30
+border-radius.px: 5
+border-width.px: 1
+border-color: #C8C8C8
+shadow: $common.box
+type: text
+role: $inherited.types.copy-small
+
+-- ftd.text-input:
+placeholder: Email
+padding.px: 8
+width: fill-container
+height.fixed.px: 30
+border-width.px: 1
+border-radius.px: 5
+border-color: #C8C8C8
+shadow: $common.box
+type: text
+role: $inherited.types.copy-small
+
+-- end: ftd.row
+
+-- ftd.text-input:
+align-self: start
+placeholder: Message
+padding-horizontal.px: 10 
+width: fill-container
+height.fixed.px: 300
+border-width.px: 1
+border-radius.px: 5
+border-color: #9CA3AF
+shadow: $common.box
+type: text
+role: $inherited.types.copy-small
+
+-- end: ftd.column
+
+-- button: Send
+url: mailto: zindottechnologies@gmail.com <zindottechnologies@gmail.com>;
+
+-- ftd.column:
+padding-top.px: 50
+padding-bottom.px: 30
+align-self: center
+align-content: center
+
+-- ftd.text: info@zindot.in
+color: #000000
+role: $inherited.types.copy-large
+
+-- ftd.text: +91 6238296993
+padding-bottom.px: 50
+color: #9CA3AF
+role: $inherited.types.copy-large
+
+-- social-media:
+
+
+-- end: ftd.column
+
+-- end: ftd.column
+
+-- end: contact
+
+
+
+
+
+
+
+
+
+
+-- component footer:
+
+-- ftd.row:
+align-content: left
+width: fill-container 
+spacing.fixed.px: 80
+margin-bottom.px: 10
+padding.px: 16
+
+-- ftd.row:
+align-self: start
+width: fill-container
+
+-- ftd.image:
+src: $assets.files.images.zindot.png 
+height.fixed.px: 27
+width.fixed.px: 50
+
+-- ftd.text: **Zindot**
+padding-left.px: 10
+margin-bottom.px: 10
+color: #57028f
+role: $inherited.types.heading-small
+
+-- end: ftd.row
+
+-- social-media:
+
+-- end: ftd.row
+
+-- end: footer
+
+
+
+
+
+
+
+
+
+
+-- component social-media:
+
+-- ftd.row:
+spacing.fixed.px: 10
+
+
+-- ftd.image:
+src: $assets.files.images.insta.png
+height.fixed.px: 30
+width.fixed.px: 30
+color: #353f4f
+link: https://www.instagram.com/zindotinnovations/
+
+
+-- ftd.image:
+src: $assets.files.images.linkedin.png
+height.fixed.px: 30
+width.fixed.px: 30
+color: #353f4f
+link: https://www.linkedin.com/company/zindot/
+
+-- ftd.image:
+src: $assets.files.images.mail.png
+height.fixed.px: 30
+width.fixed.px: 30
+color: #353f4f
+link: mailto:info@zindot.in
+
+-- ftd.image:
+src: $assets.files.images.whatsapp.png
+height.fixed.px: 30
+width.fixed.px: 30
+color: #353f4f
+link: https://wa.me/916238296993
+
+-- end: ftd.row
+
+-- end: social-media
+
+
+
+
+
+
+
+
+
+-- component vertline:
+
+-- ftd.column:
+width.fixed.px: 1
+height.fixed.px: 350
+background.solid: #354243
+
+-- end: ftd.column
+
+-- end: vertline
