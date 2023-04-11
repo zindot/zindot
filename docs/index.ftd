@@ -1,14 +1,14 @@
 -- import: sarvom.github.io/zindot/assets
 -- import: sarvom.github.io/zindot/lib
 
--- ds.page: Welcome to your Zindot
+-- doc-site.page: Welcome to your Zindot
 
 -- ftd.column:
 align-self: center
 
 -- chat.message-left: Yo! I am Amit Upadhyay, CEO of FifthTry, welcome to the new world of FTD.
 
--- ds.markdown: 
+-- doc-site.markdown: 
 
 You reached the right place, and from here let me assure you, your FTD journey is going superfast. 🙂
 
@@ -25,27 +25,27 @@ You reached the right place, and from here let me assure you, your FTD journey i
 
 -- end: ftd.column
 
--- ds.h1: How to use?
+-- doc-site.h1: How to use?
 
 It's very simple like making a sandwich. Create new `.ftd` file and just say:
 
--- ds.code: `-- ds.page` 
+-- doc-site.code: `-- ds.page` 
 lang: ftd
 
-\-- ds.page: Your page title goes here
+\-- doc-site.page: Your page title goes here
 
 Your page content goes here.
 
 
--- ds.h1: Need sidebar at right side of page?
+-- doc-site.h1: Need sidebar at right side of page?
 
 Here it is, [use this document](https://fifthtry.github.io/doc-site/docs/right-sidebar/).
 
 
--- ds.h1: 👀 Learn FTD and become a pro?
+-- doc-site.h1: 👀 Learn FTD and become a pro?
 
 You are one click away, just check [our documentation](https://fastn.dev/) and 
 dont forget to jump into our [FifthTry Discord server](https://discord.gg/bucrdvptYd).
 
--- end: ds.page
+-- end: doc-site.page
 
