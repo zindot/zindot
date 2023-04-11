@@ -4,4 +4,6 @@
 
 -- fastn.dependency: fastn-community.github.io/opensans-typography
 
+-- fastn.dependency: fifthtry.github.io/doc-site 
+
 favicon: /images/zindot.png
