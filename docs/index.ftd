@@ -1,41 +1,192 @@
 -- import: sarvom.github.io/zindot/assets
 -- import: sarvom.github.io/zindot/lib
--- import: fifthtry.github.io/doc-site
+-- import: fifthtry.github.io/doc-site as ds
 
--- doc-site.page: Welcome to your Zindot
+-- ds.page: Zindot Documentation
+site-logo: $assets.files.images.zindot.png
 
--- ftd.column:
-align-self: center
+-- ds.page.body:
 
--- doc-site.markdown: 
+This document contains various components we have developed using `ftd`
+language.
 
--- ds.markdown:
+Below are a few sample components:
 
-[Click here to learn more](https://fifthtry.github.io/bling/chat/)
+-- ds.h3: Navbar Component
 
--- end: ftd.column
+We have developed the `navbar` component for [zindot.in](https://zindot.in/), 
+which matches the design currently displayed on the live site.
 
--- doc-site.h1: How to use?
+-- ds.rendered:
 
-It's very simple like making a sandwich. Create new `.ftd` file and just say:
+-- ds.rendered.input:
 
--- doc-site.code: `-- ds.page` 
-lang: ftd
+\-- lib.navbar: **Zindot**
+pic: $assets.files.images.zindot.png 
+text1: Home
+text2: Services
+text3: Training
+text4: Contact Us
 
-\-- doc-site.page: Your page title goes here
+-- ds.rendered.output:
 
-Your page content goes here.
+-- lib.navbar: **Zindot**
+pic: $assets.files.images.zindot.png 
+text1: Home
+text2: Services
+text3: Training
+text4: Contact Us
+
+-- end: ds.rendered.output
+
+-- end: ds.rendered
+
+-- ds.h3: Hero Component
+
+We have developed the `hero` component for [zindot.in](https://zindot.in/), 
+which matches the design currently displayed on the live site.
+
+-- ds.rendered:
+
+-- ds.rendered.input:
+
+\-- lib.hero: Technology and Education Roads to a Brighter Future
+pic: $assets.files.images.zin.png
+
+Understand how the world works. Learn, Apply and Grow with us in every aspect of life.
+
+-- ds.rendered.output:
+
+-- lib.hero: Technology and Education Roads to a Brighter Future
+pic: $assets.files.images.zin.png
+
+Understand how the world works. Learn, Apply and Grow with us in every aspect of life.
+
+-- end: ds.rendered.output
+
+-- end: ds.rendered
+
+-- ds.h3: Counter Component
+
+We have developed the `counter` component for [zindot.in](https://zindot.in/), 
+which matches the design currently displayed on the live site.
+
+-- ds.rendered:
+
+-- ds.rendered.input:
+
+\-- lib.counter:
+head1: **55**
+text1: **Projects**
+head2: **21**
+text2: **Clients**
+head3: **1200+**
+text3: **Students Trained**
+head4: **10+**
+text4: **Training Programs**
+
+-- ds.rendered.output:
+
+-- lib.counter:
+head1: **55**
+text1: **Projects**
+head2: **21**
+text2: **Clients**
+head3: **1200+**
+text3: **Students Trained**
+head4: **10+**
+text4: **Training Programs**
+
+-- end: ds.rendered.output
+
+-- end: ds.rendered
+
+-- ds.h3: Item Component
+
+We have developed the `item` component for [zindot.in](https://zindot.in/), 
+which matches the design currently displayed on the live site.
+
+-- ds.rendered:
+
+-- ds.rendered.input:
+
+\-- lib.item: **Skill & Placement Training**
+icon: $assets.files.images.skillicon.png
+
+Never be doubtful about yourself again and get placed in good companies or work on 
+good projects. Zindot offers many programmes for technical and professional upskilling of 
+students as well as graduates. With hands-on-experience on tailored projects from beginner 
+to advanced level, explore the 'GREAT' in you!
+
+\-- lib.item: **Faculty Development Programmes**
+icon: $assets.files.images.placement.png
+
+To all the talented and beloved faculty members and professors out there... we have 
+the perfect programme for your timely updation in this technical world. Zindot offers 
+faculty development programmes(FDP) for faculty members in technological or professional 
+institutes. FDPs are tailored to requirements and are delivered offline and online.
+
+\-- lib.item: **Project Assistance**
+icon: $assets.files.images.projectassist.png
+
+Never ever be worried about the technical feasibility of your project when Zindot's 
+here. Zindot provides technical assistance and facilities to technical and research 
+oriented projects of students and even faculty members so you can work on that dream project.
 
 
--- doc-site.h1: Need sidebar at right side of page?
+-- ds.rendered.output:
 
-Here it is, [use this document](https://fifthtry.github.io/doc-site/docs/right-sidebar/).
+-- lib.item: **Skill & Placement Training**
+icon: $assets.files.images.skillicon.png
 
+Never be doubtful about yourself again and get placed in good companies or work on 
+good projects. Zindot offers many programmes for technical and professional upskilling of 
+students as well as graduates. With hands-on-experience on tailored projects from beginner 
+to advanced level, explore the 'GREAT' in you!
 
--- doc-site.h1: 👀 Learn FTD and become a pro?
+-- lib.item: **Faculty Development Programmes**
+icon: $assets.files.images.placement.png
 
-You are one click away, just check [our documentation](https://fastn.dev/) and 
-dont forget to jump into our [FifthTry Discord server](https://discord.gg/bucrdvptYd).
+To all the talented and beloved faculty members and professors out there... we have 
+the perfect programme for your timely updation in this technical world. Zindot offers 
+faculty development programmes(FDP) for faculty members in technological or professional 
+institutes. FDPs are tailored to requirements and are delivered offline and online.
 
--- end: doc-site.page
+-- lib.item: **Project Assistance**
+icon: $assets.files.images.projectassist.png
+
+Never ever be worried about the technical feasibility of your project when Zindot's 
+here. Zindot provides technical assistance and facilities to technical and research 
+oriented projects of students and even faculty members so you can work on that dream project.
+
+-- end: ds.rendered.output
+
+-- end: ds.rendered
+
+-- ds.h3: Dashboard Component
+
+We have developed the `dashboard` component for [zindot.in](https://zindot.in/), 
+which matches the design currently displayed on the live site.
+
+-- ds.rendered:
+
+-- ds.rendered.input:
+
+\-- lib.dash:
+
+Are you ready to Kickstart and Pump your Career? Apply for any training 
+programme by completing the form
+
+-- ds.rendered.output:
+
+-- lib.dash:
+
+Are you ready to Kickstart and Pump your Career? Apply for any training 
+programme by completing the form
+
+-- end: ds.rendered.output
+
+-- end: ds.rendered
+
+-- end: ds.page
 

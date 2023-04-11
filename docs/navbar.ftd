@@ -1,0 +1,227 @@
+-- import: sarvom.github.io/zindot/assets
+-- import: sarvom.github.io/zindot/lib
+-- import: fifthtry.github.io/doc-site as ds
+
+-- ds.page: Zindot Documentation
+site-logo: $assets.files.images.zindot.png
+
+-- component navbar:
+caption name:
+string text1:
+string text2:
+string text3:
+string text4:
+ftd.image-src pic:
+ftd.type-data types: $opensans-typography.types
+
+-- ftd.column:
+width: fill-container
+
+-- navbar-mobile:
+if: { ftd.device == "mobile" }
+name: $navbar.name
+text1: $navbar.text1
+text2: $navbar.text2
+text3: $navbar.text3
+text4: $navbar.text4
+pic: $navbar.pic
+types: $navbar.types
+
+-- navbar-desktop:
+if: { ftd.device == "desktop" }
+name: $navbar.name
+text1: $navbar.text1
+text2: $navbar.text2
+text3: $navbar.text3
+text4: $navbar.text4
+pic: $navbar.pic
+types: $navbar.types
+
+-- end: ftd.column
+
+-- end: navbar
+
+
+
+
+
+
+
+
+
+-- component navbar-desktop:
+caption name:
+string text1:
+string text2:
+string text3:
+string text4:
+ftd.image-src pic:
+ftd.type-data types: $opensans-typography.types
+
+-- ftd.row:
+align-content: left
+height.fixed.px: 68
+width: fill-container
+padding-horizontal.px: 20 
+padding-vertical.px: 16
+spacing.fixed.px: 40
+types: $opensans-typography.types
+shadow: $common.navbar
+background.solid: #ffffff99
+sticky: true
+
+-- ftd.row:
+align-self: start
+width: fill-container
+types: $opensans-typography.types
+
+-- ftd.image:
+height.fixed.px: 32
+src: $navbar-desktop.pic
+
+-- ftd.text: $navbar-desktop.name
+padding-left.px: 10
+color: #57028f
+margin-bottom.px: 10
+role: $inherited.types.heading-small
+
+-- end: ftd.row
+
+-- ftd.text: $navbar-desktop.text1
+color: #c091fb
+role: $inherited.types.label-large
+text-align: center
+white-space: nowrap
+link: /zindot/
+
+-- ftd.text: $navbar-desktop.text2
+color: #c091fb
+role: $inherited.types.label-large
+text-align: center
+white-space: nowrap
+link: index.html#services
+
+-- ftd.text: $navbar-desktop.text3
+color: #c091fb
+role: $inherited.types.label-large
+text-align: center
+white-space: nowrap
+link: training/
+
+-- ftd.text: $navbar-desktop.text4
+color: #c091fb
+role: $inherited.types.label-large
+text-align: center
+white-space: nowrap
+link: index.html#contact
+
+-- end: ftd.row
+
+-- end: navbar-desktop
+
+
+
+
+
+
+
+
+
+
+-- component navbar-mobile:
+caption name:
+string text1:
+string text2:
+string text3:
+string text4:
+ftd.image-src pic:
+ftd.image-src menu: $assets.files.images.menu.png
+ftd.image-src close: $assets.files.images.close.png
+ftd.type-data types: $opensans-typography.types
+boolean $open: false
+
+-- ftd.column:
+padding.px: 20
+width: fill-container
+height: hug-content
+shadow: $common.navbar
+background.solid: #ffffff
+
+-- ftd.row:
+spacing.fixed.px: 80
+
+-- ftd.row:
+align-self: start
+width: fill-container
+types: $opensans-typography.types
+
+-- ftd.image:
+height.fixed.px: 32
+src: $navbar-mobile.pic
+
+-- ftd.text: $navbar-mobile.name
+padding-horizontal.px: 10
+color: #57028f
+margin-bottom.px: 10
+role: $inherited.types.heading-small
+
+-- end: ftd.row
+
+-- ftd.row:
+margin-left.px: 80
+
+-- ftd.image:
+if: { !navbar-mobile.open }
+height.fixed.px: 32
+src: $navbar-mobile.menu
+$on-click$: $ftd.set-bool($a = $navbar-mobile.open, v = true)
+
+-- ftd.image:
+if: { navbar-mobile.open }
+height.fixed.px: 32
+src: $navbar-mobile.close
+$on-click$: $ftd.set-bool($a = $navbar-mobile.open, v = false)
+
+-- end: ftd.row
+
+-- end: ftd.row
+
+-- ftd.column:
+if: { navbar-mobile.open}
+width: fill-container
+
+-- ftd.text: $navbar-mobile.text1
+color: #c091fb
+role: $inherited.types.label-large
+text-align: center
+white-space: nowrap
+link: /zindot/
+
+-- ftd.text: $navbar-mobile.text2
+color: #c091fb
+role: $inherited.types.label-large
+text-align: center
+white-space: nowrap
+link: index.html#services
+
+-- ftd.text: $navbar-mobile.text3
+color: #c091fb
+role: $inherited.types.label-large
+text-align: center
+white-space: nowrap
+link: training/
+
+-- ftd.text: $navbar-mobile.text4
+color: #c091fb
+role: $inherited.types.label-large
+text-align: center
+white-space: nowrap
+link: index.html#contact
+
+-- end: ftd.column
+
+-- end: ftd.column
+
+-- end: navbar-mobile
+
+-- end: ds.page
