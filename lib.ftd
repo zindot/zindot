@@ -89,7 +89,7 @@ color: #c091fb
 role: $inherited.types.label-large
 text-align: center
 white-space: nowrap
-link: /
+link: 
 
 -- ftd.text: $navbar-desktop.text2
 color: #c091fb
@@ -110,7 +110,7 @@ color: #c091fb
 role: $inherited.types.label-large
 text-align: center
 white-space: nowrap
-link: index.html#contact
+link: /index.html#contact
 
 -- end: ftd.row
 
@@ -199,21 +199,21 @@ color: #c091fb
 role: $inherited.types.label-large
 text-align: center
 white-space: nowrap
-link: index.html#services
+link: /index.html#services
 
 -- ftd.text: $navbar-mobile.text3
 color: #c091fb
 role: $inherited.types.label-large
 text-align: center
 white-space: nowrap
-link: training/
+link: /training/
 
 -- ftd.text: $navbar-mobile.text4
 color: #c091fb
 role: $inherited.types.label-large
 text-align: center
 white-space: nowrap
-link: index.html#contact
+link: /index.html#contact
 
 -- end: ftd.column
 
@@ -332,7 +332,8 @@ spacing.fixed.px: 10
 align-self: center
 
 -- button: Services
-url: index.html#services
+url: /index.html#services
+
 -- button: Training
 url: /training/
 
@@ -402,9 +403,10 @@ padding-vertical.px: 10
 spacing.fixed.px: 10
 
 -- button: Services
-url: index.html#services
+url: /index.html#services
+
 -- button: Training
-url: training/
+url: /training/
 
 -- end: ftd.row
 
