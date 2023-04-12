@@ -89,7 +89,7 @@ color: #c091fb
 role: $inherited.types.label-large
 text-align: center
 white-space: nowrap
-link: /zindot/
+link: /
 
 -- ftd.text: $navbar-desktop.text2
 color: #c091fb
@@ -103,7 +103,7 @@ color: #c091fb
 role: $inherited.types.label-large
 text-align: center
 white-space: nowrap
-link: training/
+link: /training/
 
 -- ftd.text: $navbar-desktop.text4
 color: #c091fb
@@ -192,7 +192,7 @@ color: #c091fb
 role: $inherited.types.label-large
 text-align: center
 white-space: nowrap
-link: /zindot/
+link: /
 
 -- ftd.text: $navbar-mobile.text2
 color: #c091fb
