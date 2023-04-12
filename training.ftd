@@ -92,7 +92,7 @@ margin-bottom.px: 50
 width: fill-container
 
 -- lib.button: Know More
-url: /training
+url: /zindot/training
 
 -- end: ftd.row
 
