@@ -3,7 +3,7 @@
 -- import: fifthtry.github.io/doc-site as ds
 
 -- ds.page: Zindot Documentation
-site-logo: $assets.files.images.zindot.png
+site-logo: /images/zindot.png
 
 -- ds.page.body:
 
