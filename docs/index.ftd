@@ -1,5 +1,5 @@
--- import: sarvom.github.io/zindot/assets
--- import: sarvom.github.io/zindot/lib
+-- import: zindot.github.io/zindot/assets
+-- import: zindot.github.io/zindot/lib
 -- import: fifthtry.github.io/doc-site as ds
 
 -- ds.page: Zindot Documentation
