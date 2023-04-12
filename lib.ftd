@@ -132,8 +132,8 @@ string text2:
 string text3:
 string text4:
 ftd.image-src pic:
-ftd.image-src menu: $assets.files.images.menu.png
-ftd.image-src close: $assets.files.images.close.png
+ftd.image-src menu: /images/menu.png
+ftd.image-src close: /images/close.png
 ftd.type-data types: $opensans-typography.types
 boolean $open: false
 
@@ -267,7 +267,7 @@ ftd.type-data types: $opensans-typography.types
 
 -- ftd.column:
 width: fill-container
-background.image: $assets.files.images.bgimg.jpg
+background.image: /images/bgimg.jpg
 
 -- hero-mobile:
 if: { ftd.device == "mobile" }
@@ -304,7 +304,7 @@ ftd.type-data types: $opensans-typography.types
 
 -- ftd.column:
 width: fill-container
-background.image: $assets.files.images.bgimg.jpg
+background.image: /images/bgimg.jpg
 
 -- ftd.column:
 width: fill-container
@@ -334,7 +334,7 @@ align-self: center
 -- button: Services
 url: index.html#services
 -- button: Training
-url: training/
+url: /training/
 
 -- end: ftd.row
 
@@ -371,7 +371,7 @@ ftd.type-data types: $opensans-typography.types
 align-self: center
 align-content: center
 width: fill-container
-background.image: $assets.files.images.bgimg.jpg
+background.image: /images/.bgimg.jpg
 
 -- ftd.row:
 align-self: center
@@ -1020,8 +1020,8 @@ if: { ftd.device == "mobile" }
 spacing.fixed.px: 50
 
 -- test-card:
-quote: $assets.files.images.quote.png
-logo: $assets.files.images.logo.png
+quote: /images/quote.png
+logo: /images/logo.png
 name: Muhammed Nowfal
 role: Director | Evergreen Interiors
 
@@ -1030,8 +1030,8 @@ my interior design projects as well as for my e-commerce needs. It really helped
 business.
 
 -- test-card:
-quote: $assets.files.images.quote.png
-logo: $assets.files.images.logo.png
+quote: /images/quote.png
+logo: /images/logo.png
 name: Sarath M
 role: Research Student | CUSAT
 
@@ -1047,8 +1047,8 @@ margin-horizontal.px: 139
 spacing.fixed.px: 50
 
 -- test-card:
-quote: $assets.files.images.quote.png
-logo: $assets.files.images.logo.png
+quote: /images/quote.png
+logo: /images/logo.png
 name: Muhammed Nowfal
 role: Director | Evergreen Interiors
 
@@ -1057,8 +1057,8 @@ my interior design projects as well as for my e-commerce needs. It really helped
 business.
 
 -- test-card:
-quote: $assets.files.images.quote.png
-logo: $assets.files.images.logo.png
+quote: /images/quote.png
+logo: /images/logo.png
 name: Sarath M
 role: Research Student | CUSAT
 
@@ -1263,7 +1263,7 @@ align-self: start
 width: fill-container
 
 -- ftd.image:
-src: $assets.files.images.zindot.png 
+src: /images/zindot.png 
 height.fixed.px: 27
 width.fixed.px: 50
 
@@ -1297,7 +1297,7 @@ spacing.fixed.px: 10
 
 
 -- ftd.image:
-src: $assets.files.images.insta.png
+src: /images/insta.png
 height.fixed.px: 30
 width.fixed.px: 30
 color: #353f4f
@@ -1305,21 +1305,21 @@ link: https://www.instagram.com/zindotinnovations/
 
 
 -- ftd.image:
-src: $assets.files.images.linkedin.png
+src: /images/linkedin.png
 height.fixed.px: 30
 width.fixed.px: 30
 color: #353f4f
 link: https://www.linkedin.com/company/zindot/
 
 -- ftd.image:
-src: $assets.files.images.mail.png
+src: /images/mail.png
 height.fixed.px: 30
 width.fixed.px: 30
 color: #353f4f
 link: mailto:info@zindot.in
 
 -- ftd.image:
-src: $assets.files.images.whatsapp.png
+src: /images/whatsapp.png
 height.fixed.px: 30
 width.fixed.px: 30
 color: #353f4f

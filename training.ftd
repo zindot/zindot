@@ -5,7 +5,7 @@
 
 -- lib.navbar: 
 name: Zindot
-pic: $assets.files.images.zindot.png 
+pic: /images/zindot.png 
 text1: Home
 text2: Services
 text3: Training
@@ -14,7 +14,7 @@ text4: Contact Us
 -- lib.hero: 
 title: Technology and Education Roads to a Brighter Future
 cta-text-1: Understand how the world works. Learn, Apply and Grow with us in every aspect of life.
-pic: $assets.files.images.zinint.png
+pic: /images/zinint.png
 
 -- lib.about: About Us
 
@@ -32,7 +32,7 @@ it’s transformational.” – George Couros
 if: { ftd.device == "mobile" }
 
 -- lib.item: Skill & Placement Training
-icon: $assets.files.images.skillicon.png
+icon: /images/skillicon.png
 
 Never be doubtful about yourself again and get placed in good companies or work on 
 good projects. Zindot offers many programmes for technical and professional upskilling of 
@@ -40,7 +40,7 @@ students as well as graduates. With hands-on-experience on tailored projects fro
 to advanced level, explore the 'GREAT' in you!
 
 -- lib.item: Faculty Development Programmes
-icon: $assets.files.images.placement.png
+icon: /images/placement.png
 
 To all the talented and beloved faculty members and professors out there... we have 
 the perfect programme for your timely updation in this technical world. Zindot offers 
@@ -48,7 +48,7 @@ faculty development programmes(FDP) for faculty members in technological or prof
 institutes. FDPs are tailored to requirements and are delivered offline and online.
 
 -- lib.item: Project Assistance
-icon: $assets.files.images.projectassist.png
+icon: /images/projectassist.png
 
 Never ever be worried about the technical feasibility of your project when Zindot's 
 here. Zindot provides technical assistance and facilities to technical and research 
@@ -61,7 +61,7 @@ if: { ftd.device == "desktop" }
 margin-horizontal.px: 100
 
 -- lib.item: Skill & Placement Training
-icon: $assets.files.images.skillicon.png
+icon: /images/skillicon.png
 
 Never be doubtful about yourself again and get placed in good companies or work on 
 good projects. Zindot offers many programmes for technical and professional upskilling of 
@@ -69,7 +69,7 @@ students as well as graduates. With hands-on-experience on tailored projects fro
 to advanced level, explore the 'GREAT' in you!
 
 -- lib.item: Faculty Development Programmes
-icon: $assets.files.images.placement.png
+icon: /images/placement.png
 
 To all the talented and beloved faculty members and professors out there... we have 
 the perfect programme for your timely updation in this technical world. Zindot offers 
@@ -77,7 +77,7 @@ faculty development programmes(FDP) for faculty members in technological or prof
 institutes. FDPs are tailored to requirements and are delivered offline and online.
 
 -- lib.item: Project Assistance
-icon: $assets.files.images.projectassist.png
+icon: /images/projectassist.png
 
 Never ever be worried about the technical feasibility of your project when Zindot's 
 here. Zindot provides technical assistance and facilities to technical and research 
@@ -92,7 +92,7 @@ margin-bottom.px: 50
 width: fill-container
 
 -- lib.button: Know More
-url: /zindot/training
+url: /training
 
 -- end: ftd.row
 
