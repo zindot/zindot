@@ -22,7 +22,7 @@ which matches the design currently displayed on the live site.
 -- ds.rendered.input:
 
 \-- lib.navbar: **Zindot**
-pic: /images/zindot.png 
+pic: $assets.files.images.zindot.png 
 text1: Home
 text2: Services
 text3: Training
@@ -31,7 +31,7 @@ text4: Contact Us
 -- ds.rendered.output:
 
 -- lib.navbar: **Zindot**
-pic: /images/zindot.png 
+pic: $assets.files.images.zindot.png 
 text1: Home
 text2: Services
 text3: Training
@@ -51,14 +51,14 @@ which matches the design currently displayed on the live site.
 -- ds.rendered.input:
 
 \-- lib.hero: Technology and Education Roads to a Brighter Future
-pic: /images/.zin.png
+pic: $assets.files.images.zin.png
 
 Understand how the world works. Learn, Apply and Grow with us in every aspect of life.
 
 -- ds.rendered.output:
 
 -- lib.hero: Technology and Education Roads to a Brighter Future
-pic: /images/zin.png
+pic: $assets.files.images.zin.png
 
 Understand how the world works. Learn, Apply and Grow with us in every aspect of life.
 
@@ -111,7 +111,7 @@ which matches the design currently displayed on the live site.
 -- ds.rendered.input:
 
 \-- lib.item: **Skill & Placement Training**
-icon: /images/skillicon.png
+icon: $assets.files.images.skillicon.png
 
 Never be doubtful about yourself again and get placed in good companies or work on 
 good projects. Zindot offers many programmes for technical and professional upskilling of 
@@ -119,7 +119,7 @@ students as well as graduates. With hands-on-experience on tailored projects fro
 to advanced level, explore the 'GREAT' in you!
 
 \-- lib.item: **Faculty Development Programmes**
-icon: /images/placement.png
+icon: $assets.files.images./images/placement.png
 
 To all the talented and beloved faculty members and professors out there... we have 
 the perfect programme for your timely updation in this technical world. Zindot offers 
@@ -127,7 +127,7 @@ faculty development programmes(FDP) for faculty members in technological or prof
 institutes. FDPs are tailored to requirements and are delivered offline and online.
 
 \-- lib.item: **Project Assistance**
-icon:/images/projectassist.png
+icon:$assets.files.images.projectassist.png
 
 Never ever be worried about the technical feasibility of your project when Zindot's 
 here. Zindot provides technical assistance and facilities to technical and research 
