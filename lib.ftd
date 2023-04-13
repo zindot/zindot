@@ -96,7 +96,7 @@ color: #c091fb
 role: $inherited.types.label-large
 text-align: center
 white-space: nowrap
-link: index.html#services
+link: /index.html#services
 
 -- ftd.text: $navbar-desktop.text3
 color: #c091fb
@@ -885,6 +885,7 @@ body content:
 ftd.type-data types: $opensans-typography.types
 
 -- ftd.column:
+width: fill-container
 
 -- dash-mobile:
 if: { ftd.device == "mobile" }
