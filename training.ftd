@@ -5,7 +5,7 @@
 
 -- lib.navbar: 
 name: Zindot
-pic: $assets.files.images./images/zindot.png 
+pic: $assets.files.images.zindot.png 
 text1: Home
 text2: Services
 text3: Training
