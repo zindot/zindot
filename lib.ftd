@@ -1,6 +1,6 @@
--- import: zindot.github.io/zindot/assets
+-- import: zindot.in/assets
 -- import: fastn-community.github.io/opensans-typography
--- import: zindot.github.io/zindot/common
+-- import: zindot.in/common
 
 -- component navbar:
 caption name:
