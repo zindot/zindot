@@ -89,7 +89,7 @@ color: #c091fb
 role: $inherited.types.label-large
 text-align: center
 white-space: nowrap
-link: 
+link: /
 
 -- ftd.text: $navbar-desktop.text2
 color: #c091fb
