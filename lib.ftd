@@ -1308,7 +1308,7 @@ link: https://www.instagram.com/zindotinnovations/
 
 
 -- ftd.image:
-src: $assets.files.images./images/linkedin.png
+src: $assets.files.images.linkedin.png
 height.fixed.px: 30
 width.fixed.px: 30
 color: #353f4f
