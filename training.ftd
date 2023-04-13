@@ -14,7 +14,7 @@ text4: Contact Us
 -- lib.hero: 
 title: Technology and Education Roads to a Brighter Future
 cta-text-1: Understand how the world works. Learn, Apply and Grow with us in every aspect of life.
-pic: $assets.filezinint.png
+pic: $assets.files.images.zinint.png
 
 -- lib.about: About Us
 
