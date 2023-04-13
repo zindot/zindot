@@ -372,7 +372,7 @@ ftd.type-data types: $opensans-typography.types
 align-self: center
 align-content: center
 width: fill-container
-background.image: /images/.bgimg.jpg
+background.image: $assets.files.images.bgimg.jpg
 
 -- ftd.row:
 align-self: center
