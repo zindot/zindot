@@ -62,7 +62,7 @@ if: { ftd.device == "desktop" }
 margin-horizontal.px: 100
 
 -- lib.stack: Embedded system and PCB design
-icon: $assets.files.images.embedded.png
+icon: /images/embedded.png
 
 The embedded system wing of ZINDOT is just the right place for all your custom 
 requirements. With best solutions for your problems in minimal time, we will fulfil your 
