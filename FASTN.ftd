@@ -1,10 +1,26 @@
 -- import: fastn
 
--- fastn.package: www.zindot.in
+-- fastn.package: zindot.in
 favicon: /images/zindotlogo.ico
 
 -- fastn.dependency: fastn-community.github.io/opensans-typography
 
 -- fastn.dependency: fifthtry.github.io/doc-site 
+-- fastn.dependency: fastn-community.github.io/expand-ds
+
+
+
+-- fastn.sitemap:
+
+
+# Home: index.html
+
+- Zindot components: docs/
+- `page`: docs/index.html
+- `hero`: docs/hero/
+- `grid-section`: docs/grid-section/
+- `image-with-card`: docs/image-with-card/
+- `pricing`: docs/pricing/
+- `get-in-touch`: docs/get-in-touch/
 
 
