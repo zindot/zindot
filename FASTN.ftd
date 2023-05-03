@@ -16,11 +16,8 @@ favicon: /images/zindotlogo.ico
 # Home: index.html
 
 - Zindot components: docs/
-- `page`: docs/index.html
+- `navbar`: docs/navbar
 - `hero`: docs/hero/
-- `grid-section`: docs/grid-section/
-- `image-with-card`: docs/image-with-card/
-- `pricing`: docs/pricing/
-- `get-in-touch`: docs/get-in-touch/
+
 
 
