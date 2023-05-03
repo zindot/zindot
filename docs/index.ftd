@@ -1,6 +1,6 @@
--- import: www.zindot.in/assets
--- import: www.zindot.in/lib
--- import: fifthtry.github.io/doc-site as ds
+-- import: zindot.in/assets
+-- import: zindot.in/lib
+-- import: fastn-community.github.io/expand-ds as ds
 
 -- ds.page: Zindot Documentation
 site-logo: /images/zindot.png

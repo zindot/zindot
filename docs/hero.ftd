@@ -1,0 +1,33 @@
+-- import: zindot.in/assets
+-- import: zindot.in/lib
+-- import: fastn-community.github.io/expand-ds as ds
+
+-- ds.page: Zindot Documentation
+site-logo: /images/zindot.png
+
+-- ds.h3: Hero Component
+
+We have developed the `hero` component for [zindot.in](https://zindot.in/), 
+which matches the design currently displayed on the live site.
+
+-- ds.rendered:
+
+-- ds.rendered.input:
+
+\-- lib.hero: Technology and Education Roads to a Brighter Future
+pic: /images/zin.png
+
+Understand how the world works. Learn, Apply and Grow with us in every aspect of life.
+
+-- ds.rendered.output:
+
+-- lib.hero: Technology and Education Roads to a Brighter Future
+pic: /images/zin.png
+
+Understand how the world works. Learn, Apply and Grow with us in every aspect of life.
+
+-- end: ds.rendered.output
+
+-- end: ds.rendered
+
+-- end: ds.page

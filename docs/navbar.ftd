@@ -1,0 +1,37 @@
+-- import: zindot.in/assets
+-- import: zindot.in/lib
+-- import: fastn-community.github.io/expand-ds as ds
+
+-- ds.page: Zindot Documentation
+site-logo: /images/zindot.png
+
+-- ds.h3: Navbar Component
+
+We have developed the `navbar` component for [zindot.in](https://zindot.in/), 
+which matches the design currently displayed on the live site.
+
+-- ds.rendered:
+
+-- ds.rendered.input:
+
+\-- lib.navbar: **Zindot**
+pic: /images/zindot.png 
+text1: Home
+text2: Services
+text3: Training
+text4: Contact Us
+
+-- ds.rendered.output:
+
+-- lib.navbar: **Zindot**
+pic: /images/zindot.png 
+text1: Home
+text2: Services
+text3: Training
+text4: Contact Us
+
+-- end: ds.rendered.output
+
+-- end: ds.rendered
+
+-- end: ds.page
