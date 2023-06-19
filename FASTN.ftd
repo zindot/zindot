@@ -1,11 +1,10 @@
 -- import: fastn
 
 -- fastn.package: zindot.in
-favicon: /images/zindotlogo.ico
+favicon: /-/zindot.in/images/zindotlogo.ico
 
 -- fastn.dependency: fastn-community.github.io/opensans-typography
-
--- fastn.dependency: fifthtry.github.io/doc-site 
+-- fastn.dependency: fastn-community.github.io/doc-site 
 -- fastn.dependency: fastn-community.github.io/expand-ds
 
 

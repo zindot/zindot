@@ -5,21 +5,21 @@
 -- ftd.document: Zindot
 
 -- lib.navbar: **Zindot**
-pic: /images/zindot.png 
+pic: $assets.files.images.zindot.png 
 text1: Home
 text2: Services
 text3: Training
 text4: Contact Us
 
 -- lib.hero: Technology and Education Roads to a Brighter Future
-pic: /images/zin.png
+pic: $assets.files.images.zin.png
 
 Understand how the world works. Learn, Apply and Grow with us in every aspect of life.
 
 -- lib.about: **Our Services**
 
 Zindot Technologies bring you a handful of services under one roof. From software 
-development to one-to-one mentoring for technical aspirants. We provide project assistance
+development to one-to-one mentoring for technical aspirants. We also provide project assistance
 to students and industrialists and undertake projects offering the best standards. Zindot 
 is a one stop destination for all your technical requirements!
 
@@ -27,14 +27,14 @@ is a one stop destination for all your technical requirements!
 if: { ftd.device == "mobile" }
 
 -- lib.stack: Embedded system and PCB design
-icon: /images/embedded.png
+icon: $assets.files.images.embedded.png
 
 The embedded system wing of ZINDOT is just the right place for all your custom 
 requirements. With best solutions for your problems in minimal time, we will fulfil your 
 requirements.
 
 -- lib.stack: Internet of Things
-icon: /images/iot.png
+icon: $assets.files.images.iot.png
 
 The Internet of Things, or IoT for short, is the concept of connecting physical 
 objects to the Internet so that they can be either controlled or monitored remotely, with
@@ -42,14 +42,14 @@ the goal of gaining insights that help improve personal or business outcomes. We
 design and develop unique, tailor-made IoT solutions.
 
 -- lib.stack: Rapid Prototyping
-icon: /images/rapid.png
+icon: $assets.files.images.rapid.png
 
 With 3D printers taking on the industry with its ability to cater to the needs of 
 anything and everything we bring you the service of building your 3D models. Learn early 
 insights about your designs or improve them with our team.
 
 -- lib.stack: Web and App Development
-icon: /images/webicon.png
+icon: $assets.files.images.webicon.png
 
 Zindot has the best web and native app development team with updated and new stacks 
 to flexible and robust on-cloud solutions. The best architecture for your business with 
@@ -63,7 +63,7 @@ if: { ftd.device == "desktop" }
 margin-horizontal.px: 100
 
 -- lib.stack: Embedded system and PCB design
-icon: /images/embedded.png
+icon: $assets.files.images.embedded.png
 
 The embedded system wing of ZINDOT is just the right place for all your custom 
 requirements. With best solutions for your problems in minimal time, we will fulfil your 
@@ -72,7 +72,7 @@ requirements.
 -- lib.vertline:
 
 -- lib.stack: Internet of Things
-icon: /images/iot.png
+icon: $assets.files.images.iot.png
 
 The Internet of Things, or IoT for short, is the concept of connecting physical 
 objects to the Internet so that they can be either controlled or monitored remotely, with
@@ -82,7 +82,7 @@ design and develop unique, tailor-made IoT solutions.
 -- lib.vertline:
 
 -- lib.stack: Rapid Prototyping
-icon: /images/rapid.png
+icon: $assets.files.images.rapid.png
 
 With 3D printers taking on the industry with its ability to cater to the needs of 
 anything and everything we bring you the service of building your 3D models. Learn early 
@@ -91,7 +91,7 @@ insights about your designs or improve them with our team.
 -- lib.vertline:
 
 -- lib.stack: Web and App Development
-icon: /images/webicon.png
+icon: $assets.files.images.webicon.png
 
 Zindot has the best web and native app development team with updated and new stacks 
 to flexible and robust on-cloud solutions. The best architecture for your business with 
@@ -110,7 +110,7 @@ if: { ftd.device == "mobile" }
 margin-horizontal.px: 30
 
 -- lib.item: **Skill & Placement Training**
-icon: /images/skillicon.png
+icon: $assets.files.images.skillicon.png
 
 Never be doubtful about yourself again and get placed in good companies or work on 
 good projects. Zindot offers many programmes for technical and professional upskilling of 
@@ -118,7 +118,7 @@ students as well as graduates. With hands-on-experience on tailored projects fro
 to advanced level, explore the 'GREAT' in you!
 
 -- lib.item: **Faculty Development Programmes**
-icon: /images/placement.png
+icon: $assets.files.images.placement.png
 
 To all the talented and beloved faculty members and professors out there... we have 
 the perfect programme for your timely updation in this technical world. Zindot offers 
@@ -126,7 +126,7 @@ faculty development programmes(FDP) for faculty members in technological or prof
 institutes. FDPs are tailored to requirements and are delivered offline and online.
 
 -- lib.item: **Project Assistance**
-icon: /images/projectassist.png
+icon: $assets.files.images.projectassist.png
 
 Never ever be worried about the technical feasibility of your project when Zindot's 
 here. Zindot provides technical assistance and facilities to technical and research 
@@ -139,7 +139,7 @@ if: { ftd.device == "desktop" }
 margin-horizontal.px: 100
 
 -- lib.item: **Skill & Placement Training**
-icon: /images/skillicon.png
+icon: $assets.files.images.skillicon.png
 
 Never be doubtful about yourself again and get placed in good companies or work on 
 good projects. Zindot offers many programmes for technical and professional upskilling of 
@@ -147,7 +147,7 @@ students as well as graduates. With hands-on-experience on tailored projects fro
 to advanced level, explore the 'GREAT' in you!
 
 -- lib.item: **Faculty Development Programmes**
-icon: /images/placement.png
+icon: $assets.files.images.placement.png
 
 To all the talented and beloved faculty members and professors out there... we have 
 the perfect programme for your timely updation in this technical world. Zindot offers 
@@ -155,7 +155,7 @@ faculty development programmes(FDP) for faculty members in technological or prof
 institutes. FDPs are tailored to requirements and are delivered offline and online.
 
 -- lib.item: **Project Assistance**
-icon: /images/projectassist.png
+icon: $assets.files.images.projectassist.png
 
 Never ever be worried about the technical feasibility of your project when Zindot's 
 here. Zindot provides technical assistance and facilities to technical and research 
